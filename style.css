@@ -276,12 +276,20 @@ strong{color:var(--white);font-weight:600}
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:900px){
   body{overflow-y:auto;overflow-x:hidden;height:auto}
-  .slides{flex-direction:column;overflow-x:hidden;overflow-y:auto;scroll-snap-type:y mandatory;height:auto;width:100vw}
-  .slide{flex:0 0 auto;min-height:100vh;height:auto;width:100vw;scroll-snap-align:start;padding:100px 0 60px}
+  .slides{flex-direction:column;overflow-x:hidden;overflow-y:visible;scroll-snap-type:none;height:auto;width:100vw}
+  .slide{flex:0 0 auto;min-height:auto;height:auto;width:100vw;scroll-snap-align:none;padding:80px 0 40px}
+  .dots{display:none}
+  .hint{display:none}
+  .topbar{background:rgba(3,3,5,.9);backdrop-filter:blur(16px)}
+  .tb-btn{width:40px;height:40px}
   .slide-inner{padding:0 24px}
   .prod-layout,.about-layout,.svc-layout,.about-full,.contact-layout{grid-template-columns:1fr;gap:24px}
   .contact-grid{grid-template-columns:1fr 1fr}
   .proj-scroll{flex-wrap:wrap}
+  .tb-menu{min-width:140px}
+  .lang-btn,.tb-nav-link{padding:12px 20px;font-size:.9rem}
+  .pv-terminal{position:relative;top:auto;right:auto;width:100%;margin-top:12px}
+  .starry{display:none}
   .svc-grid,.port-grid{grid-template-columns:1fr}
   .contact-links{flex-direction:column}
   .dots{right:16px;gap:8px}
