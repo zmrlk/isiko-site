@@ -208,8 +208,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── Language ──
-  let lang = localStorage.getItem('isiko-lang') || 'pl';
+  // ── Language (auto-detect browser language) ──
+  let lang = localStorage.getItem('isiko-lang');
+  if (!lang) {
+    const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    if (browserLang.startsWith('pl')) lang = 'pl';
+    else if (browserLang.startsWith('es')) lang = 'es';
+    else lang = 'en';
+  }
+  document.getElementById('lang-current').textContent = lang.toUpperCase();
   setLang(lang);
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
