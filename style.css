@@ -271,15 +271,7 @@ strong{color:var(--white);font-weight:600}
 .contact-footer{font-size:.72rem;color:var(--t3)}
 
 /* ═══ ENTRANCE ANIMATIONS ═══ */
-.slide-inner > *{opacity:0;transform:translateY(20px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
-.slide.in-view .slide-inner > *{opacity:1;transform:none}
-.slide.in-view .slide-inner > *:nth-child(1){transition-delay:0s}
-.slide.in-view .slide-inner > *:nth-child(2){transition-delay:.08s}
-.slide.in-view .slide-inner > *:nth-child(3){transition-delay:.16s}
-.slide.in-view .slide-inner > *:nth-child(4){transition-delay:.24s}
-.slide.in-view .slide-inner > *:nth-child(5){transition-delay:.32s}
-.slide.in-view .slide-inner > *:nth-child(6){transition-delay:.4s}
-.slide.in-view .slide-inner > *:nth-child(7){transition-delay:.48s}
+.slide-inner > *{opacity:1;transform:none}
 
 /* ═══ RESPONSIVE ═══ */
 @media(max-width:900px){

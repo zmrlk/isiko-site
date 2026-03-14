@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.isIntersecting) {
         const idx = [...slideEls].indexOf(e.target);
         dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-        e.target.classList.add('in-view');
+        // content always visible
         // Hide hint after first slide
         if (idx > 0 && hint) hint.classList.add('hidden');
       }
@@ -232,8 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── Mark first slide as in-view ──
-  slideEls[0].classList.add('in-view');
+  // ── All slides visible ──
+  slideEls.forEach(s => s.classList.add('in-view'));
 
   // ── Cursor glow on hero ──
   const heroSlide = document.getElementById('hero-slide');
