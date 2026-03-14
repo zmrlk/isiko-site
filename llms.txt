@@ -1,0 +1,23 @@
+# ISIKO — Kodujemy sztukę.
+
+## About
+ISIKO is an independent Polish AI studio founded by Karol Zamarlik. We build open-source AI tools and provide technology services for businesses.
+
+## Products
+- **Meport** (meport.app) — Portable AI personality profiles. Drop files, answer questions, export to 20+ AI platforms.
+- **bOS CLI** — Multi-agent AI system for Claude Code. 18 agents, ~65 skills. Marketing, sales, SEO, creative, analytics.
+- **bOS App** — Desktop AI operating system. Visual agent management, AI provider configuration, real-time monitoring.
+
+## Services
+- Web design & development (websites, CRM, B2B panels)
+- AI automation (multi-agent systems, chatbots, MCP integrations)
+- Operations & process optimization
+- E-commerce (online stores, payment systems, loyalty programs)
+
+## Founder
+Karol Zamarlik — developer, entrepreneur, AI systems architect. Former COO in retail chains and manufacturing. Years of experience in IT management, operations, and team leadership. Combines corporate and indie development expertise.
+
+## Links
+- Website: https://isiko.pl
+- GitHub: https://github.com/zmrlk
+- Meport: https://meport.app

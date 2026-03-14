@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Sitemap: https://isiko.pl/sitemap.xml
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
