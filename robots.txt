@@ -1,7 +1,12 @@
+# isiko.pl · Fractional CTO/COO Kraków
+# Crawl all · zero tracking · AI bots welcome
+
 User-agent: *
 Allow: /
+
 Sitemap: https://isiko.pl/sitemap.xml
 
+# AI crawlers — explicit allow (LLMs, indexing, research)
 User-agent: GPTBot
 Allow: /
 
@@ -12,4 +17,10 @@ User-agent: PerplexityBot
 Allow: /
 
 User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
 Allow: /

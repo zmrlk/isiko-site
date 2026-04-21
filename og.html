@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>isiko OG</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #0A0A0A; width: 1200px; height: 630px; overflow: hidden; font-family: 'Space Grotesk', sans-serif; color: #fff; }
+  .og {
+    width: 1200px;
+    height: 630px;
+    padding: 80px 90px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: #0A0A0A;
+    position: relative;
+  }
+  .rail { position: absolute; top: 0; bottom: 0; left: 0; width: 48px; background: #C7F05A; }
+  .grid-bg {
+    position: absolute; inset: 0; opacity: 0.22;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .left { position: relative; z-index: 2; padding-left: 20px; }
+  .pill {
+    display: inline-block; padding: 8px 16px;
+    background: #C7F05A; color: #0A0A0A;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px; letter-spacing: .14em; text-transform: uppercase;
+    font-weight: 500; margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 84px; font-weight: 500; line-height: 1.05;
+    letter-spacing: -0.04em; margin: 0 0 20px;
+  }
+  h1 .line { display: block; }
+  h1 .hl { background: #C7F05A; color: #0A0A0A; padding: 2px 14px 6px; display: inline-block; }
+  h1 .dot { color: #C7F05A; }
+  p {
+    font-size: 22px; line-height: 1.4;
+    color: rgba(255,255,255,.75); margin: 0;
+    max-width: 560px;
+  }
+  .right { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; }
+  .mark { width: 100%; max-width: 380px; }
+  .meta {
+    position: absolute; bottom: 36px; left: 110px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px; letter-spacing: .14em; text-transform: uppercase;
+    color: rgba(255,255,255,.55);
+    z-index: 3;
+  }
+  .meta .sep { color: #C7F05A; margin: 0 8px; }
+</style>
+</head>
+<body>
+<div class="og">
+  <div class="rail"></div>
+  <div class="grid-bg"></div>
+
+  <div class="left">
+    <div class="pill">FRACTIONAL CTO / COO · KRAKÓW</div>
+    <h1>
+      <span class="line">wiemy</span>
+      <span class="line"><span class="hl">co wam dolega<span class="dot">.</span></span></span>
+    </h1>
+    <p>Wchodzimy do firm w chaosie. Diagnozujemy, budujemy system, zostajemy obok.</p>
+  </div>
+
+  <div class="right">
+    <svg class="mark" viewBox="0 0 480 480">
+      <circle cx="240" cy="192" r="128" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+      <circle cx="240" cy="192" r="96" fill="#C7F05A"/>
+      <text x="240" y="398" text-anchor="middle" font-family="Space Grotesk" font-weight="500" font-size="96" letter-spacing="-4" fill="#FFFFFF">isiko</text>
+      <path d="M 80 440 Q 240 404 400 440" fill="none" stroke="#C7F05A" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <div class="meta">
+    isiko.pl <span class="sep">·</span> karol@isiko.pl <span class="sep">·</span> kultura w języku zulu
+  </div>
+</div>
+</body>
+</html>

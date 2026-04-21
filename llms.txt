@@ -1,23 +1,55 @@
-# ISIKO — Kodujemy sztukę.
+# isiko — wiemy co wam dolega.
 
 ## About
-ISIKO is an independent Polish AI studio founded by Karol Zamarlik. We build open-source AI tools and provide technology services for businesses.
+isiko — kultura w języku Zulu. Fractional CTO/COO dla polskich firm. Wchodzimy do firm w chaosie, diagnozujemy co nie działa, budujemy system, proces i narzędzie. Zostajemy, dopóki to nie działa samo. Kraków, Polska.
 
-## Products
-- **Meport** (meport.app) — Portable AI personality profiles. Drop files, answer questions, export to 20+ AI platforms.
-- **bOS CLI** — Multi-agent AI system for Claude Code. 18 agents, ~65 skills. Marketing, sales, SEO, creative, analytics.
-- **bOS App** — Desktop AI operating system. Visual agent management, AI provider configuration, real-time monitoring.
+## Positioning
+Fractional CTO/COO. 1-2 dni w tygodniu, 6+ miesięcy. Bez etatu, bez długich kontraktów. Łączymy dwa światy: technologię i operacje. Prywatne spółki 20-200 osób w Polsce — budżety są ograniczone, muszą liczyć każdą fakturę. Wiemy jak zrobić szybko i tanimi kosztami.
+
+## Method — three steps
+1. **Diagnoza (koło)** — patrzymy pierwsi. Siedzimy z zespołem, nad dokumentami i procesami. Obserwujemy jak firma naprawdę działa, zanim ktoś powie gdzie boli. Wychodzisz z mapą: co naprawimy w miesiąc, co w kwartał, co zostaje.
+2. **Most (łuk)** — łączymy. 1-2 dni w tygodniu, 6-12 miesięcy. Wpisani w rytm zespołu. Każda decyzja udokumentowana po polsku.
+3. **Rozwiązanie (isiko)** — zostaje system, który działa sam. Instrukcje krok po kroku, zapis decyzji, przeszkolony zespół. Po uruchomieniu odbieramy telefon przez 2-3 miesiące w 24-48h.
 
 ## Services
-- Web design & development (websites, CRM, B2B panels)
-- AI automation (multi-agent systems, chatbots, MCP integrations)
-- Operations & process optimization
-- E-commerce (online stores, payment systems, loyalty programs)
+- ERP + workflow (CRM, wyceny, faktury, KSeF, WMS)
+- Panele B2B, rezerwacje, e-commerce
+- AI integration (RAG, boty, automatyzacje)
+- Process design, procedures, onboarding
+- Dashboards, analizy danych
+- Brand, copy, strony
+
+## Products (own, used daily)
+- **bOS** (github.com/zmrlk/bOS) — Wieloagentowy system w Claude Code. 19 agentów, 79+ skilli. Codziennie używany.
+- **Meport** (meport.app) — Przenośna warstwa personalizacji dla 20+ narzędzi AI. CLI, desktop, MCP server. MIT.
+
+## Portfolio (6 production systems)
+- STAGO (stago.com.pl) — ERP 21 modułów, kontenery i hale stalowe
+- Vape Maniacy (vapemaniacy.pl) — retail 134 oddziały, 460 pracowników, VRS
+- VAVO Group (vavogroup.pl) — holding, panele B2B, procesy (Karol = Dyrektor Operacyjny)
+- Wolny Namiot (wolnynamiot.pl) — brand + strona + SEO od zera, 6 tygodni
+- Dzikie Wiosło (dzikiewioslo.pl) — booking + płatności + regulaminy, firma kajakarska
+- Splendid Fleet (splendidfleet.pl) — procesy, procedury, arkusze, analizy
 
 ## Founder
-Karol Zamarlik — developer, entrepreneur, AI systems architect. Former COO in retail chains and manufacturing. Years of experience in IT management, operations, and team leadership. Combines corporate and indie development expertise.
+Karol Zamarlik — Founder & Fractional CTO/COO. 7+ lat zarządzania.
+- 2019: koordynator zespołu 40 osób (Splendid Fleet)
+- 2021: kierownik (CAR NET, premium car rental)
+- 2024: wchodzi do VAVO jako kierownik regionalny. Trzy awanse w dwanaście miesięcy — dziś Dyrektor Operacyjny.
+Łączy korporację i indie development. Był po stronie klienta — nie jako konsultant, jako ten, kto odpowiada przed zarządem.
+
+## Contact
+- Email: karol@isiko.pl
+- Phone: +48 575 453 474
+- Location: Kraków, Poland
+- Response: w 24h
+- Cooperation: pilot 4-tyg → kontrakt 6-12 miesięcy
+
+## Tagline
+„wiemy co wam dolega." — isiko means „culture/tradition" in Zulu. What stays when the project ends.
 
 ## Links
 - Website: https://isiko.pl
+- LinkedIn: https://linkedin.com/in/karolzamarlik
 - GitHub: https://github.com/zmrlk
-- Meport: https://meport.app
+- Privacy: https://isiko.pl/polityka.html
