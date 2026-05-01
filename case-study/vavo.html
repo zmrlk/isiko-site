@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VAVO Group · od 37 sklepów do 130 | Case study isiko</title>
+<meta name="description" content="VAVO Group: od 37 sklepów do 130. Operacyjne porządkowanie holdingu retail w trakcie szybkiego wzrostu — procedury, Discord, SharePoint, Power BI, VRS, magazyn. 130 oddziałów, 300 pracowników. Karol Zamarlik — Dyrektor Operacyjny VAVO.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://isiko.pl/case-study/vavo.html">
+<link rel="alternate" hreflang="pl" href="https://isiko.pl/case-study/vavo.html">
+<link rel="alternate" hreflang="x-default" href="https://isiko.pl/case-study/vavo.html">
+
+<meta property="og:title" content="VAVO Group · od 37 sklepów do 130">
+<meta property="og:description" content="Od 37 sklepów do 130. Procedury → Discord → SharePoint → Power BI → VRS → Magazyn. 130 oddziałów, 300 pracowników.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://isiko.pl/case-study/vavo.html">
+<meta property="og:image" content="https://isiko.pl/og.png">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+<!-- Structured Data · Article + Person + Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://isiko.pl/case-study/vavo.html#article",
+      "headline": "VAVO Group · od 37 sklepów do 130",
+      "description": "Operacyjne porządkowanie holdingu retail w trakcie szybkiego wzrostu z 37 do 130 sklepów. Chronologia: procedury → Discord → SharePoint → Power BI → VRS → magazyn. 300 pracowników.",
+      "image": "https://isiko.pl/og.png",
+      "datePublished": "2026-04-25",
+      "dateModified": "2026-04-25",
+      "inLanguage": "pl-PL",
+      "author": {
+        "@type": "Person",
+        "@id": "https://isiko.pl/#karol",
+        "name": "Karol Zamarlik",
+        "jobTitle": "Dyrektor Operacyjny VAVO · Fractional CTO/COO",
+        "url": "https://isiko.pl/#karol"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://isiko.pl/#org",
+        "name": "isiko",
+        "url": "https://isiko.pl/"
+      },
+      "about": {
+        "@type": "Organization",
+        "name": "VAVO Group",
+        "url": "https://vavogroup.pl"
+      },
+      "keywords": "fractional CTO, fractional COO, dyrektor operacyjny, retail multi-brand, ERP, WMS, holding, operations management, VAVO, polskie SME, Discord workplace, SharePoint M365, VRS"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "isiko", "item": "https://isiko.pl/"},
+        {"@type": "ListItem", "position": 2, "name": "Case studies", "item": "https://isiko.pl/#praktyka"},
+        {"@type": "ListItem", "position": 3, "name": "VAVO Group"}
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0A0A0A;
+    --paper: #FFFFFF;
+    --dim: rgba(255,255,255,.78);
+    --mute: rgba(255,255,255,.48);
+    --faint: rgba(255,255,255,.14);
+    --sage: #C7F05A;
+    --f-display: 'Space Grotesk', sans-serif;
+    --f-serif: 'Instrument Serif', serif;
+    --f-body: 'Inter', sans-serif;
+    --f-mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--f-body);
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  a { color: var(--sage); text-decoration: none; border-bottom: 1px solid var(--faint); transition: border-color .2s; }
+  a:hover { border-color: var(--sage); }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 120px 24px 120px;
+  }
+
+  /* TOP CHROME — identyczny jak main */
+  .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    padding: 20px clamp(20px, 3vw, 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10,10,10,.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .top-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    color: var(--paper);
+    border: none;
+    text-decoration: none;
+  }
+  .top-mark:hover { color: var(--sage); }
+  .top-actions { display: flex; gap: 8px; align-items: center; }
+  .top-btn {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--faint);
+    background: rgba(255,255,255,.03);
+    color: var(--dim);
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+    height: 40px;
+    min-width: 40px;
+    text-decoration: none;
+  }
+  .top-btn:hover {
+    border-color: var(--sage);
+    color: var(--paper);
+  }
+  .top-btn-cta {
+    background: var(--sage);
+    color: var(--ink);
+    border-color: var(--sage);
+    padding: 10px 18px;
+  }
+  .top-btn-cta:hover {
+    background: var(--paper);
+    color: var(--ink);
+    border-color: var(--paper);
+  }
+  @media (max-width: 700px) {
+    .top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px 24px;
+    }
+    .top-actions { width: 100%; justify-content: flex-end; }
+    .wrap { padding-top: 160px; }
+  }
+
+  .breadcrumb {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-bottom: 24px;
+  }
+  .breadcrumb a { color: var(--mute); border: none; }
+  .breadcrumb a:hover { color: var(--sage); }
+  .breadcrumb .sep { margin: 0 8px; color: var(--faint); }
+
+  h1 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    margin-bottom: 28px;
+  }
+  h1 .dot { color: var(--sage); }
+
+  .lead {
+    font-family: var(--f-body);
+    font-size: clamp(20px, 1.8vw, 26px);
+    line-height: 1.5;
+    color: var(--dim);
+    margin-bottom: 56px;
+    border-left: 2px solid var(--sage);
+    padding-left: 24px;
+  }
+
+  .meta-strip {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 28px 0;
+    border-top: 1px solid var(--faint);
+    border-bottom: 1px solid var(--faint);
+    margin-bottom: 64px;
+  }
+  @media (min-width: 720px) {
+    .meta-strip { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  }
+  .meta-cell .meta-label {
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-bottom: 6px;
+  }
+  .meta-cell .meta-val {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--paper);
+  }
+
+  h2 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(28px, 3.2vw, 38px);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    margin: 64px 0 24px;
+    color: var(--paper);
+  }
+  h2 .num {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    color: var(--sage);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.015em;
+    margin: 32px 0 12px;
+    color: var(--sage);
+  }
+
+  p { margin-bottom: 18px; color: var(--dim); }
+  p b, p strong { color: var(--paper); font-weight: 500; }
+
+  ul.story, ol.story {
+    margin: 14px 0 22px 24px;
+    color: var(--dim);
+  }
+  ul.story li, ol.story li { padding: 4px 0; }
+  ol.story li::marker { color: var(--sage); font-family: var(--f-mono); font-weight: 500; }
+
+  .pullquote {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(22px, 2.4vw, 30px);
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+    color: var(--paper);
+    border-left: 3px solid var(--sage);
+    padding: 16px 0 16px 28px;
+    margin: 36px 0;
+  }
+  .pullquote-attr {
+    display: block;
+    margin-top: 16px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+    font-style: normal;
+  }
+
+  /* Chronologia */
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin: 36px 0 48px;
+  }
+  .tl-step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 24px;
+    padding: 24px 0;
+    border-top: 1px solid var(--faint);
+    align-items: start;
+  }
+  .tl-step:last-child { border-bottom: 1px solid var(--faint); }
+  .tl-num {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    color: var(--sage);
+    padding-top: 4px;
+  }
+  .tl-content h4 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: -0.015em;
+    margin-bottom: 8px;
+    color: var(--paper);
+  }
+  .tl-content p { font-size: 15.5px; margin: 0; }
+
+  /* Sign-off small variant */
+  .signoff-small { padding-top: 20px; border-top: none; }
+
+  /* Stack box */
+  .stack {
+    background: rgba(255,255,255,.02);
+    border: 1px solid var(--faint);
+    padding: 28px 32px;
+    margin: 36px 0;
+    border-radius: 4px;
+  }
+  .stack-label {
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-bottom: 14px;
+  }
+  .stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .stack-tag {
+    padding: 6px 12px;
+    background: rgba(199,240,90,.08);
+    border: 1px solid rgba(199,240,90,.25);
+    border-radius: 2px;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--sage);
+  }
+
+  /* Efekty grid */
+  .effects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 32px 0 48px;
+  }
+  @media (min-width: 720px) { .effects { grid-template-columns: 1fr 1fr; } }
+  .effect {
+    padding: 24px;
+    background: rgba(255,255,255,.02);
+    border: 1px solid var(--faint);
+    border-radius: 4px;
+  }
+  .effect-num {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--sage);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .effect-text { color: var(--dim); font-size: 15px; line-height: 1.55; }
+  .effect-text b { color: var(--paper); font-weight: 500; }
+
+  /* CTA */
+  .cta-box {
+    background: rgba(199,240,90,.04);
+    border: 1px solid rgba(199,240,90,.25);
+    padding: 40px 36px;
+    border-radius: 4px;
+    margin: 64px 0 48px;
+  }
+  .cta-title {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(24px, 2.8vw, 32px);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+  .cta-sub { color: var(--dim); margin-bottom: 24px; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    background: var(--sage);
+    color: var(--ink);
+    font-family: var(--f-display);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    transition: transform .15s, background .15s;
+  }
+  .btn-primary:hover { transform: translateY(-1px); background: #d4f878; border-color: transparent; }
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 20px;
+    background: transparent;
+    color: var(--paper);
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid var(--faint);
+    border-radius: 2px;
+    text-decoration: none;
+    transition: border-color .15s, color .15s;
+  }
+  .btn-ghost:hover { border-color: var(--sage); color: var(--sage); }
+
+  .signoff {
+    border-top: 1px solid var(--faint);
+    padding-top: 36px;
+    margin-top: 48px;
+    color: var(--mute);
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+  .signoff-name {
+    color: var(--paper);
+    font-family: var(--f-display);
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .foot {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--faint);
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mute);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- TOP CHROME — identyczny jak main -->
+<header class="top">
+  <a class="top-mark" href="/" aria-label="isiko">
+    <svg width="22" height="22" viewBox="0 0 28 28">
+      <circle cx="14" cy="14" r="13" fill="none" stroke="currentColor" stroke-width="1"/>
+      <circle cx="14" cy="14" r="8" fill="#C7F05A"/>
+    </svg>
+    <span>isiko</span>
+  </a>
+  <div class="top-actions">
+    <a class="top-btn" href="/" aria-label="język"><span>PL</span></a>
+    <a class="top-btn" href="/pakiety.html" aria-label="pakiety"><span>pakiety</span></a>
+    <a class="top-btn top-btn-cta" href="mailto:karol@isiko.pl?subject=isiko%20·%20zaczynamy" aria-label="kontakt">
+      <span>kontakt&nbsp;→</span>
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/">isiko</a>
+    <span class="sep">/</span>
+    <a href="/#praktyka">case studies</a>
+    <span class="sep">/</span>
+    <span>VAVO Group</span>
+  </nav>
+
+  <h1>VAVO Group<span class="dot">.</span><br/>Od 37 sklepów do 130.</h1>
+
+  <p class="lead">Operacyjne porządkowanie holdingu retail w trakcie szybkiego wzrostu. Od WhatsApp z 180 osobami w jednym kanale do Discord per-oddział, od ustnych „tak się robi u nas" do spisanych SOPów. <b>130 oddziałów, 300 pracowników</b>, sześć warstw budowanych jedna na drugiej.</p>
+
+  <!-- META STRIP -->
+  <div class="meta-strip">
+    <div class="meta-cell">
+      <div class="meta-label">— klient</div>
+      <div class="meta-val">VAVO Group</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">— skala</div>
+      <div class="meta-val">130 oddziałów · 300 osób</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">— rola</div>
+      <div class="meta-val">Dyrektor Operacyjny</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">— czas</div>
+      <div class="meta-val">2024 (wejście) → trwa</div>
+    </div>
+  </div>
+
+  <!-- ============== 01 KONTEKST ============== -->
+  <h2><span class="num">01 · kontekst</span>Klient: holding retail multi-brand w fazie szybkiego wzrostu.</h2>
+
+  <p>VAVO Group to polska grupa kapitałowa z markami własnymi w segmencie retail. Wszedłem do VAVO w 2024 jako kierownik regionalny, gdy grupa miała <b>37 sklepów</b>. Dziś jest ich <b>130, z około 300 pracownikami</b>, kilka regionów operacyjnych. <b>Trzy awanse w dwanaście miesięcy</b> — kierownik regionalny → kierownik → Dyrektor Operacyjny. Dziś odpowiadam za operacje całej grupy.</p>
+
+  <p>Pisząc to case study patrzę na dziś — system, który działa. Ale zaczęło się od chaosu, który nie różni się od tego, co widziałem w innych firmach 100+ osób w Polsce. Dlatego ten case ma sens jako proof: <b>nie jako konsultant od strony, jako ten, który sam to przeszedł i odpowiada przed zarządem za wynik.</b></p>
+
+  <!-- ============== 02 CO BYŁO PRZED ============== -->
+  <h2><span class="num">02 · stan zastany</span>Każdy oddział grał po swojemu.</h2>
+
+  <p>Wchodząc do VAVO po raz pierwszy zobaczyłem to, co widziałem już w innych firmach 100+ osób — <b>operacyjny chaos, który firma normalizuje, bo nikt nigdy nie miał czasu posprzątać</b>:</p>
+
+  <ul class="story">
+    <li><b>180 osób w jednym kanale WhatsApp.</b> Komunikat z centrali tonął w wymianie zdjęć, zwolnień, "kto ma w sobocie zmianę". Informacja krytyczna ginęła w szumie.</li>
+    <li><b>Brak spisanych procedur.</b> Onboarding nowego pracownika = 2 tygodnie pytań do kolegi z oddziału obok. Kasa, magazyn, zwroty, reklamacje — wszystko ustne, "tak się robi u nas".</li>
+    <li><b>Wylopy, grafiki, raporty rozproszone.</b> Excel w Outlooku, jeden po polsku, drugi po polsku-bez-znaków, trzeci na czyimś dysku. Brak source-of-truth.</li>
+    <li><b>Brak dashboardów dla zarządu.</b> "Który oddział robi wynik, a który żyje z dofinansowania?" — pytanie bez odpowiedzi, bo dane były rozproszone.</li>
+    <li><b>Reaktywne zarządzanie.</b> Decyzje na podstawie tego kto głośniej zadzwonił, nie tego co pokazują liczby.</li>
+  </ul>
+
+  <p class="pullquote">
+    Stan w&nbsp;systemie ≠ stan na&nbsp;półce. Excel nam się rozjeżdża. Każdy dział ma swoją wersję prawdy.
+    <span class="pullquote-attr">— znane zdania z pierwszych rozmów</span>
+  </p>
+
+  <!-- ============== 03 CHRONOLOGIA ============== -->
+  <h2><span class="num">03 · chronologia</span>Sześć kroków, w&nbsp;tej samej kolejności.</h2>
+
+  <p>Operacyjne porządkowanie firmy 100+ osób nie polega na "wdrożeniu ERP". Polega na <b>budowie warstw, jedna na drugiej, w stałej kolejności</b>. Pominięcie warstwy = system nie działa, choć pliki są na miejscu.</p>
+
+  <div class="timeline">
+
+    <div class="tl-step">
+      <div class="tl-num">01 · 2024</div>
+      <div class="tl-content">
+        <h4>Procedury operacyjne + urlopy — pierwsze SOPy.</h4>
+        <p>Zacząłem od tego co najtańsze i najszybsze. Pierwsze spisane SOPy: kasa, magazyn, zwroty, reklamacje, onboarding. Urlopy — proces zlecania, akceptacji, kalendarz zespołu. Nie idealne — wystarczające. Każda procedura miała autora, datę, wersję. Powód: bez procedur nie ma o czym automatyzować.</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">02 · 2024</div>
+      <div class="tl-content">
+        <h4>Discord — komunikacja sieci.</h4>
+        <p>Migracja z WhatsApp (180 osób w jednym kanale) na Discord z kanałami per-oddział, per-region, per-rola. Każdy ma swój kanał. Każdy widzi tylko to co go dotyczy. Centrala publikuje raz, dociera do właściwego oddziału. Reszta — historia, tagi, search. Ulga widoczna była w pierwszym tygodniu.</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">03 · 2025</div>
+      <div class="tl-content">
+        <h4>Pierwszy SharePoint — single source of truth.</h4>
+        <p>M365 SharePoint jako miejsce gdzie wszystko żyje: procedury, raporty, szablony, szkolenia. Każdy pracownik wie gdzie szukać. Każdy menedżer wie gdzie publikować. Koniec wysyłania załączników w mailu — link, wersja, historia zmian. Pierwsza próba doprowadzenia firmy do rytmu dokumentowanego.</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">04 · 2025</div>
+      <div class="tl-content">
+        <h4>Power BI — dashboardy zarządu.</h4>
+        <p>Pierwszy raz w historii VAVO zarząd miał dashboard, który nie kłamie i nie wymaga ręcznej kompilacji. KPI per region, sprzedaż per oddział, marża, koszty operacyjne — wszystko w jednym miejscu, odświeżane same. Decyzje na podstawie liczb, nie tego kto głośniej zadzwonił.</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">05 · 2025</div>
+      <div class="tl-content">
+        <h4>VRS — pierwszy własny system.</h4>
+        <p>Vape Retail System — własna platforma do prowadzenia sieci detalicznej. Grafiki dyżurów, frekwencja, sprzedaż per-oddział, alerty. Zbudowany pod konkretne procesy VAVO, nie pod abstrakcyjne potrzeby. Decyzja o własnym systemie zamiast SaaS była świadoma — zbyt wiele specyficznych przypadków, żeby SaaS pokrył je bez kompromisów.</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">06 · 2025</div>
+      <div class="tl-content">
+        <h4>VRS rozszerzony — analizy i KPI.</h4>
+        <p>Po wdrożeniu codziennej operacji VRS rozwijał się do warstwy analitycznej: porównania regionów, KPI per-oddział, alertowanie odchyłek. Dane wpadały same — nikt nie musiał ich zbierać raz w tygodniu. Power BI zostaje na zarząd, VRS — na operację codzienną.</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">07 · 2025–2026</div>
+      <div class="tl-content">
+        <h4>Magazyn — WMS, przeniesienie lokalizacji, redukcja kosztów.</h4>
+        <p>Wdrożenie WMS na magazynie centralnym. Przeniesienie magazynu do nowej lokalizacji — większa powierzchnia, lepsza logistyka, niższy koszt operacyjny. Zwiększenie przepustowości (więcej paczek/dzień przy tym samym zespole). Procedury magazynowe spisane, mierzone, optymalizowane. Operacja, która wcześniej była wąskim gardłem, stała się przewidywalna.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============== 04 STACK ============== -->
+  <h2><span class="num">04 · stack</span>Co stoi pod warstwami.</h2>
+
+  <div class="stack">
+    <div class="stack-label">— Operations layer</div>
+    <div class="stack-list">
+      <span class="stack-tag">SharePoint (M365)</span>
+      <span class="stack-tag">OneDrive</span>
+      <span class="stack-tag">Outlook</span>
+      <span class="stack-tag">Teams</span>
+    </div>
+  </div>
+
+  <div class="stack">
+    <div class="stack-label">— Custom system (VRS)</div>
+    <div class="stack-list">
+      <span class="stack-tag">Supabase → Postgres</span>
+      <span class="stack-tag">Keycloak (SSO)</span>
+      <span class="stack-tag">S3 (storage)</span>
+      <span class="stack-tag">SvelteKit (frontend)</span>
+      <span class="stack-tag">Power BI (raporty)</span>
+    </div>
+  </div>
+
+  <div class="stack">
+    <div class="stack-label">— Communication</div>
+    <div class="stack-list">
+      <span class="stack-tag">Discord (per-oddział)</span>
+      <span class="stack-tag">Outlook (centrala)</span>
+      <span class="stack-tag">Teams (zarząd)</span>
+    </div>
+  </div>
+
+  <p>Stack nie jest celem — jest narzędziem. Każda warstwa odpowiada na konkretną potrzebę: SharePoint = dokumenty, VRS = operacja codzienna, Discord = komunikacja zespołu. <b>Wymiana jednego narzędzia bez przebudowy procesu = wymiana mebla w kuchni, w której gotowanie nadal nie ma rytmu.</b></p>
+
+  <!-- ============== 05 EFEKT ============== -->
+  <h2><span class="num">05 · efekt</span>Co się zmieniło — mierzalnie.</h2>
+
+  <div class="effects">
+    <div class="effect">
+      <div class="effect-num">— komunikacja</div>
+      <div class="effect-text"><b>Z 180 osób w 1 kanale WhatsApp na Discord per-oddział.</b> Komunikat z centrali dociera w 1h zamiast tonąć w szumie. Pracownik widzi tylko to, co go dotyczy.</div>
+    </div>
+    <div class="effect">
+      <div class="effect-num">— onboarding</div>
+      <div class="effect-text"><b>Z 2 tygodni pytań do kolegi na 1 dzień.</b> Spisane SOPy + dostęp do SharePoint + VRS access = nowy pracownik gotowy operacyjnie pierwszego dnia.</div>
+    </div>
+    <div class="effect">
+      <div class="effect-num">— dane zarządu</div>
+      <div class="effect-text"><b>Pierwszy raz w historii VAVO: dashboard KPI per-region per-tydzień.</b> Decyzje zarządu na podstawie liczb, nie tego kto głośniej zadzwonił.</div>
+    </div>
+    <div class="effect">
+      <div class="effect-num">— rytm operacyjny</div>
+      <div class="effect-text"><b>130 oddziałów działa w jednym rytmie.</b> Grafiki dyżurów, raporty, eskalacje — w jednej kadencji, jeden szablon, jeden flow.</div>
+    </div>
+  </div>
+
+  <!-- ============== 06 LEKCJE ============== -->
+  <h2><span class="num">06 · lekcje</span>Trzy rzeczy które bym zrobił inaczej (i jedna, którą zrobiłbym tak samo).</h2>
+
+  <ol class="story">
+    <li><b>Słabiej niż powinienem wymogłem pierwsze porządkowanie.</b> Pierwsze procedury zostały spisane, ale nie wymogłem ich konsekwentnie od wszystkich. Zostały wyspy luźne. Powinienem był od razu cut-over: nowy proces wchodzi, stary znika. Mniej wyjątków, mniej późniejszego prostowania.</li>
+    <li><b>Trzymałem się dwóch rozwiązań równolegle przy zmianach.</b> Stary tool + nowy tool przez kilka tygodni — z jednej strony rozsądek (bezpieczeństwo, możliwość cofnięcia), z drugiej — później część zespołu nie chciała się przesiadać. Dwa działające rozwiązania = naturalny opór przed jednym. Może następnym razem krótsze okno przejściowe i twarda data cut-over.</li>
+    <li><b>Komunikacja zmian i UX wdrożeń były słabsze niż treść zmian.</b> SOP, system, dashboard — sam w sobie był OK. Co kulało: szerokie instrukcje "co to dla Ciebie znaczy", lepszy UX dla pracownika z magazynu / kasjera, krótkie video-instrukcje. Najlepszy system bez UX = system, którego nikt nie używa. To bym zrobił inaczej.</li>
+  </ol>
+
+  <p class="pullquote">
+    Kolejność jest wszystkim. Procedury → komunikacja → źródło prawdy → analizy → system → magazyn. Pominięcie warstwy = system nie działa.
+    <span class="pullquote-attr">— co bym zostawił bez zmian</span>
+  </p>
+
+  <p><b>Główna lekcja:</b> AI nie rozwiąże chaosu operacyjnego. Procedury, dane, rytm komunikacji — to tworzy strukturę, na której potem AI ma sens. Większość firm 50-300 osób kupuje AI zanim ma SOPy. Efekt: AI w chaosie = automatyzacja chaosu. <b>Najpierw szkielet, potem mięśnie.</b></p>
+
+  <!-- ============== CTA ============== -->
+  <div class="cta-box">
+    <div class="cta-title">Twoja firma ma swoje „180 osób w&nbsp;jednym kanale"?</div>
+    <p class="cta-sub">Audyt operacyjny 7 dni — mapa procesu, lista 5-10 strat, 3 szybkie poprawki, plan 30-60-90 dni, rekomendacja kierunku (AI vs ERP vs procesy). Bez zobowiązań na dalszą współpracę. Cena ustalana po krótkiej rozmowie, gdy znam skalę firmy.</p>
+    <div class="cta-row">
+      <a class="btn-primary" href="https://cal.eu/isiko/30min" target="_blank" rel="noopener">umów 30 minut&nbsp;→</a>
+      <a class="btn-ghost" href="mailto:karol@isiko.pl?subject=isiko%20·%20rozmowa%20po%20VAVO%20case">napisz, porozmawiajmy</a>
+    </div>
+  </div>
+
+  <!-- SIGN-OFF -->
+  <div class="signoff signoff-small">
+    <div class="signoff-name">Karol Zamarlik</div>
+    <div>isiko · Dyrektor Operacyjny VAVO · Fractional CTO/COO</div>
+  </div>
+
+  <div class="foot">
+    <span>© 2026 isiko · Karol Zamarlik · Kraków · case study #01 / VAVO Group</span>
+    <a href="/">← powrót do strony</a>
+  </div>
+
+</div>
+</body>
+</html>

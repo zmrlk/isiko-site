@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pakiety · isiko — Fractional Dyrektor Operacyjny / CTO</title>
+<meta name="description" content="Pakiety isiko. Audyt operacyjny 7 dni · CTO/COO retainer · Szkolenia AI dla zarządu i zespołu. Trzy ścieżki współpracy z Karolem Zamarlikiem — Dyrektorem Operacyjnym VAVO. Polskie firmy 1-300 osób. Kraków.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://isiko.pl/pakiety.html">
+<link rel="alternate" hreflang="pl" href="https://isiko.pl/pakiety.html">
+<link rel="alternate" hreflang="x-default" href="https://isiko.pl/pakiety.html">
+
+<meta property="og:title" content="Pakiety · isiko">
+<meta property="og:description" content="Audyt 7d · CTO/COO retainer · Szkolenia AI. Fractional Dyrektor Operacyjny / CTO dla polskich firm 1-300 osób.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://isiko.pl/pakiety.html">
+<meta property="og:image" content="https://isiko.pl/og.png">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<!-- Structured Data · OfferCatalog z 3 Service offers -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "https://isiko.pl/pakiety.html#catalog",
+  "name": "Pakiety isiko",
+  "description": "Trzy główne ścieżki współpracy: Audyt operacyjny 7 dni, CTO/COO retainer, Szkolenia & AI workshops. Ceny ustalane indywidualnie po rozmowie.",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://isiko.pl/#org",
+    "name": "isiko",
+    "url": "https://isiko.pl/"
+  },
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "@id": "https://isiko.pl/pakiety.html#audyt-7d",
+      "name": "Audyt operacyjny 7 dni",
+      "description": "Mapa procesu firmy, lista strat, 3 szybkie poprawki, plan 30-60-90 dni, rekomendacja kierunku (AI vs ERP vs procesy). Cytowane indywidualnie po krótkiej rozmowie.",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Audyt operacyjny",
+        "serviceType": "Operations consulting / diagnostic audit",
+        "areaServed": {"@type": "Country", "name": "Polska"}
+      }
+    },
+    {
+      "@type": "Offer",
+      "@id": "https://isiko.pl/pakiety.html#operational",
+      "name": "CTO/COO retainer",
+      "description": "1-2 dni/tydz, 6+ miesięcy. Cotygodniowy rytm DOO/CTO wpisany w zespół firmy. Strategia tech + operations spięta w jeden plan. Cena po pilocie 4-tygodniowym.",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Fractional Dyrektor Operacyjny / CTO retainer",
+        "serviceType": "Fractional executive / interim management",
+        "areaServed": {"@type": "Country", "name": "Polska"}
+      }
+    },
+    {
+      "@type": "Offer",
+      "@id": "https://isiko.pl/pakiety.html#szkolenia",
+      "name": "Szkolenia & AI workshops",
+      "description": "AI Workshop dla zarządu (1 dzień), szkolenie zespołu (1-3 dni), AI Implementation per use case (RAG, bot, automatyzacja). Praktyczne, na realnych przypadkach z firmy.",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "AI workshops & team training",
+        "serviceType": "Corporate AI training & implementation",
+        "areaServed": {"@type": "Country", "name": "Polska"}
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0A0A0A;
+    --paper: #FFFFFF;
+    --dim: rgba(255,255,255,.78);
+    --mute: rgba(255,255,255,.48);
+    --faint: rgba(255,255,255,.14);
+    --sage: #C7F05A;
+    --f-display: 'Space Grotesk', sans-serif;
+    --f-body: 'Inter', sans-serif;
+    --f-mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--f-body);
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  a { color: var(--sage); text-decoration: none; border-bottom: 1px solid var(--faint); transition: border-color .2s; }
+  a:hover { border-color: var(--sage); }
+
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 120px 24px 120px;
+  }
+
+  /* TOP CHROME — identyczny jak main */
+  .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    padding: 20px clamp(20px, 3vw, 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10,10,10,.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .top-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    color: var(--paper);
+    border: none;
+    text-decoration: none;
+  }
+  .top-mark:hover { color: var(--sage); }
+  .top-actions { display: flex; gap: 8px; align-items: center; }
+  .top-btn {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--faint);
+    background: rgba(255,255,255,.03);
+    color: var(--dim);
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+    height: 40px;
+    min-width: 40px;
+    text-decoration: none;
+  }
+  .top-btn:hover {
+    border-color: var(--sage);
+    color: var(--paper);
+  }
+  .top-btn.active {
+    border-color: var(--sage);
+    color: var(--sage);
+  }
+  .top-btn-cta {
+    background: var(--sage);
+    color: var(--ink);
+    border-color: var(--sage);
+    padding: 10px 18px;
+  }
+  .top-btn-cta:hover {
+    background: var(--paper);
+    color: var(--ink);
+    border-color: var(--paper);
+  }
+  @media (max-width: 700px) {
+    .top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px 24px;
+    }
+    .top-actions { width: 100%; justify-content: flex-end; }
+    .wrap { padding-top: 160px; }
+  }
+
+  .sub {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(48px, 7vw, 96px);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin-bottom: 28px;
+  }
+  h1 .dot { color: var(--sage); }
+
+  /* LIST LAYOUT — pakiety jak długi email/list */
+  .letter-layout {
+    display: block;
+  }
+  .letter-main {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .letter-greeting {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(36px, 5vw, 56px);
+    letter-spacing: -0.035em;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+  .letter-greeting .dot { color: var(--sage); }
+
+  .lead {
+    font-family: var(--f-body);
+    font-size: clamp(18px, 1.6vw, 22px);
+    line-height: 1.55;
+    color: var(--dim);
+    margin-bottom: 28px;
+  }
+  .lead b { color: var(--paper); font-weight: 500; }
+
+  .letter-intro {
+    font-family: var(--f-body);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--dim);
+    margin-bottom: 56px;
+    padding-left: 20px;
+    border-left: 2px solid var(--faint);
+  }
+
+  /* CTA na końcu listu */
+  .letter-cta {
+    margin-top: 80px;
+    padding: 48px 0 40px;
+    border-top: 2px solid var(--sage);
+  }
+  .letter-cta-headline {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(32px, 4.2vw, 52px);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .letter-cta-sub {
+    font-family: var(--f-body);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--dim);
+    margin-bottom: 32px;
+    max-width: 640px;
+  }
+  .letter-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .btn-primary-big {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 28px;
+    background: var(--sage);
+    color: var(--ink);
+    font-family: var(--f-display);
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    transition: transform .15s, background .15s;
+  }
+  .btn-primary-big:hover { transform: translateY(-1px); background: #d4f878; border-color: transparent; }
+  .btn-ghost-big {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 24px;
+    background: transparent;
+    color: var(--paper);
+    font-family: var(--f-mono);
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid var(--faint);
+    border-radius: 2px;
+    text-decoration: none;
+    transition: border-color .15s, color .15s;
+    letter-spacing: 0.04em;
+  }
+  .btn-ghost-big:hover { border-color: var(--sage); color: var(--sage); }
+  .letter-cta-meta {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--mute);
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    line-height: 1.8;
+  }
+  .letter-cta-meta .dim-sep { color: var(--faint); }
+  .signoff-small { padding-top: 20px; border-top: none; }
+
+  /* Pakiet jako sekcja listu */
+  .pkg-grid {
+    margin-bottom: 60px;
+  }
+
+  .pkg {
+    padding: 48px 0 48px;
+    border-top: 1px solid var(--faint);
+  }
+  .pkg:first-child { border-top: 2px solid var(--sage); padding-top: 56px; }
+
+  .pkg-num {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--sage);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .pkg-name {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(30px, 3.5vw, 42px);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    margin-bottom: 20px;
+    color: var(--paper);
+  }
+  .pkg-name br { display: none; }
+  .pkg-intro {
+    font-family: var(--f-body);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--dim);
+    margin-bottom: 32px;
+  }
+  .pkg-intro b { color: var(--paper); font-weight: 500; }
+
+  .pkg-section {
+    margin-bottom: 22px;
+  }
+  .pkg-section-label {
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-bottom: 10px;
+  }
+  .pkg-list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--dim);
+    font-size: 15px;
+  }
+  .pkg-list li {
+    padding: 4px 0 4px 22px;
+    position: relative;
+  }
+  .pkg-list li::before {
+    content: '·';
+    position: absolute;
+    left: 6px;
+    color: var(--sage);
+  }
+  .pkg-list-num {
+    list-style: decimal;
+    padding-left: 22px;
+    color: var(--dim);
+    font-size: 15px;
+  }
+  .pkg-list-num li {
+    padding: 4px 0;
+  }
+  .pkg-list-num li::marker { color: var(--sage); font-family: var(--f-mono); font-size: 13px; }
+
+  .pkg-meta {
+    margin-top: auto;
+    padding-top: 24px;
+    border-top: 1px solid var(--faint);
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--mute);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .pkg-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    background: var(--sage);
+    color: var(--ink);
+    font-family: var(--f-display);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    transition: transform .15s, background .15s;
+  }
+  .pkg-cta:hover { transform: translateY(-1px); background: #d4f878; border-color: transparent; }
+
+  /* Reszta oferty */
+  .rest {
+    background: rgba(255,255,255,.02);
+    border: 1px solid var(--faint);
+    border-radius: 4px;
+    padding: 40px 36px;
+    margin-bottom: 80px;
+  }
+  .rest-title {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .rest-sub {
+    color: var(--dim);
+    margin-bottom: 28px;
+    font-size: 15px;
+  }
+  .rest-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  @media (min-width: 720px) { .rest-grid { grid-template-columns: 1fr 1fr; } }
+  .rest-item {
+    padding: 14px 0;
+    border-top: 1px solid var(--faint);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: baseline;
+  }
+  .rest-item-name { color: var(--paper); font-weight: 500; }
+  .rest-item-meta { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em; color: var(--mute); text-transform: uppercase; white-space: nowrap; }
+
+  .rest-cta-row {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--faint);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rest-cta-row p { color: var(--dim); font-size: 15px; max-width: 540px; }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: transparent;
+    color: var(--paper);
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid var(--faint);
+    border-radius: 2px;
+    text-decoration: none;
+    transition: border-color .15s, color .15s;
+  }
+  .btn-ghost:hover { border-color: var(--sage); color: var(--sage); }
+
+  /* FAQ small */
+  .faq {
+    margin-bottom: 80px;
+  }
+  .faq-title {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+  .faq-item {
+    border-top: 1px solid var(--faint);
+    padding: 20px 0;
+  }
+  .faq-q {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--paper);
+    margin-bottom: 8px;
+  }
+  .faq-a {
+    color: var(--dim);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .signoff {
+    border-top: 1px solid var(--faint);
+    padding-top: 36px;
+    color: var(--mute);
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+  .signoff-name { color: var(--paper); font-family: var(--f-display); font-size: 16px; letter-spacing: -0.01em; margin-bottom: 8px; font-weight: 500; }
+
+  .foot {
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--faint);
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mute);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- TOP CHROME — identyczny jak main -->
+<header class="top">
+  <a class="top-mark" href="/" aria-label="isiko">
+    <svg width="22" height="22" viewBox="0 0 28 28">
+      <circle cx="14" cy="14" r="13" fill="none" stroke="currentColor" stroke-width="1"/>
+      <circle cx="14" cy="14" r="8" fill="#C7F05A"/>
+    </svg>
+    <span>isiko</span>
+  </a>
+  <div class="top-actions">
+    <a class="top-btn" href="/" aria-label="język"><span>PL</span></a>
+    <a class="top-btn active" href="/pakiety.html" aria-label="pakiety"><span>pakiety</span></a>
+    <a class="top-btn top-btn-cta" href="mailto:karol@isiko.pl?subject=isiko%20·%20zaczynamy" aria-label="kontakt">
+      <span>kontakt&nbsp;→</span>
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="letter-layout">
+
+    <div class="letter-main">
+
+      <div class="sub">Pakiety · współpraca · 2026</div>
+
+      <h1 class="letter-greeting">Witaj<span class="dot">.</span></h1>
+
+      <p class="lead">Wiemy, że firmy są różne. Niektóre potrzebują <b>7 dni</b>, żeby zrozumieć co naprawić w pierwszej kolejności. Inne — <b>kogoś przy zespole na pół roku</b>, kto poukłada tech i operacje razem. Trzecie — <b>szkolenia AI dla zarządu i zespołu</b>, żeby ruszyć z konkretem zamiast czytać o tym kolejny artykuł.</p>
+
+      <p class="letter-intro">W skrócie pracuję w trzech głównych formatach. Każdy zaczyna się od innego pytania właściciela — wybierz ścieżkę, która brzmi najbardziej jak Twoja firma. Jeśli żadna nie pasuje, napisz krótko: kto jesteś, co robicie, co Cię boli — znajdziemy co działa.</p>
+
+      <!-- 3 PAKIETY -->
+  <div class="pkg-grid">
+
+    <!-- Pakiet 01 -->
+    <article class="pkg" id="audyt-7d">
+      <div class="pkg-num">01 — entry</div>
+      <h2 class="pkg-name">Audyt operacyjny 7 dni</h2>
+      <p class="pkg-intro">Wchodzę na 7 dni do firmy w chaosie. <b>3 dni on-site, 4 dni remote.</b> Patrzę jak naprawdę działa, słucham zespołu, czytam dokumenty. Wychodzisz z mapą procesu, listą strat i konkretnym planem 30 / 60 / 90 dni.</p>
+
+      <div class="pkg-section">
+        <div class="pkg-section-label">— dla kogo</div>
+        <ul class="pkg-list">
+          <li>firma 1–300 osób w chaosie operacyjnym</li>
+          <li>decyzje opierają się na Excelu i pamięci właściciela</li>
+          <li>zespół robi po swojemu, procesy nie są spisane</li>
+          <li>AI / ERP / WMS jest tematem, ale bez wdrożenia</li>
+        </ul>
+      </div>
+
+      <div class="pkg-section">
+        <div class="pkg-section-label">— co dostajesz</div>
+        <ol class="pkg-list-num">
+          <li>Mapa procesu firmy (jak naprawdę działa, nie jak miała)</li>
+          <li>Lista 5–10 strat (czas + pieniądze + kontrola)</li>
+          <li>3 szybkie poprawki do wdrożenia w tygodniu</li>
+          <li>Plan 30–60–90 dni z priorytetami</li>
+          <li>Rekomendacja kierunku: AI vs ERP vs procesy</li>
+        </ol>
+      </div>
+
+      <div class="pkg-meta">
+        7 dni · 3 dni on-site + 4 dni remote · raport po polsku
+      </div>
+
+      <a class="pkg-cta" href="mailto:karol@isiko.pl?subject=isiko%20·%20audyt%207%20dni">zarezerwuj termin →</a>
+    </article>
+
+    <!-- Pakiet 02 -->
+    <article class="pkg" id="operational">
+      <div class="pkg-num">02 — core</div>
+      <h2 class="pkg-name">CTO/COO retainer</h2>
+      <p class="pkg-intro">Wchodzę na pół roku do firmy, która ma już kierunek — i potrzebuje kogoś, kto poukłada tech, operacje i ludzi w jeden plan. <b>Cotygodniowy rytm. Pilot 4 tygodnie, potem dłużej.</b> Strategia plus codzienna obecność na komunikatorze zespołu.</p>
+
+      <div class="pkg-section">
+        <div class="pkg-section-label">— dla kogo</div>
+        <ul class="pkg-list">
+          <li>firma która ma już kierunek, brakuje executive presence</li>
+          <li>zarząd potrzebuje kogoś wpisanego w cotygodniowy rytm</li>
+          <li>tech (CTO) + operacje (COO) w jednej osobie</li>
+          <li>ERP / workflow / KPI do prowadzenia operacyjnie</li>
+        </ul>
+      </div>
+
+      <div class="pkg-section">
+        <div class="pkg-section-label">— co dostajesz</div>
+        <ol class="pkg-list-num">
+          <li>1–2 dni w tygodniu w Twoim zespole</li>
+          <li>Cotygodniowy raport po polsku (decyzje + ryzyko)</li>
+          <li>Strategia tech + operations spięta w jeden plan</li>
+          <li>Codzienna dostępność na komunikatorze firmy</li>
+          <li>Pilot 4-tygodniowy → kontrakt 6+ miesięcy</li>
+        </ol>
+      </div>
+
+      <div class="pkg-meta">
+        1–2 dni / tydzień · 6+ miesięcy · pilot 4-tyg najpierw
+      </div>
+
+      <a class="pkg-cta" href="mailto:karol@isiko.pl?subject=isiko%20·%20operational%20retainer">porozmawiajmy →</a>
+    </article>
+
+    <!-- Pakiet 03 -->
+    <article class="pkg" id="szkolenia">
+      <div class="pkg-num">03 — entry / AI</div>
+      <h2 class="pkg-name">Szkolenia &amp; AI workshops</h2>
+      <p class="pkg-intro">Format dla firm, które chcą ruszyć z AI bez pełnego retainera. <b>Workshop dla zarządu (1 dzień)</b> — gdzie AI ma sens w Twojej firmie, gdzie nie. <b>Szkolenie zespołu (1–3 dni)</b> — ćwiczenia na realnych przypadkach, nie slajdy. Plus jednorazowe wdrożenia per use case.</p>
+
+      <div class="pkg-section">
+        <div class="pkg-section-label">— dla kogo</div>
+        <ul class="pkg-list">
+          <li>zarząd, który chce zrozumieć gdzie AI ma sens (a gdzie nie)</li>
+          <li>zespół, który ma używać AI codziennie, nie raz na kwartał</li>
+          <li>firma gotowa na pierwszą integrację AI w realnym procesie</li>
+          <li>brak chęci na pełen retainer — chcemy konkretny output</li>
+        </ul>
+      </div>
+
+      <div class="pkg-section">
+        <div class="pkg-section-label">— co dostajesz</div>
+        <ol class="pkg-list-num">
+          <li>AI Workshop dla zarządu (1 dzień, na realnych przypadkach z firmy)</li>
+          <li>Szkolenie zespołu (1–3 dni, ćwiczenia, nie slajdy)</li>
+          <li>AI Implementation per use case (RAG / bot / automatyzacja)</li>
+          <li>Materiały do dalszego użytku po polsku</li>
+          <li>2 tygodnie wsparcia po uruchomieniu</li>
+        </ol>
+      </div>
+
+      <div class="pkg-meta">
+        1 dzień – 3 miesiące · zakres po krótkiej rozmowie
+      </div>
+
+      <a class="pkg-cta" href="mailto:karol@isiko.pl?subject=isiko%20·%20szkolenia%20AI">porozmawiajmy o szkoleniu →</a>
+    </article>
+
+  </div>
+
+  <!-- RESZTA OFERTY -->
+  <div class="rest">
+    <div class="rest-title">Reszta oferty.</div>
+    <p class="rest-sub">Cztery usługi dodatkowe — gdy potrzebujesz czegoś węższego niż retainer, a szerszego niż jednorazowy workshop.</p>
+
+    <div class="rest-grid">
+      <div class="rest-item">
+        <span class="rest-item-name">Advisory retainer</span>
+        <span class="rest-item-meta">4–8h / mc</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-item-name">Integracje / wtyczki AI do istniejącego systemu</span>
+        <span class="rest-item-meta">per use case</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-item-name">Process design + dokumentacja</span>
+        <span class="rest-item-meta">2–4 msc</span>
+      </div>
+      <div class="rest-item">
+        <span class="rest-item-name">Coś innego?</span>
+        <span class="rest-item-meta">napisz, zobaczymy</span>
+      </div>
+    </div>
+
+    <div class="rest-cta-row">
+      <p>Nie wiesz który pakiet pasuje? Napisz krótko: kto jesteś, co robicie, co Cię boli. Odpowiem w 24h, polecę kierunek nawet jeśli nie jest to praca dla mnie. Pakiety to punkt startu — ostateczny zakres dostosowuję do firmy.</p>
+      <a class="btn-ghost" href="mailto:karol@isiko.pl?subject=isiko%20·%20pytanie%20o%20pakiet">napisz, opowiem szerzej →</a>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <h2 class="faq-title">Częste pytania.</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Ile to kosztuje?</div>
+      <div class="faq-a">Każda firma to inny case. Audyt 7 dni dla firmy 20-osobowej to inna sytuacja niż dla 300-osobowej. Retainer 1 dzień/tydz to inna intensywność niż 2 dni. Ustalimy razem na pierwszej rozmowie — gdy zobaczę z czym mam do czynienia. Nie ma ukrytych kosztów ani „on-boarding fee", nie ma sztywnego cennika do podpisu.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Dlaczego nie ma packaged sprintów 30/60/90 dni?</div>
+      <div class="faq-a">Rzeczywistość firm 1–300 osób nie układa się w sprinty. Procesy zmieniają się stopniowo, AI wymaga iteracji, ludzie potrzebują czasu żeby przyzwyczaić się do nowych narzędzi. Cotygodniowy rytm z DOO/CTO obecnym w zespole daje większą wartość niż packaged sprint który kończy się pakietem PDF.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Czy mogę kupić tylko AI bez audytu?</div>
+      <div class="faq-a">Tak — AI Workshop dla zarządu (1 dzień), szkolenie zespołu (1–3 dni) i AI Implementation (per use case) są standalone. Ale: w 90% przypadków AI bez wcześniejszego audytu procesów = wdrożenie do chaosu. Audyt 7d to nie obowiązek, to oszczędność.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Co jeśli nasz problem to coś innego?</div>
+      <div class="faq-a">Napisz. Polecę kierunek nawet jeśli nie jestem właściwą osobą. Mam sieć innych konsultantów (procesy, finanse, HR, prawo), z którymi pracujemy. Lepiej polecić niż zaakceptować zlecenie poza kompetencjami.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Faktura VAT?</div>
+      <div class="faq-a">Tak — działalność gospodarcza, faktury z VAT, rozliczenie miesięczne. Współpraca formalizowana umową ramową.</div>
+    </div>
+  </div>
+
+      <!-- CTA -->
+      <div class="letter-cta">
+        <h3 class="letter-cta-headline">Zainteresowany?</h3>
+        <p class="letter-cta-sub">Napisz krótko: kto jesteś, co robicie, co Cię boli. Pogadamy 30&nbsp;minut bez&nbsp;żadnych zobowiązań. Jeśli siada — robimy pilot 4-tygodniowy. Jeśli nie — polecę kierunek nawet jeśli nie jest to praca dla mnie.</p>
+        <div class="letter-cta-row">
+          <a class="btn-primary-big" href="https://cal.eu/isiko/30min" target="_blank" rel="noopener">umów 30 minut&nbsp;→</a>
+          <a class="btn-ghost-big" href="mailto:karol@isiko.pl?subject=isiko%20·%20zaczynamy">napisz do mnie</a>
+          <a class="btn-ghost-big" href="tel:+48575453474">+48 575 453 474</a>
+        </div>
+        <div class="letter-cta-meta">
+          <span>Kraków</span>
+          <span class="dim-sep">·</span>
+          <span>odpowiedź w&nbsp;24h</span>
+          <span class="dim-sep">·</span>
+          <span>hybrydowo, on-site gdy trzeba</span>
+          <span class="dim-sep">·</span>
+          <span>bez bota, bez CRM</span>
+        </div>
+      </div>
+
+      <!-- SIGN-OFF -->
+      <div class="signoff signoff-small">
+        <div class="signoff-name">Karol Zamarlik</div>
+        <div>isiko · Dyrektor Operacyjny VAVO · Fractional CTO/COO</div>
+      </div>
+
+    </div><!-- /letter-main -->
+
+  </div><!-- /letter-layout -->
+
+  <div class="foot">
+    <span>© 2026 isiko · Karol Zamarlik · Kraków</span>
+    <a href="/">← powrót do strony</a>
+  </div>
+
+</div>
+</body>
+</html>
