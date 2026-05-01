@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wolny Namiot · rebrand + website + admin panel in under 3 weeks | isiko case study</title>
+<meta name="description" content="Wolny Namiot: event tent rental. Brand refresh, system of 11 colors and 9 slogans, new website, admin panel — under 3 weeks of work before the 2026 season. Seasonal business, April–October. Karol Zamarlik / isiko.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://isiko.pl/en/case-study/wolny-namiot.html">
+<link rel="alternate" hreflang="pl" href="https://isiko.pl/case-study/wolny-namiot.html">
+<link rel="alternate" hreflang="en" href="https://isiko.pl/en/case-study/wolny-namiot.html">
+<link rel="alternate" hreflang="es" href="https://isiko.pl/es/">
+<link rel="alternate" hreflang="x-default" href="https://isiko.pl/">
+
+<meta property="og:title" content="Wolny Namiot · rebrand + website + admin panel in under 3 weeks">
+<meta property="og:description" content="Event tent rental. Brand refresh + system of 11 colors + 9 slogans + website + admin panel. Under 3 weeks of work before the 2026 season.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://isiko.pl/en/case-study/wolny-namiot.html">
+<meta property="og:image" content="https://isiko.pl/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+<!-- Structured Data · Article + Person + Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://isiko.pl/en/case-study/wolny-namiot.html#article",
+      "headline": "Wolny Namiot · rebrand + website + admin panel in under 3 weeks",
+      "description": "Event tent rental. Brand refresh, system of 11 colors and 9 slogans, new website, inquiry admin panel. Under 3 weeks of work before the 2026 season. Seasonal business, April–October.",
+      "image": "https://isiko.pl/og.png",
+      "datePublished": "2026-05-01",
+      "dateModified": "2026-05-01",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "@id": "https://isiko.pl/#karol",
+        "name": "Karol Zamarlik",
+        "jobTitle": "Operations Director, VAVO · Fractional CTO/COO",
+        "url": "https://isiko.pl/#karol"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://isiko.pl/#org",
+        "name": "isiko",
+        "url": "https://isiko.pl/"
+      },
+      "about": {
+        "@type": "Organization",
+        "name": "Wolny Namiot",
+        "url": "https://wolnynamiot.pl"
+      },
+      "keywords": "branding, brandbook, brand voice, website, SEO, small business, seasonal business, event tent rental, identity, copy, Polish startup"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "isiko", "item": "https://isiko.pl/en/"},
+        {"@type": "ListItem", "position": 2, "name": "Case studies", "item": "https://isiko.pl/en/#praktyka"},
+        {"@type": "ListItem", "position": 3, "name": "Wolny Namiot"}
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Archivo+Black&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0A0A0A;
+    --paper: #FFFFFF;
+    --dim: rgba(255,255,255,.78);
+    --mute: rgba(255,255,255,.48);
+    --faint: rgba(255,255,255,.14);
+    --sage: #C7F05A;
+    --f-display: 'Space Grotesk', sans-serif;
+    --f-serif: 'Instrument Serif', serif;
+    --f-body: 'Inter', sans-serif;
+    --f-mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--f-body);
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  a { color: var(--sage); text-decoration: none; border-bottom: 1px solid var(--faint); transition: border-color .2s; }
+  a:hover { border-color: var(--sage); }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 120px 24px 120px;
+  }
+
+  /* TOP CHROME — identical to main */
+  .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    padding: 20px clamp(20px, 3vw, 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10,10,10,.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .top-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    color: var(--paper);
+    border: none;
+    text-decoration: none;
+  }
+  .top-mark:hover { color: var(--sage); }
+  .top-actions { display: flex; gap: 8px; align-items: center; }
+  .top-btn {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--faint);
+    background: rgba(255,255,255,.03);
+    color: var(--dim);
+    font-family: var(--f-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+    height: 40px;
+    min-width: 40px;
+    text-decoration: none;
+  }
+  .top-btn:hover { border-color: var(--sage); color: var(--paper); }
+  .top-btn.active { border-color: var(--sage); color: var(--sage); }
+  .top-btn-cta {
+    background: var(--sage);
+    color: var(--ink);
+    border-color: var(--sage);
+    padding: 10px 18px;
+  }
+  .top-btn-cta:hover {
+    background: var(--paper);
+    color: var(--ink);
+    border-color: var(--paper);
+  }
+  @media (max-width: 700px) {
+    .top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px 24px;
+    }
+    .top-actions { width: 100%; justify-content: flex-end; }
+    .wrap { padding-top: 160px; }
+  }
+
+  .breadcrumb {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-bottom: 24px;
+  }
+  .breadcrumb a { color: var(--mute); border: none; }
+  .breadcrumb a:hover { color: var(--sage); }
+  .breadcrumb .sep { margin: 0 8px; color: var(--faint); }
+
+  h1 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    margin-bottom: 28px;
+  }
+  h1 .dot { color: var(--sage); }
+
+  .lead {
+    font-family: var(--f-body);
+    font-size: clamp(20px, 1.8vw, 26px);
+    line-height: 1.5;
+    color: var(--dim);
+    margin-bottom: 56px;
+    border-left: 2px solid var(--sage);
+    padding-left: 24px;
+  }
+
+  .meta-strip {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 28px 0;
+    border-top: 1px solid var(--faint);
+    border-bottom: 1px solid var(--faint);
+    margin-bottom: 64px;
+  }
+  @media (min-width: 720px) {
+    .meta-strip { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  }
+  .meta-cell .meta-label {
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-bottom: 6px;
+  }
+  .meta-cell .meta-val {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--paper);
+  }
+
+  h2 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(28px, 3.2vw, 38px);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    margin: 64px 0 24px;
+    color: var(--paper);
+  }
+  h2 .num {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    color: var(--sage);
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.015em;
+    margin: 32px 0 12px;
+    color: var(--sage);
+  }
+
+  p { margin-bottom: 18px; color: var(--dim); }
+  p b, p strong { color: var(--paper); font-weight: 500; }
+
+  ul.story, ol.story {
+    margin: 14px 0 22px 24px;
+    color: var(--dim);
+  }
+  ul.story li, ol.story li { padding: 4px 0; }
+  ol.story li::marker { color: var(--sage); font-family: var(--f-mono); font-weight: 500; }
+
+  .pullquote {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(22px, 2.4vw, 30px);
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+    color: var(--paper);
+    border-left: 3px solid var(--sage);
+    padding: 16px 0 16px 28px;
+    margin: 36px 0;
+  }
+  .pullquote-attr {
+    display: block;
+    margin-top: 16px;
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mute);
+    font-style: normal;
+  }
+
+  /* Chronology */
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin: 36px 0 48px;
+  }
+  .tl-step {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 24px;
+    padding: 24px 0;
+    border-top: 1px solid var(--faint);
+    align-items: start;
+  }
+  .tl-step:last-child { border-bottom: 1px solid var(--faint); }
+  .tl-num {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    color: var(--sage);
+    padding-top: 4px;
+  }
+  .tl-content h4 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: -0.015em;
+    margin-bottom: 8px;
+    color: var(--paper);
+  }
+  .tl-content p { font-size: 15.5px; margin: 0; }
+
+  /* Stack box */
+  .stack {
+    background: rgba(255,255,255,.02);
+    border: 1px solid var(--faint);
+    padding: 28px 32px;
+    margin: 36px 0;
+    border-radius: 4px;
+  }
+  .stack-label {
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-bottom: 14px;
+  }
+  .stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .stack-tag {
+    padding: 6px 12px;
+    background: rgba(199,240,90,.08);
+    border: 1px solid rgba(199,240,90,.25);
+    border-radius: 2px;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--sage);
+  }
+
+  /* Effects grid */
+  .effects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 32px 0 48px;
+  }
+  @media (min-width: 720px) { .effects { grid-template-columns: 1fr 1fr; } }
+  .effect {
+    padding: 24px;
+    background: rgba(255,255,255,.02);
+    border: 1px solid var(--faint);
+    border-radius: 4px;
+  }
+  .effect-num {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--sage);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .effect-text { color: var(--dim); font-size: 15px; line-height: 1.55; }
+  .effect-text b { color: var(--paper); font-weight: 500; }
+
+  /* WN Slogans grid */
+  .wn-slogans {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    background: #0A0A0A;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 24px 0 0;
+  }
+  @media (min-width: 720px) {
+    .wn-slogans { grid-template-columns: repeat(3, 1fr); }
+  }
+  .wn-slogan {
+    padding: 28px 22px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wn-slogan-tier {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: lowercase;
+  }
+  .wn-slogan-text {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 24px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-transform: lowercase;
+  }
+  .wn-slogan-text em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: none;
+  }
+  .wn-slogan-gloss {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    margin-top: 10px;
+    opacity: 0.65;
+    text-transform: none;
+  }
+  .wn-slogan-1 { background:#0A0A0A; color:#F5F1E6; }
+  .wn-slogan-1 .wn-slogan-tier { color:#E8A933; }
+  .wn-slogan-2 { background:#C34A1F; color:#F5F1E6; }
+  .wn-slogan-2 .wn-slogan-tier { color:rgba(255,255,255,0.7); }
+  .wn-slogan-3 { background:#FAF7EE; color:#0A0A0A; }
+  .wn-slogan-3 .wn-slogan-tier { color:#C34A1F; }
+  .wn-slogan-4 { background:#1F7A3F; color:#F5F1E6; }
+  .wn-slogan-4 .wn-slogan-tier { color:#E8A933; }
+  .wn-slogan-5 { background:#E8A933; color:#0A0A0A; }
+  .wn-slogan-5 .wn-slogan-tier { color:#7a2a0f; }
+  .wn-slogan-6 { background:#E8DFC9; color:#0A0A0A; }
+  .wn-slogan-6 .wn-slogan-tier { color:#A8350F; }
+  .wn-slogan-7 { background:#D4C9AE; color:#0A0A0A; }
+  .wn-slogan-7 .wn-slogan-tier { color:#C34A1F; }
+  .wn-slogan-8 { background:#1F1F1F; color:#F5F1E6; }
+  .wn-slogan-8 .wn-slogan-tier { color:#E8DFC9; }
+  .wn-slogan-9 { background:#F5F1E6; color:#0A0A0A; border:1px solid #0A0A0A; }
+  .wn-slogan-9 .wn-slogan-tier { color:#1F7A3F; }
+
+  /* WN Brand visuals */
+  .wn-brand-block {
+    background: #F5F1E6;
+    color: #0A0A0A;
+    border-radius: 6px;
+    padding: 56px 48px;
+    margin: 36px 0 28px;
+  }
+  .wn-wordmark {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(48px, 8vw, 96px);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    text-transform: lowercase;
+    color: #0A0A0A;
+    margin-bottom: 16px;
+  }
+  .wn-wordmark em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #C34A1F;
+  }
+  .wn-tagline {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(20px, 2.4vw, 28px);
+    line-height: 1.2;
+    text-transform: lowercase;
+    color: #0A0A0A;
+    margin: 32px 0 8px;
+  }
+  .wn-tagline em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #C34A1F;
+  }
+  .wn-tagline-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #6B6B6B;
+  }
+  .wn-sygnet {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 32px 0 0;
+    padding-top: 32px;
+    border-top: 1px solid rgba(10,10,10,.12);
+  }
+  .wn-sygnet svg { display: block; flex-shrink: 0; }
+  .wn-sygnet-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6B6B6B;
+    line-height: 1.5;
+  }
+  .wn-palette {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    margin: 24px 0 0;
+    background: #0A0A0A;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  @media (min-width: 720px) {
+    .wn-palette { grid-template-columns: repeat(6, 1fr); }
+  }
+  .wn-swatch {
+    height: 88px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 13px;
+    text-transform: lowercase;
+    letter-spacing: -0.01em;
+  }
+  .wn-swatch .hex {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  /* CTA - new letter style */
+  .letter-cta {
+    margin-top: 64px;
+    padding: 48px 0 40px;
+    border-top: 2px solid var(--sage);
+  }
+  .letter-cta-headline {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(32px, 4.2vw, 52px);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .letter-cta-sub {
+    font-family: var(--f-body);
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--dim);
+    margin-bottom: 32px;
+    max-width: 640px;
+  }
+  .letter-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .btn-primary-big {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 28px;
+    background: var(--sage);
+    color: var(--ink);
+    font-family: var(--f-display);
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    transition: transform .15s, background .15s;
+  }
+  .btn-primary-big:hover { transform: translateY(-1px); background: #d4f878; border-color: transparent; }
+  .btn-ghost-big {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 24px;
+    background: transparent;
+    color: var(--paper);
+    font-family: var(--f-mono);
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid var(--faint);
+    border-radius: 2px;
+    text-decoration: none;
+    transition: border-color .15s, color .15s;
+    letter-spacing: 0.04em;
+  }
+  .btn-ghost-big:hover { border-color: var(--sage); color: var(--sage); }
+  .letter-cta-meta {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--mute);
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    line-height: 1.8;
+  }
+  .letter-cta-meta .dim-sep { color: var(--faint); }
+  .signoff-small { padding-top: 20px; border-top: none; }
+
+  /* CTA - old style (legacy) */
+  .cta-box {
+    background: rgba(199,240,90,.04);
+    border: 1px solid rgba(199,240,90,.25);
+    padding: 40px 36px;
+    border-radius: 4px;
+    margin: 64px 0 48px;
+  }
+  .cta-title {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(24px, 2.8vw, 32px);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+  .cta-sub { color: var(--dim); margin-bottom: 24px; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; }
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    background: var(--sage);
+    color: var(--ink);
+    font-family: var(--f-display);
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    transition: transform .15s, background .15s;
+  }
+  .btn-primary:hover { transform: translateY(-1px); background: #d4f878; border-color: transparent; }
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 20px;
+    background: transparent;
+    color: var(--paper);
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid var(--faint);
+    border-radius: 2px;
+    text-decoration: none;
+    transition: border-color .15s, color .15s;
+  }
+  .btn-ghost:hover { border-color: var(--sage); color: var(--sage); }
+
+  .signoff {
+    border-top: 1px solid var(--faint);
+    padding-top: 36px;
+    margin-top: 48px;
+    color: var(--mute);
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+  .signoff-name {
+    color: var(--paper);
+    font-family: var(--f-display);
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .foot {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--faint);
+    font-family: var(--f-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mute);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- TOP CHROME — identical to main -->
+<header class="top">
+  <a class="top-mark" href="/en/" aria-label="isiko">
+    <svg width="22" height="22" viewBox="0 0 28 28">
+      <circle cx="14" cy="14" r="13" fill="none" stroke="currentColor" stroke-width="1"/>
+      <circle cx="14" cy="14" r="8" fill="#C7F05A"/>
+    </svg>
+    <span>isiko</span>
+  </a>
+  <div class="top-actions">
+    <a class="top-btn" href="/" aria-label="polski"><span>PL</span></a>
+    <a class="top-btn active" href="/en/" aria-label="english"><span>EN</span></a>
+    <a class="top-btn" href="/es/" aria-label="español"><span>ES</span></a>
+    <a class="top-btn" href="/en/packages.html" aria-label="packages"><span>packages</span></a>
+    <a class="top-btn top-btn-cta" href="/en/#kontakt" aria-label="contact">
+      <span>contact&nbsp;→</span>
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/en/">isiko</a>
+    <span class="sep">/</span>
+    <a href="/en/#praktyka">case studies</a>
+    <span class="sep">/</span>
+    <span>Wolny Namiot</span>
+  </nav>
+
+  <h1>Wolny Namiot<span class="dot">.</span><br/>Rebrand + new voice + website + admin panel.</h1>
+
+  <p class="lead">Event tent rental — a seasonal business running April–October. The company is moving up a level in 2026: serious marketing, content, long-term SEO. The client had a basic identity from 2025, but it wasn't ready to scale. <b>Full rebrand, system of 11 colors and 9 slogans, new tone of voice, new website, inquiry admin panel</b> — all delivered in&nbsp;under 3 weeks: 3 days of an intensive brand + website sprint, 2 weeks of greenfield admin panel.</p>
+
+  <!-- META STRIP -->
+  <div class="meta-strip">
+    <div class="meta-cell">
+      <div class="meta-label">— client</div>
+      <div class="meta-val">Wolny Namiot</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">— scope</div>
+      <div class="meta-val">brand refresh · website · panel</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">— role</div>
+      <div class="meta-val">brand + tech end-to-end</div>
+    </div>
+    <div class="meta-cell">
+      <div class="meta-label">— time</div>
+      <div class="meta-val">~3 weeks · 2026 season</div>
+    </div>
+  </div>
+
+  <!-- ============== 01 CONTEXT ============== -->
+  <h2><span class="num">01 · context</span>A seasonal business stepping up its marketing.</h2>
+
+  <p>Wolny Namiot is event tent rental — weddings, events, outdoor birthdays. A heavily seasonal business: <b>the whole year's revenue runs from April to October</b>, the rest of the year is preparation, warehousing, planning. In&nbsp;2025 the company had a basic identity put together in a&nbsp;hurry, just to start working. It was enough for the first season, but in&nbsp;2026 the plan changed.</p>
+
+  <p>The goal for this year: <b>serious marketing — content, ads, social, long-term SEO</b>. The old identity wasn't ready to be scaled. It had to be refreshed, with a coherent brand system (palette, slogans, voice, typography), a new website, plus an inquiry admin panel for daily operations. All before the April&nbsp;/ May start of the season.</p>
+
+  <!-- ============== 02 STATE BEFORE ============== -->
+  <h2><span class="num">02 · state on entry</span>Identity „put together fast", needing a fix.</h2>
+
+  <p>The old version of the brand worked in 2025 as a placeholder, but it didn't fit the new plan. The list of what had to be done from&nbsp;scratch or properly fixed:</p>
+
+  <ul class="story">
+    <li><b>Visual identity „done in a hurry".</b> Logo, palette, fonts — all built ad-hoc in 2025, no system. It worked, but wasn't suitable for content, posters, ads, social media.</li>
+    <li><b>No brand system.</b> One color, one slogan, one style. To scale across formats (post, poster, flyer, ad) we needed a system: a palette of several colors, several slogans, a tone of voice described for any channel.</li>
+    <li><b>Old website.</b> Functional, but not&nbsp;aligned with the new brand and not&nbsp;optimised for the 2026 season.</li>
+    <li><b>No inquiry admin panel.</b> Everything ran through email manually, individual inquiries got lost. The 2025 season tolerated it, the 2026 season with higher traffic — won't.</li>
+    <li><b>SEO not laid out.</b> The site was indexed, but no long-term strategy. Competitors have 3-5 years of content in&nbsp;Google — we're entering that ring late.</li>
+  </ul>
+
+  <p class="pullquote">
+    Last year it was enough to just start. This year I have to be visible.
+    <span class="pullquote-attr">— conversation with the client before the 2026 season</span>
+  </p>
+
+  <!-- ============== 03 CHRONOLOGY ============== -->
+  <h2><span class="num">03 · chronology</span>Three days for the brand and the site. Two weeks for the panel.</h2>
+
+  <p>Brand-building isn't about „making a website". It's about <b>layers built in a fixed order</b>, where each next one only makes sense when the previous one works. The refresh moved fast because the direction was clear from day one — the client knew what he didn't want, had material from 2025 to start from, and made sharp decisions. The value of the work isn't 8 hours × 21 days — it's nearly 3 weeks of focused work split between a brand sprint and a technical sprint.</p>
+
+  <div class="timeline">
+
+    <div class="tl-step">
+      <div class="tl-num">01 · day 1</div>
+      <div class="tl-content">
+        <h4>ICP refresh + brand voice + color system.</h4>
+        <p>We started with questions, not colors. Tent for whom — a wedding, a corporate event, a birthday? What sets us apart from the „brass + serif" competition? Voice choice: <b>Polish festivity, unpretentious, slightly absurd, zero corporate jargon</b>. That determined everything downstream — a palette of 11 colors (canvas, ink, fire, grass, lightbulb, wedding plus 5 accents), a system of 5 slogan stamps, a lowercase wordmark.</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">02 · day 2</div>
+      <div class="tl-content">
+        <h4>Wordmark + symbol + brandbook.</h4>
+        <p>Wordmark: Archivo Black "wolny" + Instrument Serif italic <em>"namiot"</em> — a double meaning, the tent as an object and as a word whispered. Symbol: a 2×2 pavilion seen from above, geometry that survives shrinking. Public brandbook at <a href="https://wolnynamiot.pl/brandbook/" target="_blank" rel="noopener">wolnynamiot.pl/brandbook</a> — 11 sections, complete system: palette, color scale, typography, components, slogans, posters, stickers. Not a folder for an agency — a tool for running the brand independently.</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">03 · day 3</div>
+      <div class="tl-content">
+        <h4>Website + copy + SEO.</h4>
+        <p>Website rewritten from scratch, aligned with the new brand. Copy first, layout second. Hero + project gallery + price list + blog + FAQ + terms + privacy. Mobile-first. Schema.org LocalBusiness + Service. Sitemap, robots.txt, Search Console, Google Business Profile. Plausible Analytics instead of GA — lighter, privacy, sufficient. Everything in Polish, production-ready from the start, no „Lorem ipsum".</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">04 · week 1–2 (parallel)</div>
+      <div class="tl-content">
+        <h4>Inquiry admin panel — from scratch.</h4>
+        <p>Greenfield admin panel: managing inquiries from the form, statuses, availability calendar per tent per date, quoting per package, generating confirmations. <b>In the 2025 season, handling was email-driven — it cost time and lost leads</b>. The panel is the operational core for 2026 and the seasons after. Built on our own infrastructure (Proxmox), no external SaaS — cost: 0 PLN/month.</p>
+      </div>
+    </div>
+
+    <div class="tl-step">
+      <div class="tl-num">05 · launch</div>
+      <div class="tl-content">
+        <h4>Quiet, no fireworks — the season decides.</h4>
+        <p>Old site replaced by the new one with no downtime. Brandbook public. Panel in production. <b>The first weeks are observation: does the client remember the brand, does the form convert, does the panel cut inquiry handling from days to hours</b>. Performance marketing and social will launch alongside the season — that's a separate sprint, just starting now.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <p><b>Total work:</b> 3 days of intensive brand + website + SEO sprint. 2 weeks of work on the admin panel (in parallel, longer timeline because it's a different kind of work — code, tests, integrations). Together: under 3 calendar weeks, ~80-100 hours of focused work.</p>
+
+  <!-- ============== 04 BRAND VISUALLY ============== -->
+  <h2><span class="num">04 · brand visually</span>This is how it sounds, this is how it looks.</h2>
+
+  <p>A brand system — not just a logo. <b>Wordmark + 11-color palette + 9 slogans + voice</b> — coherent, scalable to any format (post, poster, flyer, sticker, ad). Public brandbook: <a href="https://wolnynamiot.pl/brandbook/" target="_blank" rel="noopener">wolnynamiot.pl/brandbook</a>.</p>
+
+  <div class="wn-brand-block">
+    <div class="wn-wordmark">wolny <em>namiot.</em></div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#6B6B6B;margin-bottom:32px;">— wordmark · Archivo Black + Instrument Serif italic</div>
+
+    <p style="font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.7;color:#3a3a3a;max-width:540px;margin:0 0 8px;">Two fonts, two registers. <strong>Archivo Black 900 lowercase</strong> gives „wolny" the weight of a poster. <em style="font-family:'Instrument Serif',serif;color:#C34A1F;">Instrument Serif italic</em> gives „namiot" lightness — a tent as an object, but also a word whispered. Together: a shout and a whisper in&nbsp;one wordmark. Third font (JetBrains Mono) — utility: prices, dates, labels.</p>
+
+    <div class="wn-palette">
+      <div class="wn-swatch" style="background:#F5F1E6;color:#0A0A0A;">canvas<span class="hex">#F5F1E6</span></div>
+      <div class="wn-swatch" style="background:#0A0A0A;color:#F5F1E6;">ink<span class="hex">#0A0A0A</span></div>
+      <div class="wn-swatch" style="background:#C34A1F;color:#F5F1E6;">fire<span class="hex">#C34A1F</span></div>
+      <div class="wn-swatch" style="background:#1F7A3F;color:#F5F1E6;">grass<span class="hex">#1F7A3F</span></div>
+      <div class="wn-swatch" style="background:#E8A933;color:#0A0A0A;">lightbulb<span class="hex">#E8A933</span></div>
+      <div class="wn-swatch" style="background:#E8DFC9;color:#0A0A0A;">wedding<span class="hex">#E8DFC9</span></div>
+    </div>
+    <div class="wn-tagline-meta" style="margin-top:12px;">— main palette · 6 of 11 colors (full set in the brandbook)</div>
+  </div>
+
+  <p style="margin:48px 0 20px;">Voice: <b>Polish festivity, unpretentious, slightly absurd, no circus</b>. Lowercase everywhere, self-deprecating distance, locality as a strength. „We do the job — beautifully, on&nbsp;time, no surprises on the invoice." Nine slogan-stamps, three registers (primary / secondary / long), ready for print, posters, flyers, the side of a van. <em>Slogans kept in original Polish — they carry the brand voice and live on Polish posters; English glosses below each.</em></p>
+
+  <div class="wn-slogans">
+    <div class="wn-slogan wn-slogan-1">
+      <span class="wn-slogan-tier">primary · 01</span>
+      <div class="wn-slogan-text">postaw gdzie chcesz. <em>zrób co chcesz.</em></div>
+      <div class="wn-slogan-gloss">EN: pitch it where you want. do what you want.</div>
+    </div>
+    <div class="wn-slogan wn-slogan-2">
+      <span class="wn-slogan-tier">primary · 02</span>
+      <div class="wn-slogan-text">wolny namiot <em>—</em><br/>twoja impreza.</div>
+      <div class="wn-slogan-gloss">EN: free tent — your party.</div>
+    </div>
+    <div class="wn-slogan wn-slogan-3">
+      <span class="wn-slogan-tier">primary · 03</span>
+      <div class="wn-slogan-text">twój <em>ogród.</em><br/>twoje zasady.</div>
+      <div class="wn-slogan-gloss">EN: your garden. your rules.</div>
+    </div>
+    <div class="wn-slogan wn-slogan-4">
+      <span class="wn-slogan-tier">secondary · 04</span>
+      <div class="wn-slogan-text">nie padało. <em>i tak by nie padało.</em></div>
+      <div class="wn-slogan-gloss">EN: it didn't rain. it wouldn't have rained anyway.</div>
+    </div>
+    <div class="wn-slogan wn-slogan-5">
+      <span class="wn-slogan-tier">secondary · 05</span>
+      <div class="wn-slogan-text">ślub? protest? <em>obojętnie.</em></div>
+      <div class="wn-slogan-gloss">EN: wedding? protest? doesn't matter.</div>
+    </div>
+    <div class="wn-slogan wn-slogan-6">
+      <span class="wn-slogan-tier">secondary · 06</span>
+      <div class="wn-slogan-text">nie pytamy <em>co robisz</em> pod spodem.</div>
+      <div class="wn-slogan-gloss">EN: we don't ask what you do underneath.</div>
+    </div>
+    <div class="wn-slogan wn-slogan-7">
+      <span class="wn-slogan-tier">long · 07</span>
+      <div class="wn-slogan-text" style="font-size:20px;">80 wesel rocznie. <em>ani jednego odwołania z naszej winy.</em></div>
+      <div class="wn-slogan-gloss">EN: 80 weddings a year. not a single cancellation on us.</div>
+    </div>
+    <div class="wn-slogan wn-slogan-8">
+      <span class="wn-slogan-tier">long · 08</span>
+      <div class="wn-slogan-text" style="font-size:20px;">montaż w 3h. demontaż w 1. <em>reszta należy do ciebie.</em></div>
+      <div class="wn-slogan-gloss">EN: setup in 3h. teardown in 1. the rest is yours.</div>
+    </div>
+    <div class="wn-slogan wn-slogan-9">
+      <span class="wn-slogan-tier">long · 09</span>
+      <div class="wn-slogan-text" style="font-size:20px;">rodzinna firma z <em>jędrzejowa.</em><br/>południe polski. zawsze na czas.</div>
+      <div class="wn-slogan-gloss">EN: family company from Jędrzejów. southern Poland. always on time.</div>
+    </div>
+  </div>
+
+  <p class="pullquote" style="margin-top:36px;">
+    Wedding? Yes. Auntie's birthday? Yes. Allotment-society feast? Sure. Protest? We'll pitch one. Wake? We'll come quietly.
+    <span class="pullquote-attr">— „who it's for" section in the Wolny Namiot brandbook</span>
+  </p>
+
+
+  <!-- ============== 05 EFFECT ============== -->
+  <h2><span class="num">05 · effect</span>What stands after the sprint.</h2>
+
+  <p>The season starts in&nbsp;April/May 2026 — as this case study is being written. <b>Post-launch data (conversion, SEO terms, leads per season) will land in 3 months.</b> What concretely exists after the sprint:</p>
+
+  <div class="effects">
+    <div class="effect">
+      <div class="effect-num">— brand system</div>
+      <div class="effect-text"><b>11 colors × 9 slogans × 5 poster types × wordmark + sticker.</b> Public brandbook: <a href="https://wolnynamiot.pl/brandbook/" target="_blank" rel="noopener">wolnynamiot.pl/brandbook</a>. Every element ready for use — from&nbsp;Instagram to invoice, from&nbsp;a&nbsp;van sticker to a&nbsp;DL flyer. A brand, not a signboard.</div>
+    </div>
+    <div class="effect">
+      <div class="effect-num">— tone of voice</div>
+      <div class="effect-text"><b>Lowercase, Polish festivity, no corporate jargon.</b> Slogans like „it didn't rain. it wouldn't have rained anyway" instead of „premium tent rental experience". Client speaks to client like a human, not&nbsp;like an agency.</div>
+    </div>
+    <div class="effect">
+      <div class="effect-num">— website</div>
+      <div class="effect-text"><b>wolnynamiot.pl LIVE.</b> Gallery of 14 projects, blog ready for content, price list, terms, privacy, inquiry form. Mobile-first. Schema.org LocalBusiness + Service. Google Business Profile verified, Search Console connected.</div>
+    </div>
+    <div class="effect">
+      <div class="effect-num">— admin panel</div>
+      <div class="effect-text"><b>Greenfield admin panel LIVE</b> on our own Proxmox (0 PLN/month). Every inquiry has a status, an availability calendar per tent per date, a quote generator. Season 2025 was email-driven — season 2026 has a flow.</div>
+    </div>
+  </div>
+
+  <!-- ============== 06 LESSONS ============== -->
+  <h2><span class="num">06 · lessons</span>Three takeaways from the 6-week sprint.</h2>
+
+  <ol class="story">
+    <li><b>The 2025 starting material saved half the time on the refresh.</b> We didn't start from a blank page — there was an old identity, photos of past projects, the name. That let us skip weeks of discovery and step straight into brand decisions. Lesson for other projects: <b>even a „temporary identity put together fast" has value — leave material for the refresh, instead of inventing from zero again.</b></li>
+    <li><b>Copy first, design second — works in a refresh too, not just greenfield.</b> The tagline „Postaw gdzie chcesz. Zrób co chcesz." (pitch it where you want, do what you want) was written before the first sketch of the page layout. The brand voice (Polish festivity, slightly absurd, zero corporate jargon) was set on day one. Everything downstream — palette, slogans, symbol — followed from that decision.</li>
+    <li><b>Greenfield admin panel = greater ROI than one more brand iteration.</b> We stopped the brand at 80% (instead of 110%), because for a small company <b>an inquiry admin panel cuts the sales cycle 5×</b>, and a „perfect" brand won't do that. Decision: 3 days brand + website, 2 weeks panel. Not 3 weeks of brand and email handling.</li>
+  </ol>
+
+  <p><b>Main lesson:</b> a brand refresh + website + admin panel in under 3 weeks is possible <b>only when brand decisions are made by one person on the client side</b>. A committee, two co-founders, „let's also ask X" — that's weeks instead of hours. Wolny Namiot delivered because decisions were sharp, fast and owner-driven. From my side — fact-first, no ornaments, a Polish tagline instead of an English claim.</p>
+
+  <!-- STACK · concise, at the end -->
+  <p class="mono" style="font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--mute);margin-top:48px;padding-top:24px;border-top:1px solid var(--faint);">— stack under the brand</p>
+  <p style="font-family:var(--f-mono);font-size:13px;color:var(--dim);line-height:1.7;margin-top:8px;">Archivo Black + Instrument Serif italic + JetBrains Mono · 11 colors · vanilla HTML/CSS, mobile-first · Schema.org LocalBusiness · Google Business Profile · Search Console · Proxmox (self-host) + PostgreSQL + SvelteKit for the panel.</p>
+
+  <!-- ============== CTA ============== -->
+  <div class="letter-cta">
+    <h3 class="letter-cta-headline">Interested?</h3>
+    <p class="letter-cta-sub">Have an idea for a company but don't know where to start? Or already have a company but lack a brand, a website and visibility? Let's talk for 30&nbsp;minutes with no strings attached — I'll tell you what's doable in your budget and time. If it's not my lane, I'll refer someone else.</p>
+    <div class="letter-cta-row">
+      <a class="btn-primary-big" href="https://cal.eu/isiko/30min" target="_blank" rel="noopener">book 30 minutes&nbsp;→</a>
+      <a class="btn-ghost-big" href="/en/packages.html">see packages</a>
+      <a class="btn-ghost-big" href="mailto:karol@isiko.pl?subject=isiko%20·%20conversation%20after%20Wolny%20Namiot%20case">write to me</a>
+    </div>
+    <div class="letter-cta-meta">
+      <span>Krakow</span>
+      <span class="dim-sep">·</span>
+      <span>reply in&nbsp;24h</span>
+      <span class="dim-sep">·</span>
+      <span>hybrid, on-site when needed</span>
+      <span class="dim-sep">·</span>
+      <span>no bot, no CRM</span>
+    </div>
+  </div>
+
+  <!-- SIGN-OFF -->
+  <div class="signoff signoff-small">
+    <div class="signoff-name">Karol Zamarlik</div>
+    <div>isiko · Operations Director, VAVO · Fractional CTO/COO</div>
+  </div>
+
+  <div class="foot">
+    <span>© 2026 isiko · Karol Zamarlik · Krakow · case study #02 / Wolny Namiot</span>
+    <a href="/en/">← back to home</a>
+  </div>
+
+</div>
+</body>
+</html>

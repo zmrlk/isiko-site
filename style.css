@@ -129,6 +129,15 @@ button { background: none; border: none; cursor: pointer; color: inherit; font: 
   border-color: var(--sage);
   color: var(--paper);
 }
+.top-btn-lang {
+  text-decoration: none;
+  min-width: 36px;
+  padding: 10px 12px;
+}
+.top-btn-lang.active {
+  border-color: var(--sage);
+  color: var(--sage);
+}
 .top-btn-cta {
   background: var(--sage);
   color: var(--ink);

@@ -1,7 +1,7 @@
 # isiko — wiemy co wam dolega.
 
 ## About
-isiko — kultura w języku Zulu. Fractional Dyrektor Operacyjny / CTO dla polskich SME 1-300 osób. Wchodzimy do firm w chaosie, diagnozujemy co nie działa, budujemy system, proces i narzędzie. Zostajemy w cotygodniowym rytmie, dopóki to nie działa samo. Kraków, Polska.
+isiko — kultura w języku Zulu. Fractional Dyrektor Operacyjny / CTO / Dyrektor Technologiczny dla polskich firm 1-300 osób. Wchodzimy do firm w chaosie, diagnozujemy co nie działa, budujemy system, proces i narzędzie. Zostajemy w cotygodniowym rytmie, dopóki to nie działa samo. Kraków + Małopolska, Śląsk, Świętokrzyskie. Zdalnie + on-site gdy trzeba.
 
 ## Positioning
 Fractional Dyrektor Operacyjny / CTO. Cotygodniowy rytm: 1-2 dni w tygodniu, 6+ miesięcy. Bez etatu, bez długich kontraktów. Łączymy operacje (procesy, ERP, KPI, ludzie) z technologią (AI, automatyzacja). Polskie SME 1-300 osób — budżety są ograniczone, muszą liczyć każdą fakturę. Karol Zamarlik jest aktualnym Dyrektorem Operacyjnym VAVO Group — to nie konsultant od strony, to dyrektor operacyjny który przeszedł 3 awanse w 12 miesięcy. Łączymy doświadczenie operacyjne z budową własnych systemów (bOS, Meport, ERP STAGO, VRS). ERP-first, nie AI-first: ERP/workflow to 90% bólu polskiego MŚP (koszty utrzymania idą w tysiące, czasem dziesiątki tysięcy złotych miesięcznie), AI dokładamy gdzie ma sens.
@@ -44,6 +44,12 @@ Faktura VAT, rozliczenie miesięczne, umowa ramowa.
 - Wolny Namiot (wolnynamiot.pl) — brand + strona + SEO od zera, 6 tygodni. Wynajem namiotów imprezowych.
 - Dzikie Wiosło (dzikiewioslo.pl) — booking + płatności + regulaminy. Firma kajakarska sezonowa.
 - Splendid Fleet (splendidfleet.pl) — procesy, procedury, arkusze, analizy. Wypożyczalnia samochodów.
+
+## Geografia
+Główny obszar: **Kraków** (baza), **Małopolska**, **Śląsk** (Katowice), **Świętokrzyskie** (Kielce). Tryb: zdalnie + on-site gdy trzeba. Zdalnie cała Polska, plus international (international clients via cal.eu/isiko/30min booking).
+
+## Search keywords (frazy pod które pozycjonuje się isiko)
+Główne: dyrektor operacyjny online, dyrektor operacyjny Kraków, dyrektor technologiczny outsourcing, fractional CTO Kraków, fractional COO Małopolska, kierownik IT zdalnie, wdrażanie AI w firmie, szkolenia AI dla firm, ChatGPT dla zarządu szkolenie, Claude AI dla biznesu, optymalizacja procesów biznesowych, audyt operacyjny firmy, AI workshop Kraków, konsulting technologiczny Polska.
 
 ## Founder
 Karol Zamarlik — Founder. Dyrektor Operacyjny VAVO. Fractional CTO/COO. **9+ lat zarządzania od 2017.**
