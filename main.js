@@ -9,6 +9,56 @@
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
 
+  // ════════════════════════════════════════════════════
+  // 0 · LANG DROPDOWN + AUTO-DETECT
+  // ════════════════════════════════════════════════════
+  const langToggle = $('#lang-toggle');
+  const langMenu = $('#lang-menu');
+  if (langToggle && langMenu) {
+    const closeMenu = () => {
+      langMenu.hidden = true;
+      langToggle.setAttribute('aria-expanded', 'false');
+    };
+    const openMenu = () => {
+      langMenu.hidden = false;
+      langToggle.setAttribute('aria-expanded', 'true');
+    };
+    langToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langMenu.hidden ? openMenu() : closeMenu();
+    });
+    document.addEventListener('click', (e) => {
+      if (!langMenu.hidden && !langMenu.contains(e.target) && e.target !== langToggle) closeMenu();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !langMenu.hidden) closeMenu();
+    });
+  }
+
+  // Auto-detect language on first visit (only on root /)
+  const LANG_KEY = 'isiko-lang-redirected';
+  const path = window.location.pathname;
+  const isRoot = path === '/' || path === '/index.html';
+  const alreadyRedirected = (() => { try { return localStorage.getItem(LANG_KEY) === '1'; } catch (e) { return true; }})();
+  if (isRoot && !alreadyRedirected) {
+    const browserLang = (navigator.language || navigator.userLanguage || 'pl').toLowerCase();
+    const target = browserLang.startsWith('es') ? '/es/' : browserLang.startsWith('en') ? '/en/' : null;
+    if (target) {
+      try { localStorage.setItem(LANG_KEY, '1'); } catch (e) {}
+      window.location.replace(target);
+      return;
+    }
+    try { localStorage.setItem(LANG_KEY, '1'); } catch (e) {}
+  }
+
+  // ════════════════════════════════════════════════════
+  // 0b · HASH HANDLER (#kontakt → slide 7, etc.)
+  // ════════════════════════════════════════════════════
+  const HASH_TO_SLIDE = {
+    '#start': 0, '#dolega': 1, '#cto': 2, '#metoda': 3,
+    '#praktyka': 4, '#produkty': 5, '#karol': 6, '#kontakt': 7
+  };
+
   const prefersReducedMotion =
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isMobile = window.matchMedia('(max-width: 900px)').matches;
@@ -164,6 +214,16 @@
       goToSlide(i);
     });
   });
+
+  // Hash handler — #kontakt etc. (initial + hashchange)
+  const goToHash = () => {
+    const hash = window.location.hash;
+    if (hash && HASH_TO_SLIDE[hash] !== undefined) {
+      setTimeout(() => goToSlide(HASH_TO_SLIDE[hash]), 80);
+    }
+  };
+  goToHash();
+  window.addEventListener('hashchange', goToHash);
 
   // ════════════════════════════════════════════════════
   // 3 · KEYBOARD NAV (arrows ↑↓, PageUp/Dn, Home/End, 1-8)

@@ -167,6 +167,16 @@
     color: var(--ink);
     border-color: var(--paper);
   }
+  .lang-dropdown { position: relative; }
+  .lang-toggle { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+  .lang-toggle svg { transition: transform .2s; opacity: .6; }
+  .lang-toggle[aria-expanded="true"] svg { transform: rotate(180deg); opacity: 1; }
+  .lang-menu { position: absolute; top: calc(100% + 6px); right: 0; min-width: 180px; background: rgba(10,10,10,.95); backdrop-filter: blur(10px); border: 1px solid var(--faint); border-radius: 10px; padding: 6px; z-index: 50; }
+  .lang-menu[hidden] { display: none; }
+  .lang-menu a { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-radius: 6px; color: var(--dim); font-family: var(--f-mono); font-size: 12px; letter-spacing: .04em; border: none; text-decoration: none; transition: background .15s, color .15s; }
+  .lang-menu a:hover { background: rgba(255,255,255,.05); color: var(--paper); }
+  .lang-menu a.lang-active { color: var(--sage); background: rgba(199,240,90,.05); }
+  .lang-menu .lang-code { font-weight: 600; letter-spacing: .12em; min-width: 22px; }
   @media (max-width: 700px) {
     .top {
       flex-direction: column;
@@ -489,14 +499,23 @@
     <span>isiko</span>
   </a>
   <div class="top-actions">
-    <a class="top-btn" href="/" aria-label="polski"><span>PL</span></a>
-    <a class="top-btn" href="/en/" aria-label="english"><span>EN</span></a>
+    <a class="top-btn" href="/es/" aria-label="qué hacemos"><span>qué hacemos</span></a>
     <a class="top-btn" href="/es/paquetes.html" aria-label="paquetes"><span>paquetes</span></a>
-    <a class="top-btn top-btn-cta" href="mailto:karol@isiko.pl?subject=isiko%20·%20empezamos" aria-label="contacto">
-      <span>contacto&nbsp;→</span>
-    </a>
+    <a class="top-btn" href="/es/#kontakt" aria-label="contacto"><span>contacto</span></a>
+    <div class="lang-dropdown">
+      <button class="top-btn lang-toggle" id="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-label="idioma">
+        <span>ES</span>
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lang-menu" id="lang-menu" hidden role="menu">
+        <a href="/case-study/vavo.html" role="menuitem"><span class="lang-code">PL</span><span>polski</span></a>
+        <a href="/en/case-study/vavo.html" role="menuitem"><span class="lang-code">EN</span><span>english</span></a>
+        <a href="/es/case-study/vavo.html" class="lang-active" role="menuitem"><span class="lang-code">ES</span><span>español</span></a>
+      </div>
+    </div>
   </div>
 </header>
+<script>(function(){var t=document.getElementById('lang-toggle'),m=document.getElementById('lang-menu');if(!t||!m)return;t.addEventListener('click',function(e){e.stopPropagation();var h=m.hidden;m.hidden=!h;t.setAttribute('aria-expanded',h?'true':'false');});document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target)&&e.target!==t){m.hidden=true;t.setAttribute('aria-expanded','false');}});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){m.hidden=true;t.setAttribute('aria-expanded','false');}});})();</script>
 
 <div class="wrap">
 

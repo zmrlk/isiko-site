@@ -176,6 +176,26 @@
     color: var(--ink);
     border-color: var(--paper);
   }
+  .top-btn.active { border-color: var(--sage); color: var(--sage); }
+  /* Lang dropdown */
+  .lang-dropdown { position: relative; }
+  .lang-toggle { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+  .lang-toggle svg { transition: transform .2s; opacity: .6; }
+  .lang-toggle[aria-expanded="true"] svg { transform: rotate(180deg); opacity: 1; }
+  .lang-menu {
+    position: absolute; top: calc(100% + 6px); right: 0; min-width: 180px;
+    background: rgba(10,10,10,.95); backdrop-filter: blur(10px);
+    border: 1px solid var(--faint); border-radius: 10px; padding: 6px; z-index: 50;
+  }
+  .lang-menu[hidden] { display: none; }
+  .lang-menu a {
+    display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-radius: 6px;
+    color: var(--dim); font-family: var(--f-mono); font-size: 12px; letter-spacing: .04em;
+    border: none; text-decoration: none; transition: background .15s, color .15s;
+  }
+  .lang-menu a:hover { background: rgba(255,255,255,.05); color: var(--paper); }
+  .lang-menu a.lang-active { color: var(--sage); background: rgba(199,240,90,.05); }
+  .lang-menu .lang-code { font-weight: 600; letter-spacing: .12em; min-width: 22px; }
   @media (max-width: 700px) {
     .top {
       flex-direction: column;
@@ -558,13 +578,32 @@
     <span>isiko</span>
   </a>
   <div class="top-actions">
-    <a class="top-btn" href="/" aria-label="język"><span>PL</span></a>
+    <a class="top-btn" href="/" aria-label="co robimy"><span>co&nbsp;robimy</span></a>
     <a class="top-btn active" href="/pakiety.html" aria-label="pakiety"><span>pakiety</span></a>
-    <a class="top-btn top-btn-cta" href="mailto:karol@isiko.pl?subject=isiko%20·%20zaczynamy" aria-label="kontakt">
-      <span>kontakt&nbsp;→</span>
-    </a>
+    <a class="top-btn top-btn-cta" href="/#kontakt" aria-label="kontakt"><span>kontakt&nbsp;→</span></a>
+    <div class="lang-dropdown">
+      <button class="top-btn lang-toggle" id="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="język">
+        <span>PL</span>
+        <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 4 L5 7 L8 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lang-menu" id="lang-menu" hidden>
+        <a href="/" class="lang-active" data-lang="pl"><span class="lang-code">PL</span> polski</a>
+        <a href="/en/packages.html" data-lang="en"><span class="lang-code">EN</span> english</a>
+        <a href="/es/paquetes.html" data-lang="es"><span class="lang-code">ES</span> español</a>
+      </div>
+    </div>
   </div>
 </header>
+
+<script>
+(function(){
+  var t=document.getElementById('lang-toggle'),m=document.getElementById('lang-menu');
+  if(!t||!m)return;
+  t.addEventListener('click',function(e){e.stopPropagation();var h=m.hidden;m.hidden=!h;t.setAttribute('aria-expanded',h?'true':'false');});
+  document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target)&&e.target!==t){m.hidden=true;t.setAttribute('aria-expanded','false');}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){m.hidden=true;t.setAttribute('aria-expanded','false');}});
+})();
+</script>
 
 <div class="wrap">
 

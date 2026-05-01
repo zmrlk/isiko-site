@@ -129,13 +129,20 @@
     <span>isiko</span>
   </a>
   <div class="top-actions">
-    <a class="top-btn top-btn-lang" href="/" aria-label="polski"><span>PL</span></a>
-    <a class="top-btn top-btn-lang" href="/en/" aria-label="english"><span>EN</span></a>
-    <a class="top-btn top-btn-lang active" href="/es/" aria-label="español"><span>ES</span></a>
+    <a class="top-btn" href="#start" data-slide-to="0" aria-label="qué hacemos"><span>qué&nbsp;hacemos</span></a>
     <a class="top-btn" href="/es/paquetes.html" aria-label="paquetes"><span>paquetes</span></a>
-    <a class="top-btn top-btn-cta" href="#contacto" data-slide-to="7" aria-label="contacto">
-      <span>contacto&nbsp;→</span>
-    </a>
+    <a class="top-btn top-btn-cta" href="#kontakt" data-slide-to="7" aria-label="contacto"><span>contacto&nbsp;→</span></a>
+    <div class="lang-dropdown">
+      <button class="top-btn lang-toggle" id="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="idioma">
+        <span>ES</span>
+        <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 4 L5 7 L8 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lang-menu" id="lang-menu" hidden>
+        <a href="/" data-lang="pl"><span class="lang-code">PL</span> polski</a>
+        <a href="/en/" data-lang="en"><span class="lang-code">EN</span> english</a>
+        <a href="/es/" class="lang-active" data-lang="es"><span class="lang-code">ES</span> español</a>
+      </div>
+    </div>
   </div>
 </header>
 
