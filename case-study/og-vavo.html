@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>VAVO OG</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #0A0A0A; width: 1200px; height: 630px; overflow: hidden; font-family: 'Space Grotesk', sans-serif; color: #fff; }
+  .og {
+    width: 1200px; height: 630px;
+    padding: 80px 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: #0A0A0A;
+    position: relative;
+  }
+  .rail { position: absolute; top: 0; bottom: 0; left: 0; width: 48px; background: #C7F05A; }
+  .grid-bg {
+    position: absolute; inset: 0; opacity: 0.22;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .left { position: relative; z-index: 2; padding-left: 30px; }
+  .pill {
+    display: inline-block; padding: 8px 16px;
+    background: #C7F05A; color: #0A0A0A;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; letter-spacing: .18em; text-transform: uppercase;
+    font-weight: 500; margin-bottom: 24px;
+  }
+  h1 {
+    font-size: 78px; font-weight: 500; line-height: 1.0;
+    letter-spacing: -0.045em; margin: 0 0 20px;
+  }
+  h1 .line { display: block; }
+  h1 .dot { color: #C7F05A; }
+  p {
+    font-size: 22px; line-height: 1.4;
+    color: rgba(255,255,255,.78); margin: 0;
+    max-width: 580px;
+  }
+  p b { color: #fff; font-weight: 500; }
+  .right { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 24px; }
+  .stat {
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.18);
+    padding: 28px 36px;
+    border-radius: 4px;
+    background: rgba(255,255,255,.02);
+  }
+  .stat-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 92px; font-weight: 700; line-height: 1;
+    letter-spacing: -0.04em; color: #C7F05A;
+    margin-bottom: 6px;
+  }
+  .stat-arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px; letter-spacing: .12em;
+    color: rgba(255,255,255,.55); text-transform: uppercase;
+    margin: 8px 0;
+  }
+  .meta {
+    position: absolute; bottom: 32px; left: 120px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px; letter-spacing: .14em; text-transform: uppercase;
+    color: rgba(255,255,255,.55);
+    z-index: 3;
+  }
+  .meta .sep { color: #C7F05A; margin: 0 10px; }
+</style>
+</head>
+<body>
+<div class="og">
+  <div class="rail"></div>
+  <div class="grid-bg"></div>
+
+  <div class="left">
+    <div class="pill">CASE STUDY · 01 / VAVO GROUP</div>
+    <h1>
+      <span class="line">od 37 sklepów</span>
+      <span class="line">do 130<span class="dot">.</span></span>
+    </h1>
+    <p>Operacyjne porządkowanie <b>holdingu retail</b> w&nbsp;trakcie szybkiego wzrostu. <b>7 warstw</b> w&nbsp;stałej kolejności: procedury, Discord, SharePoint, Power BI, VRS, magazyn.</p>
+  </div>
+
+  <div class="right">
+    <div class="stat">
+      <div class="stat-num">37</div>
+      <div class="stat-arrow">↓ 2024 — wejście</div>
+      <div class="stat-num">130</div>
+      <div class="stat-arrow">2026 — dziś · 300 osób</div>
+    </div>
+  </div>
+
+  <div class="meta">
+    isiko.pl/case-study/vavo <span class="sep">·</span> karol zamarlik <span class="sep">·</span> dyrektor operacyjny vavo
+  </div>
+</div>
+</body>
+</html>
