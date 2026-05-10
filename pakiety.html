@@ -446,6 +446,89 @@
   .pkg-cta:hover { transform: translateY(-1px); background: #d4f878; border-color: transparent; }
 
   /* Reszta oferty */
+  /* PARP refundation banner */
+  .parp-banner {
+    margin-bottom: 60px;
+    padding: 40px 36px;
+    border: 1px solid var(--sage);
+    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(199, 240, 90, 0.06), rgba(199, 240, 90, 0.02));
+    position: relative;
+  }
+  .parp-tag {
+    display: inline-block;
+    font-family: var(--f-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    color: var(--sage);
+    background: rgba(10, 10, 10, 0.6);
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--sage);
+    margin-bottom: 18px;
+  }
+  .parp-headline {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(22px, 2vw, 30px);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+    color: var(--paper);
+  }
+  .parp-sub {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--dim);
+    max-width: 760px;
+    margin-bottom: 28px;
+  }
+  .parp-sub em { color: var(--paper); font-style: normal; border-bottom: 1px dashed var(--sage); }
+  .parp-points {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    padding: 20px 0;
+    border-top: 1px solid var(--faint);
+    border-bottom: 1px solid var(--faint);
+  }
+  .parp-point { display: flex; flex-direction: column; gap: 4px; min-width: 120px; }
+  .parp-point-num {
+    font-family: var(--f-display);
+    font-size: clamp(22px, 2vw, 28px);
+    font-weight: 600;
+    color: var(--sage);
+    line-height: 1;
+  }
+  .parp-point-desc {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    color: var(--mute);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .parp-help {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--dim);
+    max-width: 760px;
+    margin-bottom: 24px;
+  }
+  .parp-banner .btn-ghost {
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+  .parp-disclaimer {
+    font-size: 11px;
+    color: var(--mute);
+    line-height: 1.5;
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--faint);
+  }
+
   .rest {
     background: rgba(255,255,255,.02);
     border: 1px solid var(--faint);
@@ -724,6 +807,32 @@
       <a class="pkg-cta" href="mailto:karol@isiko.pl?subject=isiko%20·%20szkolenia%20AI">porozmawiajmy o szkoleniu →</a>
     </article>
 
+  </div>
+
+  <!-- PARP REFUNDACJA -->
+  <div class="parp-banner">
+    <div class="parp-tag">refundacja PARP 2026</div>
+    <h2 class="parp-headline">Do 80% kosztów szkoleń AI dla MŚP — refundacja z budżetu UE.</h2>
+    <p class="parp-sub">
+      Q3 2026 PARP otwiera nabory <em>„Kompetencje z automatyzacji dla transformacji cyfrowej"</em> w ramach FERS. Refundacja do 80% kosztów szkoleń i doradztwa AI dla mikro, małych i średnich przedsiębiorstw. Audyt operacyjny, AI Workshop dla zarządu i AI Implementation kwalifikują się do refundacji.
+    </p>
+    <div class="parp-points">
+      <div class="parp-point">
+        <span class="parp-point-num">do 80%</span>
+        <span class="parp-point-desc">refundacji kosztów</span>
+      </div>
+      <div class="parp-point">
+        <span class="parp-point-num">Q3 2026</span>
+        <span class="parp-point-desc">planowane otwarcie</span>
+      </div>
+      <div class="parp-point">
+        <span class="parp-point-num">MŚP</span>
+        <span class="parp-point-desc">do 250 osób</span>
+      </div>
+    </div>
+    <p class="parp-help">Pomagam zebrać dokumentację — wniosek, opis projektu, plan wdrożenia, sprawozdania końcowe. Zgłoś się przed naborami, żebyśmy mieli czas dograć szczegóły. Bez ukrytych opłat za przygotowanie wniosku.</p>
+    <a class="btn-ghost" href="mailto:karol@isiko.pl?subject=isiko%20·%20PARP%20refundacja%20AI">zapytaj o&nbsp;refundację&nbsp;→</a>
+    <p class="parp-disclaimer mono">Daty i procent refundacji wg ogłoszeń PARP / FERS na 05.2026. Zweryfikuj aktualne warunki naboru przed złożeniem wniosku.</p>
   </div>
 
   <!-- RESZTA OFERTY -->
