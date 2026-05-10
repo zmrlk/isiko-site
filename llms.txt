@@ -71,6 +71,9 @@ Karol Zamarlik — Founder. Dyrektor Operacyjny VAVO. Fractional CTO/COO. **9+ l
 
 ## Links
 - Website: https://isiko.pl
+- Blog (PL): https://isiko.pl/blog/
+- Pakiety: https://isiko.pl/pakiety.html
+- Case studies: VAVO (https://isiko.pl/case-study/vavo.html), STAGO v2 (https://isiko.pl/case-study/stago-v2.html), Wolny Namiot (https://isiko.pl/case-study/wolny-namiot.html)
 - LinkedIn: https://www.linkedin.com/in/karol-zamarlik-416b68184/
 - GitHub: https://github.com/zmrlk
 - Privacy: https://isiko.pl/polityka.html

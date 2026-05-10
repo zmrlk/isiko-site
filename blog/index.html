@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog · isiko — Fractional Dyrektor Operacyjny dla SME</title>
+<meta name="description" content="Blog isiko. DOO vs CTO, audyt operacyjny vs ERP, PARP refundacja AI, AI Readiness Checklist, ChatGPT vs Claude dla zarządu. Praktycznie, dla polskich firm 1-300 osób.">
+<meta name="keywords" content="blog isiko, fractional CTO Polska, dyrektor operacyjny, audyt operacyjny, ERP, AI dla biznesu, PARP refundacja, ChatGPT zarząd, Claude AI biznes, Karol Zamarlik">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://isiko.pl/blog/">
+<link rel="alternate" hreflang="pl" href="https://isiko.pl/blog/">
+<link rel="alternate" hreflang="x-default" href="https://isiko.pl/blog/">
+
+<meta property="og:title" content="Blog · isiko">
+<meta property="og:description" content="DOO vs CTO, audyt vs ERP, PARP, AI Readiness, ChatGPT vs Claude. Praktycznie, dla polskich firm 1-300 osób.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://isiko.pl/blog/">
+<meta property="og:image" content="https://isiko.pl/og.png">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+
+<!-- Structured Data · Blog -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": "https://isiko.pl/blog/#blog",
+  "name": "Blog isiko",
+  "description": "Praktyczny blog dla polskich SME 1-300 osób. Operacje, ERP, AI workflow, refundacje PARP, narzędzia dla zarządu.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://isiko.pl/#org",
+    "name": "isiko",
+    "url": "https://isiko.pl/"
+  },
+  "inLanguage": "pl-PL",
+  "url": "https://isiko.pl/blog/"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #0A0A0A;
+    --paper: #FFFFFF;
+    --sage: #C7F05A;
+    --dim: #B8B8B8;
+    --mute: #6E6E6E;
+    --faint: rgba(255,255,255,.10);
+    --f-display: 'Space Grotesk', system-ui, sans-serif;
+    --f-body: 'Inter', system-ui, sans-serif;
+    --f-mono: 'JetBrains Mono', ui-monospace, monospace;
+    --f-serif: 'Instrument Serif', Georgia, serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--f-body);
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .top {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--faint);
+  }
+  .top-mark { display: flex; align-items: center; gap: 10px; font-weight: 500; font-family: var(--f-display); }
+  .top-actions { display: flex; gap: 8px; align-items: center; }
+  .top-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+    color: var(--dim);
+    border: 1px solid var(--faint);
+    border-radius: 999px;
+    transition: all 0.2s;
+  }
+  .top-btn:hover { color: var(--paper); border-color: var(--sage); }
+  .top-btn-cta { color: var(--ink); background: var(--sage); border-color: var(--sage); }
+  .top-btn-cta:hover { background: var(--paper); border-color: var(--paper); color: var(--ink); }
+
+  .lang-dropdown { position: relative; }
+  .lang-toggle { display: flex; align-items: center; gap: 6px; cursor: pointer; background: transparent; }
+  .lang-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 140px;
+    background: var(--ink);
+    border: 1px solid var(--faint);
+    border-radius: 8px;
+    padding: 6px;
+    z-index: 100;
+  }
+  .lang-menu a { display: flex; gap: 10px; padding: 8px 12px; font-size: 13px; color: var(--dim); border-radius: 6px; }
+  .lang-menu a:hover { background: var(--faint); color: var(--paper); }
+  .lang-code { font-family: var(--f-mono); color: var(--sage); font-size: 11px; }
+
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 60px 32px 100px;
+  }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--f-mono);
+    font-size: 12px;
+    color: var(--mute);
+    margin-bottom: 32px;
+  }
+  .breadcrumb a { color: var(--mute); }
+  .breadcrumb a:hover { color: var(--sage); }
+  .breadcrumb .sep { color: var(--faint); }
+
+  h1 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+  h1 .dot { color: var(--sage); }
+
+  .lead {
+    font-size: clamp(17px, 1.5vw, 21px);
+    color: var(--dim);
+    max-width: 720px;
+    margin-bottom: 56px;
+    line-height: 1.6;
+  }
+  .lead b { color: var(--paper); font-weight: 600; }
+
+  .blog-meta {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--mute);
+    padding: 16px 0;
+    border-top: 1px solid var(--faint);
+    border-bottom: 1px solid var(--faint);
+    margin-bottom: 48px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .blog-meta .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border: 1px solid var(--sage);
+    color: var(--sage);
+    border-radius: 999px;
+    font-size: 11px;
+  }
+
+  .post-list {
+    display: grid;
+    gap: 0;
+  }
+
+  .post-card {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 28px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--faint);
+    align-items: start;
+    transition: background 0.2s;
+  }
+  .post-card:hover { background: rgba(199, 240, 90, 0.03); }
+  .post-card:last-child { border-bottom: none; }
+
+  .post-num {
+    font-family: var(--f-mono);
+    font-size: 13px;
+    color: var(--sage);
+    padding-top: 4px;
+  }
+
+  .post-content h2 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: clamp(22px, 2vw, 28px);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .post-content h2 a:hover { color: var(--sage); }
+  .post-content .post-lead {
+    color: var(--dim);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .post-content .post-tags {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    color: var(--mute);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .post-content .post-tags span:not(:last-child)::after {
+    content: " · ";
+    color: var(--faint);
+    margin: 0 4px;
+  }
+
+  .post-status {
+    font-family: var(--f-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+    align-self: start;
+    margin-top: 4px;
+  }
+  .status-soon { color: var(--mute); border: 1px solid var(--faint); }
+  .status-live { color: var(--ink); background: var(--sage); }
+
+  @media (max-width: 700px) {
+    .post-card {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .post-status { justify-self: start; }
+  }
+
+  .subscribe-box {
+    margin-top: 64px;
+    padding: 36px 32px;
+    background: rgba(255, 255, 255, .02);
+    border: 1px solid var(--faint);
+    border-radius: 8px;
+  }
+  .subscribe-box h3 {
+    font-family: var(--f-display);
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .subscribe-box p {
+    color: var(--dim);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .subscribe-box .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  .btn-primary {
+    background: var(--sage);
+    color: var(--ink);
+    border: 1px solid var(--sage);
+  }
+  .btn-primary:hover { background: var(--paper); border-color: var(--paper); }
+  .btn-ghost {
+    margin-left: 8px;
+    color: var(--dim);
+    border: 1px solid var(--faint);
+  }
+  .btn-ghost:hover { color: var(--paper); border-color: var(--sage); }
+
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--faint);
+    font-family: var(--f-mono);
+    font-size: 11px;
+    color: var(--mute);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .foot a:hover { color: var(--sage); }
+</style>
+</head>
+
+<body>
+
+<header class="top">
+  <a class="top-mark" href="/" aria-label="isiko">
+    <svg width="22" height="22" viewBox="0 0 28 28">
+      <circle cx="14" cy="14" r="13" fill="none" stroke="currentColor" stroke-width="1"/>
+      <circle cx="14" cy="14" r="8" fill="#C7F05A"/>
+    </svg>
+    <span>isiko</span>
+  </a>
+  <div class="top-actions">
+    <a class="top-btn" href="/" aria-label="co robimy"><span>co&nbsp;robimy</span></a>
+    <a class="top-btn" href="/pakiety.html" aria-label="pakiety"><span>pakiety</span></a>
+    <a class="top-btn top-btn-cta" href="/#kontakt" aria-label="kontakt"><span>kontakt&nbsp;→</span></a>
+    <div class="lang-dropdown">
+      <button class="top-btn lang-toggle" id="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-label="język">
+        <span>PL</span>
+        <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 4 L5 7 L8 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="lang-menu" id="lang-menu" hidden>
+        <a href="/blog/" data-lang="pl"><span class="lang-code">PL</span> polski</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>(function(){var t=document.getElementById('lang-toggle'),m=document.getElementById('lang-menu');if(!t||!m)return;t.addEventListener('click',function(e){e.stopPropagation();var h=m.hidden;m.hidden=!h;t.setAttribute('aria-expanded',h?'true':'false');});document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target)&&e.target!==t){m.hidden=true;t.setAttribute('aria-expanded','false');}});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){m.hidden=true;t.setAttribute('aria-expanded','false');}});})();</script>
+
+<div class="wrap">
+
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <a href="/">isiko</a>
+    <span class="sep">/</span>
+    <span>blog</span>
+  </nav>
+
+  <h1>Blog<span class="dot">.</span></h1>
+
+  <p class="lead">Praktycznie, dla polskich firm 1-300 osób. <b>Operacje, ERP, AI workflow, refundacje, narzędzia dla zarządu.</b> Bez teorii, bez frameworków z LinkedIn-a, bez „transformacji cyfrowej" jako buzzwordu. Tylko to, co sam wdrażałem albo widziałem działające w VAVO, STAGO, Wolnym Namiocie i u innych klientów.</p>
+
+  <div class="blog-meta">
+    <span class="pill">w&nbsp;przygotowaniu</span>
+    <span>6&nbsp;tematów · pierwsze posty wkrótce</span>
+    <span>autor: Karol Zamarlik</span>
+  </div>
+
+  <div class="post-list">
+
+    <!-- POST #01 -->
+    <article class="post-card">
+      <div class="post-num">#01</div>
+      <div class="post-content">
+        <h2>DOO vs CTO — kiedy który, kiedy oba?</h2>
+        <p class="post-lead">Polski rynek SME nie szuka „Fractional CTO" — szuka kogoś, kto naprawi operacje. Ale firma 50-200 osób z chaosem w procesach <i>i</i> długiem technologicznym potrzebuje obu. Kiedy wystarczy operacyjny, kiedy potrzebny technologiczny, kiedy jeden człowiek może łączyć obie role.</p>
+        <div class="post-tags"><span>operacje</span><span>fractional</span><span>ICP</span></div>
+      </div>
+      <span class="post-status status-soon">w&nbsp;przygotowaniu</span>
+    </article>
+
+    <!-- POST #02 -->
+    <article class="post-card">
+      <div class="post-num">#02</div>
+      <div class="post-content">
+        <h2>Audyt operacyjny vs ERP — od czego zacząć.</h2>
+        <p class="post-lead">Większość firm 50-300 osób kupuje ERP zanim ma SOPy. Efekt: 6-12 miesięcy walki z platformą, koszt rośnie, ludzie obchodzą system Excelem. Tańsza i szybsza ścieżka: najpierw audyt operacyjny, potem ERP pod realne procesy. Konkretne przykłady i koszt różnicy.</p>
+        <div class="post-tags"><span>ERP</span><span>audyt</span><span>SOP</span></div>
+      </div>
+      <span class="post-status status-soon">w&nbsp;przygotowaniu</span>
+    </article>
+
+    <!-- POST #03 -->
+    <article class="post-card">
+      <div class="post-num">#03</div>
+      <div class="post-content">
+        <h2>PARP 2026 — 87% wniosków odrzuconych. Co robi zostałe 13%?</h2>
+        <p class="post-lead">Bony PARP na automatyzację i AI mają wskaźnik akceptacji ~13%. Reszta wraca z poprawkami albo odpada. Co konkretnie wyróżnia wnioski które przechodzą: forma opisu projektu, KPI, plan wdrożenia, wybór wykonawcy. Praktyczny checklist przed złożeniem.</p>
+        <div class="post-tags"><span>PARP</span><span>refundacja</span><span>MŚP</span></div>
+      </div>
+      <span class="post-status status-soon">w&nbsp;przygotowaniu</span>
+    </article>
+
+    <!-- POST #04 -->
+    <article class="post-card">
+      <div class="post-num">#04</div>
+      <div class="post-content">
+        <h2>AI Readiness Checklist — 40 pytań przed wdrożeniem.</h2>
+        <p class="post-lead">Czy Twoja firma jest gotowa na AI? 40 pytań w 6 kategoriach (dane, procesy, ludzie, narzędzia, prawo, ROI), które pokazują czy najpierw wdrażasz AI, czy najpierw porządkujesz operacje. Bezpłatny self-assessment z systemem punktowania.</p>
+        <div class="post-tags"><span>AI</span><span>readiness</span><span>checklist</span></div>
+      </div>
+      <span class="post-status status-soon">w&nbsp;przygotowaniu</span>
+    </article>
+
+    <!-- POST #05 -->
+    <article class="post-card">
+      <div class="post-num">#05</div>
+      <div class="post-content">
+        <h2>ChatGPT vs Claude dla zarządu — który do czego.</h2>
+        <p class="post-lead">Oba pełnią inną rolę w organizacji. ChatGPT — szybkie odpowiedzi, multimodal, wide ecosystem. Claude — długi kontekst, dłuższe analizy, lepszy dla dokumentów prawnych i kodu. Dla kogo CIO planujący policy, dla kogo CFO budujący raport. Konkretne use case'y z VAVO i STAGO.</p>
+        <div class="post-tags"><span>AI</span><span>ChatGPT</span><span>Claude</span><span>zarząd</span></div>
+      </div>
+      <span class="post-status status-soon">w&nbsp;przygotowaniu</span>
+    </article>
+
+    <!-- POST #06 -->
+    <article class="post-card">
+      <div class="post-num">#06</div>
+      <div class="post-content">
+        <h2>Własny ERP vs SaaS — kiedy schodzić z platformy.</h2>
+        <p class="post-lead">Lovable, Supabase, no-code są świetne na prototyp i pierwsze 6-12 miesięcy. Ale w pewnym momencie cena elastyczności rośnie szybciej niż cena migracji. Sygnały, które mówią „pora budować własne". Case STAGO v2 jako proof.</p>
+        <div class="post-tags"><span>ERP</span><span>SaaS</span><span>build vs buy</span></div>
+      </div>
+      <span class="post-status status-soon">w&nbsp;przygotowaniu</span>
+    </article>
+
+  </div>
+
+  <div class="subscribe-box">
+    <h3>Daj znać, który temat interesuje Cię najbardziej.</h3>
+    <p>Posty wychodzą stopniowo. Kolejność zależy od tego, co rynek pyta najczęściej. Napisz krótko: który temat jest dla Ciebie najpilniejszy, jakim jesteś rolą (CEO / CTO / DOO / inne), w jakiej firmie. Wybiorę temat #1 i wyślę Ci wcześniej, zanim trafi na blog.</p>
+    <a class="btn btn-primary" href="mailto:karol@isiko.pl?subject=isiko%20·%20interesuje%20mnie%20temat%20bloga">napisz, który temat&nbsp;→</a>
+    <a class="btn btn-ghost" href="/">wróć na stronę</a>
+  </div>
+
+  <div class="foot">
+    <span>© 2026 isiko · Karol Zamarlik · Kraków</span>
+    <a href="/">← powrót do strony</a>
+  </div>
+
+</div>
+</body>
+</html>
