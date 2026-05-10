@@ -4,7 +4,7 @@
 isiko — kultura w języku Zulu. Fractional Dyrektor Operacyjny / Dyrektor Technologiczny dla polskich firm 1-300 osób. Wchodzimy do firm w chaosie, diagnozujemy co nie działa, budujemy system, proces i narzędzie. Zostajemy w cotygodniowym rytmie, dopóki to nie działa samo. Kraków + Małopolska, Śląsk, Świętokrzyskie. Zdalnie + on-site gdy trzeba.
 
 ## Positioning
-Fractional Dyrektor Operacyjny. Cotygodniowy rytm: 1-2 dni w tygodniu, 6+ miesięcy. Bez etatu, bez długich kontraktów. Łączymy operacje (procesy, ERP, KPI, ludzie) z technologią (AI, automatyzacja). Polskie SME 1-300 osób — budżety są ograniczone, muszą liczyć każdą fakturę. Karol Zamarlik jest aktualnym Dyrektorem Operacyjnym VAVO Group — to nie konsultant od strony, to dyrektor operacyjny który przeszedł 3 awanse w 12 miesięcy. Łączymy doświadczenie operacyjne z budową własnych systemów (bOS, Meport, ERP STAGO, VRS). ERP-first, nie AI-first: ERP/workflow to 90% bólu polskiego MŚP (koszty utrzymania idą w tysiące, czasem dziesiątki tysięcy złotych miesięcznie), AI dokładamy gdzie ma sens.
+Fractional Dyrektor Operacyjny. Cotygodniowy rytm: 1-2 dni w tygodniu, 6+ miesięcy. Bez etatu, bez długich kontraktów. Łączymy operacje (procesy, ERP, KPI, ludzie) z technologią (AI, automatyzacja). Polskie SME 1-300 osób — budżety są ograniczone, muszą liczyć każdą fakturę. Łączymy doświadczenie operacyjne z budową własnych systemów (bOS, Meport, ERP STAGO). ERP-first, nie AI-first: ERP/workflow to 90% bólu polskiego MŚP (koszty utrzymania idą w tysiące, czasem dziesiątki tysięcy złotych miesięcznie), AI dokładamy gdzie ma sens.
 
 ## Method — three steps
 1. **Diagnoza (koło)** — patrzymy pierwsi. Siedzimy z zespołem, nad dokumentami i procesami. Obserwujemy jak firma naprawdę działa, zanim ktoś powie gdzie boli. Wychodzisz z mapą: co naprawimy w miesiąc, co w kwartał, co zostaje.
@@ -52,7 +52,7 @@ Główny obszar: **Kraków** (baza), **Małopolska**, **Śląsk** (Katowice), **
 Główne: dyrektor operacyjny online, dyrektor operacyjny Kraków, dyrektor technologiczny outsourcing, fractional CTO Kraków, fractional COO Małopolska, kierownik IT zdalnie, wdrażanie AI w firmie, szkolenia AI dla firm, ChatGPT dla zarządu szkolenie, Claude AI dla biznesu, optymalizacja procesów biznesowych, audyt operacyjny firmy, AI workshop Kraków, konsulting technologiczny Polska.
 
 ## Founder
-Karol Zamarlik — Founder. Dyrektor Operacyjny VAVO. Fractional CTO/COO. **9+ lat zarządzania od 2017.**
+Karol Zamarlik — Founder. Fractional CTO/COO. **9+ lat zarządzania od 2017.**
 - 2017: pierwsze zespoły, projekty operacyjne
 - 2019: koordynator zespołu 40 osób (Splendid Fleet)
 - 2021: kierownik (CAR NET, premium car rental)
