@@ -1,10 +1,10 @@
 # isiko — wiemy co wam dolega.
 
 ## About
-isiko — kultura w języku Zulu. Fractional Dyrektor Operacyjny / CTO / Dyrektor Technologiczny dla polskich firm 1-300 osób. Wchodzimy do firm w chaosie, diagnozujemy co nie działa, budujemy system, proces i narzędzie. Zostajemy w cotygodniowym rytmie, dopóki to nie działa samo. Kraków + Małopolska, Śląsk, Świętokrzyskie. Zdalnie + on-site gdy trzeba.
+isiko — kultura w języku Zulu. Fractional Dyrektor Operacyjny / Dyrektor Technologiczny dla polskich firm 1-300 osób. Wchodzimy do firm w chaosie, diagnozujemy co nie działa, budujemy system, proces i narzędzie. Zostajemy w cotygodniowym rytmie, dopóki to nie działa samo. Kraków + Małopolska, Śląsk, Świętokrzyskie. Zdalnie + on-site gdy trzeba.
 
 ## Positioning
-Fractional Dyrektor Operacyjny / CTO. Cotygodniowy rytm: 1-2 dni w tygodniu, 6+ miesięcy. Bez etatu, bez długich kontraktów. Łączymy operacje (procesy, ERP, KPI, ludzie) z technologią (AI, automatyzacja). Polskie SME 1-300 osób — budżety są ograniczone, muszą liczyć każdą fakturę. Karol Zamarlik jest aktualnym Dyrektorem Operacyjnym VAVO Group — to nie konsultant od strony, to dyrektor operacyjny który przeszedł 3 awanse w 12 miesięcy. Łączymy doświadczenie operacyjne z budową własnych systemów (bOS, Meport, ERP STAGO, VRS). ERP-first, nie AI-first: ERP/workflow to 90% bólu polskiego MŚP (koszty utrzymania idą w tysiące, czasem dziesiątki tysięcy złotych miesięcznie), AI dokładamy gdzie ma sens.
+Fractional Dyrektor Operacyjny. Cotygodniowy rytm: 1-2 dni w tygodniu, 6+ miesięcy. Bez etatu, bez długich kontraktów. Łączymy operacje (procesy, ERP, KPI, ludzie) z technologią (AI, automatyzacja). Polskie SME 1-300 osób — budżety są ograniczone, muszą liczyć każdą fakturę. Karol Zamarlik jest aktualnym Dyrektorem Operacyjnym VAVO Group — to nie konsultant od strony, to dyrektor operacyjny który przeszedł 3 awanse w 12 miesięcy. Łączymy doświadczenie operacyjne z budową własnych systemów (bOS, Meport, ERP STAGO, VRS). ERP-first, nie AI-first: ERP/workflow to 90% bólu polskiego MŚP (koszty utrzymania idą w tysiące, czasem dziesiątki tysięcy złotych miesięcznie), AI dokładamy gdzie ma sens.
 
 ## Method — three steps
 1. **Diagnoza (koło)** — patrzymy pierwsi. Siedzimy z zespołem, nad dokumentami i procesami. Obserwujemy jak firma naprawdę działa, zanim ktoś powie gdzie boli. Wychodzisz z mapą: co naprawimy w miesiąc, co w kwartał, co zostaje.
@@ -22,7 +22,7 @@ Fractional Dyrektor Operacyjny / CTO. Cotygodniowy rytm: 1-2 dni w tygodniu, 6+ 
 ## Pakiety (pełny opis na https://isiko.pl/pakiety.html)
 Trzy główne ścieżki współpracy. **Wszystkie ceny ustalane indywidualnie po krótkiej rozmowie** — zależne od skali firmy, zakresu i intensywności. Pakiety to punkt startu rozmowy, nie zamknięty cennik.
 - **Audyt operacyjny 7 dni** — wejście. 7 dni (3 dni on-site + 4 dni remote). Output: mapa procesu, lista 5-10 strat, 3 szybkie poprawki, plan 30-60-90, rekomendacja kierunku (AI vs ERP vs procesy).
-- **CTO/COO retainer** — core. 1-2 dni/tydzień, 6+ miesięcy, pilot 4-tygodniowy najpierw. Fractional Dyrektor Operacyjny / CTO wpisany w cotygodniowy rytm zespołu.
+- **CTO/COO retainer** — core. 1-2 dni/tydzień, 6+ miesięcy, pilot 4-tygodniowy najpierw. Fractional Dyrektor Operacyjny wpisany w cotygodniowy rytm zespołu.
 - **Szkolenia & AI workshops** — alternative entry. AI Workshop dla zarządu (1 dzień), szkolenie zespołu (1-3 dni), AI Implementation per use case (RAG, bot, automatyzacja). Praktycznie, na realnych przypadkach z firmy.
 
 Pozostałe usługi cytowane indywidualnie:
