@@ -467,6 +467,36 @@ button { background: none; border: none; cursor: pointer; color: inherit; font: 
 }
 .hero-meta .sep { color: var(--sage); }
 
+.hero-proof {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 12px;
+  color: var(--dim);
+  opacity: 0;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+.hero-proof a {
+  color: var(--paper);
+  border-bottom: 1px dashed var(--sage);
+  padding-bottom: 1px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.hero-proof a:hover { color: var(--sage); border-bottom-color: var(--paper); }
+.hero-proof .sep { color: var(--sage); }
+.hero-proof .proof-tag {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  font-size: 10px;
+  padding: 2px 7px;
+  border: 1px solid var(--sage);
+  border-radius: 999px;
+  margin-right: 4px;
+}
+
 /* Hero right — logo */
 .hero-right {
   display: flex;
