@@ -1563,3 +1563,111 @@ button { background: none; border: none; cursor: pointer; color: inherit; font: 
   }
   .hero-logo .letter { opacity: 1 !important; }
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   POLISH PASS · additive overrides only (grain, glow, cards, hovers)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── 01 · HERO · grain texture (feTurbulence data-URI, static) ── */
+.slide-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 240px 240px;
+}
+
+/* ── 01 · HERO · soft radial sage glow behind logo ── */
+.hero-right::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(640px, 90%);
+  aspect-ratio: 1 / 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(199,240,90,.07) 0%, rgba(199,240,90,.025) 38%, transparent 68%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-logo-wrap { position: relative; z-index: 1; }
+
+/* ── 02 · DOLEGLIWOŚCI · row highlight on hover/focus (desktop only) ── */
+@media (hover: hover) and (pointer: fine) {
+  .dolega-row:not(.dolega-row-sage):hover {
+    background: rgba(199,240,90,.04);
+  }
+}
+.dolega-row:not(.dolega-row-sage):focus-within {
+  background: rgba(199,240,90,.04);
+  padding-left: 16px;
+  border-top-color: transparent;
+}
+.dolega-row:focus-within::before { transform: scaleY(1); }
+.dolega-row:focus-within .dr-a { opacity: 1; transform: translateX(0); }
+
+/* ── 03 · OFERTA · .cto-stat as cards ── */
+.cto-stats {
+  border-top: 0;
+  border-bottom: 0;
+  padding: 0;
+  gap: 18px;
+  align-items: stretch;
+}
+.cto-sep { display: none; }
+.cto-stat {
+  flex: 1 1 220px;
+  border: 1px solid var(--faint);
+  border-radius: 12px;
+  background: var(--ghost);
+  padding: 26px 28px 22px;
+  justify-content: flex-end;
+  transition: transform .35s var(--ease-out), border-color .3s, box-shadow .35s, background .3s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .cto-stat:hover {
+    transform: translateY(-2px);
+    border-color: var(--sage);
+    background: rgba(199,240,90,.04);
+    box-shadow: 0 14px 36px -16px rgba(199,240,90,.35);
+  }
+}
+@media (max-width: 520px) {
+  .cto-stats { align-items: stretch; }
+  .cto-stat { width: 100%; flex-basis: auto; }
+}
+
+/* ── 05 · PRAKTYKA · num → sage, body micro-shift ── */
+.pr-num { transition: color .25s; }
+.pr-body { transition: transform .35s var(--ease-out); }
+.praktyka-row:hover .pr-num { color: var(--sage); }
+@media (hover: hover) and (pointer: fine) {
+  .praktyka-row:hover .pr-body { transform: translateX(4px); }
+}
+
+/* ── 06 · BUTTONS · magnetic (JS owns transform; kill CSS transform fight) ── */
+.btn-primary.is-magnetic {
+  transition: background .25s, color .25s, box-shadow .3s;
+  will-change: transform;
+}
+.btn-primary.is-magnetic:hover {
+  transform: none;
+}
+
+/* ── 07 · KONTAKT · form focus states ── */
+.kf-field input,
+.kf-field textarea {
+  border-radius: 3px 3px 0 0;
+  transition: border-color .25s, box-shadow .25s, background .25s;
+}
+.kf-field input:focus,
+.kf-field textarea:focus {
+  border-color: var(--sage);
+  background: rgba(199,240,90,.03);
+  box-shadow: 0 1px 0 0 var(--sage), 0 0 0 3px rgba(199,240,90,.07);
+}
+.kf-field:focus-within label { color: var(--sage); }

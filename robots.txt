@@ -1,4 +1,4 @@
-# isiko.pl · Fractional CTO/COO Kraków
+# isiko.pl · systemy szyte na miarę · panele B2B · ERP · Kraków
 # Crawl all · zero tracking · AI bots welcome
 
 User-agent: *

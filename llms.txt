@@ -1,31 +1,38 @@
 # isiko — wiemy co wam dolega.
 
 ## About
-isiko — kultura w języku Zulu. Fractional Dyrektor Operacyjny / Dyrektor Technologiczny dla polskich firm 1-300 osób. Wchodzimy do firm w chaosie, diagnozujemy co nie działa, budujemy system, proces i narzędzie. Zostajemy w cotygodniowym rytmie, dopóki to nie działa samo. Kraków + Małopolska, Śląsk, Świętokrzyskie. Zdalnie + on-site gdy trzeba.
+isiko — kultura w języku Zulu. Projektujemy i budujemy systemy szyte na miarę dla polskich firm 1-300 osób: panele B2B, ERP, systemy rezerwacji, integracje. Wchodzimy do firm w chaosie, diagnozujemy co nie działa, budujemy dokładnie to, czego brakuje — i zostajemy, dopóki nie działa samo. Kraków. Zdalnie + on-site gdy trzeba.
 
 ## Positioning
-Fractional Dyrektor Operacyjny. Cotygodniowy rytm: 1-2 dni w tygodniu, 6+ miesięcy. Bez etatu, bez długich kontraktów. Łączymy operacje (procesy, ERP, KPI, ludzie) z technologią (AI, automatyzacja). Polskie SME 1-300 osób — budżety są ograniczone, muszą liczyć każdą fakturę. Łączymy doświadczenie operacyjne z budową własnych systemów (bOS, Meport, ERP STAGO). ERP-first, nie AI-first: ERP/workflow to 90% bólu polskiego MŚP (koszty utrzymania idą w tysiące, czasem dziesiątki tysięcy złotych miesięcznie), AI dokładamy gdzie ma sens.
+Systemy szyte na miarę, nie konsulting z PDF-em na końcu. Wyróżniki:
+1. Doświadczenie po stronie kupującego — Karol zarządzał operacyjnie firmami (koordynator → kierownik → operations, 9+ lat), zna problemy magazynu, cenników i procesów od środka, nie z briefu.
+2. Tempo i koszt — systemy w tygodniach, nie kwartałach; pierwszy działający moduł zanim software house skończyłby analizę przedwdrożeniową.
+3. Polskie realia SME — Comarch ERP Optima, Verto, KSeF, GUS, Przelewy24, panele nad istniejącym ERP. Budżety są ograniczone, każda decyzja musi się zwracać.
+AI dokładamy gdzie ma sens, nie gdzie modne. ERP/workflow to 90% bólu polskiego MŚP.
 
 ## Method — three steps
 1. **Diagnoza (koło)** — patrzymy pierwsi. Siedzimy z zespołem, nad dokumentami i procesami. Obserwujemy jak firma naprawdę działa, zanim ktoś powie gdzie boli. Wychodzisz z mapą: co naprawimy w miesiąc, co w kwartał, co zostaje.
-2. **Wdrożenie (łuk)** — łączymy. 1-2 dni w tygodniu, 6-12 miesięcy. Wpisani w rytm zespołu. Każda decyzja udokumentowana po polsku.
-3. **Przekazanie (isiko)** — zostaje system, który działa sam. Instrukcje krok po kroku, zapis decyzji, przeszkolony zespół. Po uruchomieniu odbieramy telefon przez 2-3 miesiące w 24-48h.
+2. **Wdrożenie (łuk)** — budujemy etapami, wpisani w rytm zespołu. Działające funkcje co tydzień, nie „wielki deploy" na końcu. Każda decyzja udokumentowana po polsku. Duży nacisk na UX — system, którego nikt nie używa, jest niczym.
+3. **Przekazanie (isiko)** — zostaje system, który działa sam. Instrukcje krok po kroku, zapis decyzji, przeszkolony zespół. Po uruchomieniu 2-3 miesiące opieki, potem opcja stałego rozwoju.
 
 ## Services
-- ERP + workflow (CRM, wyceny, faktury, KSeF, WMS)
+- Panel B2B dla hurtowni i producentów (gotowy produkt — patrz Pakiety)
+- Systemy na miarę: ERP, rezerwacje, workflow, WMS
+- Integracje: Comarch ERP Optima, Verto, KSeF, GUS, płatności (Przelewy24)
 - Procesy operacyjne, procedury, onboarding zespołów
 - KPI, dashboardy, analizy danych
-- Panele B2B, rezerwacje, e-commerce
 - AI integration (RAG, boty, automatyzacje) — gdzie ma sens, nie gdzie modne
 - Brand, copy, strony
 
 ## Pakiety (pełny opis na https://isiko.pl/pakiety.html)
-Trzy główne ścieżki współpracy. **Wszystkie ceny ustalane indywidualnie po krótkiej rozmowie** — zależne od skali firmy, zakresu i intensywności. Pakiety to punkt startu rozmowy, nie zamknięty cennik.
+Cztery główne ścieżki współpracy. **Wszystkie ceny ustalane indywidualnie po krótkiej rozmowie** — zależne od skali firmy i zakresu. Pakiety to punkt startu rozmowy, nie zamknięty cennik.
 - **Audyt operacyjny 7 dni** — wejście. 7 dni (3 dni on-site + 4 dni remote). Output: mapa procesu, lista 5-10 strat, 3 szybkie poprawki, plan 30-60-90, rekomendacja kierunku (AI vs ERP vs procesy).
-- **CTO/COO retainer** — core. 1-2 dni/tydzień, 6+ miesięcy, pilot 4-tygodniowy najpierw. Fractional Dyrektor Operacyjny wpisany w cotygodniowy rytm zespołu.
-- **Szkolenia & AI workshops** — alternative entry. AI Workshop dla zarządu (1 dzień), szkolenie zespołu (1-3 dni), AI Implementation per use case (RAG, bot, automatyzacja). Praktycznie, na realnych przypadkach z firmy.
+- **Panel B2B** — produkt. System zamówień B2B dla hurtowni/producentów: sklep B2B (katalog, koszyk, min. ilości, wielokrotności opakowań), cenniki per kontrahent (indywidualne ceny, serie, rabaty ilościowe), panel admina, analizy sprzedaży dla handlowców, branding klienta ustawiany z panelu. Działa samodzielnie bez ERP albo z integracją (Comarch Optima — produkcyjnie u klienta; Verto — pierwsze wdrożenie). Wdrożenie 2-4 tygodnie. Demo na rozmowie.
+- **System na miarę** — core. ERP, rezerwacje, workflow, integracje projektowane pod konkretną firmę. Diagnoza → budowa etapami → instrukcje po polsku → opieka po uruchomieniu. Zakres i wycena po diagnozie.
+- **Szkolenia & AI workshops** — dodatek. AI Workshop dla zarządu (1 dzień), szkolenie zespołu (1-3 dni), AI Implementation per use case (RAG, bot, automatyzacja). Praktycznie, na realnych przypadkach z firmy.
 
 Pozostałe usługi cytowane indywidualnie:
+- Stała współpraca operacyjno-technologiczna — przy zespole (1-2 dni/tydz)
 - Advisory retainer (4-8h/mc)
 - Integracje / wtyczki AI do istniejącego systemu (per use case)
 - Process design + dokumentacja (2-4 msc)
@@ -37,34 +44,35 @@ Faktura VAT, rozliczenie miesięczne, umowa ramowa.
 - **bOS** (github.com/zmrlk/bOS) — Wieloagentowy system w Claude Code. 19 agentów, 79+ skilli. Codziennie używany.
 - **Meport** (meport.app) — Przenośna warstwa personalizacji dla 20+ narzędzi AI. CLI, desktop, MCP server. MIT.
 
-## Portfolio (6 production systems)
-- VAVO Group (vavogroup.pl) — holding retail, 130 oddziałów, ~300 pracowników. Karol = Dyrektor Operacyjny od 2024 (wszedł gdy holding miał 37 sklepów). Procedury, Discord, SharePoint, Power BI, VRS, magazyn (WMS, przeniesienie, redukcja kosztów). Case study: https://isiko.pl/case-study/vavo.html
+## Portfolio (7 production systems)
 - STAGO (stago.com.pl) — ERP 21 modułów: CRM, leady, wyceny, faktury, KSeF. Kontenery i hale stalowe.
+- Panel B2B — hurtownia B2B (klient anonimowy): sklep B2B, cenniki per kontrahent, serie produktów, rabaty ilościowe, analizy sprzedaży. Integracja Comarch ERP Optima produkcyjnie; tryb samodzielny bez ERP dostępny jako produkt.
+- VAVO Group (vavogroup.pl) — holding retail, 130 oddziałów, ~300 pracowników. Karol = Dyrektor Operacyjny od 2024 (wszedł gdy holding miał 37 sklepów). Procedury, Discord, SharePoint, Power BI, VRS, magazyn. Case study: https://isiko.pl/case-study/vavo.html
 - Sieć detaliczna 130 oddziałów — VRS (Vape Retail System): procedury operacyjne, grafiki, KPI per-oddział, migracja Supabase → Postgres + Keycloak + S3, ~300 pracowników.
 - Wolny Namiot (wolnynamiot.pl) — brand + strona + SEO od zera, 6 tygodni. Wynajem namiotów imprezowych.
 - Dzikie Wiosło (dzikiewioslo.pl) — booking + płatności + regulaminy. Firma kajakarska sezonowa.
 - Splendid Fleet (splendidfleet.pl) — procesy, procedury, arkusze, analizy. Wypożyczalnia samochodów.
 
 ## Geografia
-Główny obszar: **Kraków** (baza), **Małopolska**, **Śląsk** (Katowice), **Świętokrzyskie** (Kielce). Tryb: zdalnie + on-site gdy trzeba. Zdalnie cała Polska, plus international (international clients via cal.eu/isiko/30min booking).
+Baza: **Kraków**. Tryb: zdalnie + on-site gdy trzeba. Zdalnie cała Polska, plus international (international clients via cal.eu/isiko/30min booking).
 
 ## Search keywords (frazy pod które pozycjonuje się isiko)
-Główne: dyrektor operacyjny online, dyrektor operacyjny Kraków, dyrektor technologiczny outsourcing, fractional CTO Kraków, fractional COO Małopolska, kierownik IT zdalnie, wdrażanie AI w firmie, szkolenia AI dla firm, ChatGPT dla zarządu szkolenie, Claude AI dla biznesu, optymalizacja procesów biznesowych, audyt operacyjny firmy, AI workshop Kraków, konsulting technologiczny Polska.
+Główne: panel B2B dla hurtowni, system zamówień B2B, platforma B2B dla producenta, oprogramowanie na miarę Kraków, system ERP dla małej firmy, integracja Comarch Optima, integracja KSeF, system rezerwacji dla firmy, aplikacje webowe dla firm, automatyzacja procesów biznesowych, audyt operacyjny firmy, wdrażanie AI w firmie, szkolenia AI dla firm, konsulting technologiczny Polska.
 
 ## Founder
-Karol Zamarlik — Founder. Fractional CTO/COO. **9+ lat zarządzania od 2017.**
+Karol Zamarlik — Founder. Projektuje i buduje systemy dla firm. **9+ lat zarządzania od 2017.**
 - 2017: pierwsze zespoły, projekty operacyjne
 - 2019: koordynator zespołu 40 osób (Splendid Fleet)
 - 2021: kierownik (CAR NET, premium car rental)
 - 2024: wchodzi do VAVO jako kierownik regionalny (gdy grupa miała 37 sklepów). Trzy awanse w dwanaście miesięcy — dziś Dyrektor Operacyjny sieci 130 oddziałów.
-Łączy korporację i indie development. Był po stronie klienta — nie jako konsultant, jako ten, kto odpowiada przed zarządem.
+Łączy korporację i indie development. Był po stronie klienta — nie jako konsultant, jako ten, kto odpowiada przed zarządem. Dlatego systemy isiko rozwiązują problemy operacyjne, nie tylko techniczne.
 
 ## Contact
 - Email: karol@isiko.pl
 - Phone: +48 690 767 285
 - Location: Kraków, Poland
 - Response: w 24h
-- Cooperation: pilot 4-tyg → kontrakt 6-12 miesięcy
+- Cooperation: diagnoza → wdrożenie → opieka po uruchomieniu
 
 ## Tagline
 „wiemy co wam dolega." — isiko means „culture/tradition" in Zulu. What stays when the project ends.

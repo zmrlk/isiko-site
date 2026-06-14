@@ -62,6 +62,7 @@
   const prefersReducedMotion =
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isMobile = window.matchMedia('(max-width: 900px)').matches;
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   const hasGSAP = typeof gsap !== 'undefined';
 
   // ════════════════════════════════════════════════════
@@ -163,6 +164,47 @@
   }
 
   // ════════════════════════════════════════════════════
+  // 1b · SEC-KICKER SCRAMBLE/DECODE on slide enter (~600ms)
+  //      hooks into updateActive() slide-change detection
+  // ════════════════════════════════════════════════════
+  const SCRAMBLE_CHARS = '▓▒░<>/\\|=+*-_';
+  const SCRAMBLE_MS = 600;
+  const scrambleState = new WeakMap();
+
+  function scrambleKickers(slideEl) {
+    if (prefersReducedMotion || !slideEl) return;
+    $$('.sec-kicker', slideEl).forEach(el => {
+      // remember the original copy once — NEVER altered, always restored
+      if (!el.dataset.scrambleText) el.dataset.scrambleText = el.textContent;
+      const original = el.dataset.scrambleText;
+      const prev = scrambleState.get(el);
+      if (prev) cancelAnimationFrame(prev.raf);
+      const start = performance.now();
+      const state = { raf: 0 };
+      scrambleState.set(el, state);
+      const tick = (now) => {
+        const t = clamp((now - start) / SCRAMBLE_MS, 0, 1);
+        const reveal = Math.floor(t * original.length);
+        let out = '';
+        for (let i = 0; i < original.length; i++) {
+          const ch = original[i];
+          out += (i < reveal || ch === ' ' || ch === '·')
+            ? ch
+            : SCRAMBLE_CHARS[(Math.random() * SCRAMBLE_CHARS.length) | 0];
+        }
+        el.textContent = out;
+        if (t < 1) {
+          state.raf = requestAnimationFrame(tick);
+        } else {
+          el.textContent = original;
+          scrambleState.delete(el);
+        }
+      };
+      state.raf = requestAnimationFrame(tick);
+    });
+  }
+
+  // ════════════════════════════════════════════════════
   // 2 · SLIDE NAVIGATION (vertical scroll)
   // ════════════════════════════════════════════════════
   const slidesWrap = $('#slides');
@@ -194,6 +236,7 @@
       currentSlide = idx;
       dots.forEach((d, i) => d.classList.toggle('active', i === idx));
       if (idx > 0) hint?.classList.add('hidden');
+      scrambleKickers(slides[idx]);
     }
     if (progressBar) {
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -504,6 +547,56 @@
       cookiesEl.classList.remove('visible');
       setTimeout(() => { cookiesEl.hidden = true; }, 400);
     });
+  }
+
+  // ════════════════════════════════════════════════════
+  // 12 · MAGNETIC HOVER · .btn-primary (max ~4px, spring back)
+  //      desktop fine-pointer only, reduced-motion guarded
+  // ════════════════════════════════════════════════════
+  if (hasGSAP && !prefersReducedMotion && finePointer) {
+    const MAG_MAX = 4;
+    $$('.btn-primary').forEach(btn => {
+      btn.classList.add('is-magnetic'); // CSS: GSAP owns transform from here
+      btn.addEventListener('mousemove', (e) => {
+        const r = btn.getBoundingClientRect();
+        const dx = clamp((e.clientX - (r.left + r.width / 2)) / (r.width / 2), -1, 1);
+        const dy = clamp((e.clientY - (r.top + r.height / 2)) / (r.height / 2), -1, 1);
+        gsap.to(btn, {
+          x: dx * MAG_MAX,
+          y: dy * MAG_MAX,
+          duration: 0.3,
+          ease: 'power2.out',
+          overwrite: 'auto'
+        });
+      });
+      btn.addEventListener('mouseleave', () => {
+        gsap.to(btn, {
+          x: 0,
+          y: 0,
+          duration: 0.7,
+          ease: 'elastic.out(1, 0.45)',
+          overwrite: 'auto'
+        });
+      });
+    });
+  }
+
+  // ════════════════════════════════════════════════════
+  // 13 · HERO LOGO PARALLAX · few px behind cursor
+  //      targets #hero-logo (svg), NOT the wrap (idle-pulse owns it)
+  // ════════════════════════════════════════════════════
+  const heroSlide = $('.slide-hero');
+  if (hasGSAP && !prefersReducedMotion && finePointer && !isMobile && heroSlide && logoFull) {
+    const PARALLAX_MAX = 6;
+    const plx = gsap.quickTo(logoFull, 'x', { duration: 0.6, ease: 'power3.out' });
+    const ply = gsap.quickTo(logoFull, 'y', { duration: 0.6, ease: 'power3.out' });
+    heroSlide.addEventListener('mousemove', (e) => {
+      const nx = (e.clientX / window.innerWidth) * 2 - 1;
+      const ny = (e.clientY / window.innerHeight) * 2 - 1;
+      plx(nx * PARALLAX_MAX);
+      ply(ny * PARALLAX_MAX);
+    });
+    heroSlide.addEventListener('mouseleave', () => { plx(0); ply(0); });
   }
 
   // ════════════════════════════════════════════════════
