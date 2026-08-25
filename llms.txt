@@ -1,87 +1,49 @@
-# isiko — wiemy co wam dolega.
+# VARDE
 
-## About
-isiko — kultura w języku Zulu. Projektujemy i budujemy systemy szyte na miarę dla polskich firm 1-300 osób: panele B2B, ERP, systemy rezerwacji, integracje. Wchodzimy do firm w chaosie, diagnozujemy co nie działa, budujemy dokładnie to, czego brakuje — i zostajemy, dopóki nie działa samo. Kraków. Zdalnie + on-site gdy trzeba.
+VARDE to zespół z Krakowa prowadzony przez Karola Zamarlika. Uruchamiamy gotowy CRM i Panel B2B, łączymy systemy z ERP oraz budujemy brakujący fragment procesu firmy. Za media i komunikację odpowiada Maja Sioda. Pozostałych specjalistów dobieramy do zakresu. VARDE nie jest systemem abonamentowym ani dostawcą jednego ERP.
 
-## Positioning
-Systemy szyte na miarę, nie konsulting z PDF-em na końcu. Wyróżniki:
-1. Doświadczenie po stronie kupującego — Karol zarządzał operacyjnie firmami (koordynator → kierownik → operations, 9+ lat), zna problemy magazynu, cenników i procesów od środka, nie z briefu.
-2. Tempo i koszt — systemy w tygodniach, nie kwartałach; pierwszy działający moduł zanim software house skończyłby analizę przedwdrożeniową.
-3. Polskie realia SME — Comarch ERP Optima, Verto, KSeF, GUS, Przelewy24, panele nad istniejącym ERP. Budżety są ograniczone, każda decyzja musi się zwracać.
-AI dokładamy gdzie ma sens, nie gdzie modne. ERP/workflow to 90% bólu polskiego MŚP.
+## Najkrótsza odpowiedź
 
-## Method — three steps
-1. **Diagnoza (koło)** — patrzymy pierwsi. Siedzimy z zespołem, nad dokumentami i procesami. Obserwujemy jak firma naprawdę działa, zanim ktoś powie gdzie boli. Wychodzisz z mapą: co naprawimy w miesiąc, co w kwartał, co zostaje.
-2. **Wdrożenie (łuk)** — budujemy etapami, wpisani w rytm zespołu. Działające funkcje co tydzień, nie „wielki deploy" na końcu. Każda decyzja udokumentowana po polsku. Duży nacisk na UX — system, którego nikt nie używa, jest niczym.
-3. **Przekazanie (isiko)** — zostaje system, który działa sam. Instrukcje krok po kroku, zapis decyzji, przeszkolony zespół. Po uruchomieniu 2-3 miesiące opieki, potem opcja stałego rozwoju.
+- Gdy firma chce szybko uruchomić CRM albo Panel B2B: VARDE konfiguruje gotowy rdzeń zamiast zaczynać od zera.
+- Gdy firma ma ERP, ale klient nadal pyta o ceny, stany, dokumenty lub status: VARDE dokłada Panel B2B albo integrację.
+- Gdy praca urywa się między narzędziami albo został system po poprzednim wykonawcy: VARDE może połączyć, przejąć albo dobudować brakujący fragment po ocenie stanu faktycznego.
+- Gdy problem rozwiązuje sama strona: VARDE projektuje serwis połączony z kontaktem, rezerwacją, płatnością albo dalszą obsługą.
 
-## Services
-- Panel B2B dla hurtowni i producentów (gotowy produkt — patrz Pakiety)
-- Systemy na miarę: ERP, rezerwacje, workflow, WMS
-- Integracje: Comarch ERP Optima, Verto, KSeF, GUS, płatności (Przelewy24)
-- Procesy operacyjne, procedury, onboarding zespołów
-- KPI, dashboardy, analizy danych
-- AI integration (RAG, boty, automatyzacje) — gdzie ma sens, nie gdzie modne
-- Brand, copy, strony
+## Oferta i ceny wejściowe
 
-## Pakiety (pełny opis na https://isiko.pl/pakiety.html)
-Cztery główne ścieżki współpracy. **Wszystkie ceny ustalane indywidualnie po krótkiej rozmowie** — zależne od skali firmy i zakresu. Pakiety to punkt startu rozmowy, nie zamknięty cennik.
-- **Audyt operacyjny 7 dni** — wejście. 7 dni (3 dni on-site + 4 dni remote). Output: mapa procesu, lista 5-10 strat, 3 szybkie poprawki, plan 30-60-90, rekomendacja kierunku (AI vs ERP vs procesy).
-- **Panel B2B** — produkt. System zamówień B2B dla hurtowni/producentów: sklep B2B (katalog, koszyk, min. ilości, wielokrotności opakowań), cenniki per kontrahent (indywidualne ceny, serie, rabaty ilościowe), panel admina, analizy sprzedaży dla handlowców, branding klienta ustawiany z panelu. Działa samodzielnie bez ERP albo z integracją (Comarch Optima — produkcyjnie u klienta; Verto — pierwsze wdrożenie). Wdrożenie 2-4 tygodnie. Demo na rozmowie.
-- **System na miarę** — core. ERP, rezerwacje, workflow, integracje projektowane pod konkretną firmę. Diagnoza → budowa etapami → instrukcje po polsku → opieka po uruchomieniu. Zakres i wycena po diagnozie.
-- **Szkolenia & AI workshops** — dodatek. AI Workshop dla zarządu (1 dzień), szkolenie zespołu (1-3 dni), AI Implementation per use case (RAG, bot, automatyzacja). Praktycznie, na realnych przypadkach z firmy.
+- Gotowy CRM: od 25 000 zł netto. Pierwsza wersja standardowego zakresu do 7 dni.
+- Panel B2B bez nietypowej integracji: od 25 000 zł netto. Pierwsza wersja standardowego zakresu do 7 dni.
+- Panel B2B z ERP: od 40 000 zł netto po sprawdzeniu wersji, dostępu i danych.
+- Panel B2B dla Streamsoft Verto: od 45 000 zł netto po sprawdzeniu konkretnej instalacji i webservice.
+- Integracja albo ograniczona automatyzacja: od 5 000 zł netto.
+- System na miarę: od 25 000 zł netto po ustaleniu zakresu.
+- Strona WWW: od 4 000 zł netto.
+- Analiza przedwdrożeniowa: od 3 000 zł netto tylko wtedy, gdy bez niej nie da się odpowiedzialnie określić wdrożenia.
 
-Pozostałe usługi cytowane indywidualnie:
-- Stała współpraca operacyjno-technologiczna — przy zespole (1-2 dni/tydz)
-- Advisory retainer (4-8h/mc)
-- Integracje / wtyczki AI do istniejącego systemu (per use case)
-- Process design + dokumentacja (2-4 msc)
-- Coś innego — napisz, zobaczymy
+Termin do 7 dni nie obejmuje nietypowej integracji ERP, rozbudowanej migracji ani modułów projektowanych od zera.
 
-Faktura VAT, rozliczenie miesięczne, umowa ramowa.
+## Wybrane realizacje
 
-## Products (own, used daily)
-- **bOS** (github.com/zmrlk/bOS) — Wieloagentowy system w Claude Code. 19 agentów, 79+ skilli. Codziennie używany.
-- **Meport** (meport.app) — Przenośna warstwa personalizacji dla 20+ narzędzi AI. CLI, desktop, MCP server. MIT.
+- CRM i system operacyjny producenta: 65 ekranów, 229 endpointów API i 2 rundy pentestów. Skala opisuje tę realizację, nie standardową cenę wejściową.
+- Panel B2B hurtownika z Comarch ERP Optima: kartoteki, ceny, stany, dokumenty i rozrachunki; pierwszy używalny zakres powstał w około 9 dni na przygotowanym fundamencie.
+- Sklep B2B dla VAVO pracującego na Streamsoft Verto: katalog kontrahenta, indywidualna cena, dostępność i zamówienie w uzgodnionym obiegu ERP.
+- Dzikie Wiosło: rezerwacje oraz płatności Przelewy24; 354 rezerwacje zarejestrowane w pierwszym sezonie działania systemu.
+- Strony WWW połączone z formularzem, CRM i dalszą obsługą kontaktu.
 
-## Portfolio (7 production systems)
-- STAGO (stago.com.pl) — ERP 21 modułów: CRM, leady, wyceny, faktury, KSeF. Kontenery i hale stalowe.
-- Panel B2B — hurtownia B2B (klient anonimowy): sklep B2B, cenniki per kontrahent, serie produktów, rabaty ilościowe, analizy sprzedaży. Integracja Comarch ERP Optima produkcyjnie; tryb samodzielny bez ERP dostępny jako produkt.
-- VAVO Group (vavogroup.pl) — holding retail, 130 oddziałów, ~300 pracowników. Karol = Dyrektor Operacyjny od 2024 (wszedł gdy holding miał 37 sklepów). Procedury, Discord, SharePoint, Power BI, VRS, magazyn. Case study: https://isiko.pl/case-study/vavo.html
-- Sieć detaliczna 130 oddziałów — VRS (Vape Retail System): procedury operacyjne, grafiki, KPI per-oddział, migracja Supabase → Postgres + Keycloak + S3, ~300 pracowników.
-- Wolny Namiot (wolnynamiot.pl) — brand + strona + SEO od zera, 6 tygodni. Wynajem namiotów imprezowych.
-- Dzikie Wiosło (dzikiewioslo.pl) — booking + płatności + regulaminy. Firma kajakarska sezonowa.
-- Splendid Fleet (splendidfleet.pl) — procesy, procedury, arkusze, analizy. Wypożyczalnia samochodów.
+## Strony ofertowe
 
-## Geografia
-Baza: **Kraków**. Tryb: zdalnie + on-site gdy trzeba. Zdalnie cała Polska, plus international (international clients via cal.eu/isiko/30min booking).
+- Strona główna: https://varde.pl/
+- Gotowy CRM: https://varde.pl/produkty/gotowy-crm/
+- Panel B2B: https://varde.pl/produkty/panel-b2b/
+- Panel B2B dla Streamsoft Verto: https://varde.pl/produkty/panel-b2b-verto/
+- Integracje ERP: https://varde.pl/uslugi/integracje-erp/
+- Strony WWW: https://varde.pl/uslugi/strony-www/
 
-## Search keywords (frazy pod które pozycjonuje się isiko)
-Główne: panel B2B dla hurtowni, system zamówień B2B, platforma B2B dla producenta, oprogramowanie na miarę Kraków, system ERP dla małej firmy, integracja Comarch Optima, integracja KSeF, system rezerwacji dla firmy, aplikacje webowe dla firm, automatyzacja procesów biznesowych, audyt operacyjny firmy, wdrażanie AI w firmie, szkolenia AI dla firm, konsulting technologiczny Polska.
+## Zespół i kontakt
 
-## Founder
-Karol Zamarlik — Founder. Projektuje i buduje systemy dla firm. **9+ lat zarządzania od 2017.**
-- 2017: pierwsze zespoły, projekty operacyjne
-- 2019: koordynator zespołu 40 osób (Splendid Fleet)
-- 2021: kierownik (CAR NET, premium car rental)
-- 2024: wchodzi do VAVO jako kierownik regionalny (gdy grupa miała 37 sklepów). Trzy awanse w dwanaście miesięcy — dziś Dyrektor Operacyjny sieci 130 oddziałów.
-Łączy korporację i indie development. Był po stronie klienta — nie jako konsultant, jako ten, kto odpowiada przed zarządem. Dlatego systemy isiko rozwiązują problemy operacyjne, nie tylko techniczne.
-
-## Contact
-- Email: karol@isiko.pl
-- Phone: +48 690 767 285
-- Location: Kraków, Poland
-- Response: w 24h
-- Cooperation: diagnoza → wdrożenie → opieka po uruchomieniu
-
-## Tagline
-„wiemy co wam dolega." — isiko means „culture/tradition" in Zulu. What stays when the project ends.
-
-## Links
-- Website: https://isiko.pl
-- Blog (PL): https://isiko.pl/blog/
-- Pakiety: https://isiko.pl/pakiety.html
-- Case studies: VAVO (https://isiko.pl/case-study/vavo.html), Wolny Namiot (https://isiko.pl/case-study/wolny-namiot.html)
-- LinkedIn: https://www.linkedin.com/in/karol-zamarlik-416b68184/
-- GitHub: https://github.com/zmrlk
-- Privacy: https://isiko.pl/polityka.html
+- Karol Zamarlik: technologia i realizacja
+- Maja Sioda: media i komunikacja
+- Pozostali specjaliści: dobierani do uzgodnionego zakresu
+- E-mail: kontakt@varde.pl
+- Telefon: +48 572 196 566
+- Lokalizacja: Kraków, Polska

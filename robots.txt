@@ -1,26 +1,19 @@
-# isiko.pl · systemy szyte na miarę · panele B2B · ERP · Kraków
-# Crawl all · zero tracking · AI bots welcome
-
 User-agent: *
 Allow: /
 
-Sitemap: https://isiko.pl/sitemap.xml
-
-# AI crawlers — explicit allow (LLMs, indexing, research)
-User-agent: GPTBot
+User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: CCBot
-Allow: /
+Sitemap: https://varde.pl/sitemap.xml
