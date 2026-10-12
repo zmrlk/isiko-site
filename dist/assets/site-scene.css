@@ -1,0 +1,271 @@
+/* Shared editorial shell: compact sections, warm paper, blue working surfaces. */
+body.scene-page{--paper:#f5f3ed;--ink:#172338;--blue:#2447a5;--muted:#536278;--line:#c4cede;--gutter:32px;background:var(--paper);color:var(--ink);font-size:16px}
+body.scene-page:before{display:none}
+.scene-page .solution{color:var(--ink)}
+.scene-page .solution .eyebrow,.scene-page .solution em{color:var(--blue)}
+.scene-page .eyebrow{color:var(--blue)!important}
+.scene-page :is(.contact,.labs-work,.crm-price-grid) .eyebrow{color:#adc4ff!important}
+.scene-page.home h2 em{color:var(--blue)}
+.scene-page .solution :is(figcaption,summary,caption,td,th),.scene-page .crm-comparison thead span,.scene-page .crm-flow li>span,.scene-page .feature-count,.scene-page .matrix-route li>span{color:inherit}
+.scene-page .page-contents summary:after{color:var(--blue)}
+.scene-page .wrap{width:calc(100% - var(--gutter)*2);max-width:1760px;margin-inline:auto;padding-inline:0}
+.scene-page .header{position:relative;background:var(--paper);color:var(--ink);padding:24px var(--gutter);gap:24px;min-height:80px}
+.scene-page .header nav,.scene-page .header .brand{color:var(--ink)}
+.scene-page .header .brand{color:var(--blue)}
+.scene-page .header nav{gap:24px}
+.scene-page .page-hero,.scene-page .solution .solution-hero{padding-block:48px 32px}
+.scene-page .page-hero h1,.scene-page .solution .solution-hero h1{font-size:clamp(40px,4.6vw,64px);line-height:1.03;letter-spacing:-.055em;color:var(--ink)}
+.scene-page .page-lead,.scene-page .page-aside a,.scene-page .prose p,.scene-page .prose li,.scene-page .prose figcaption{color:var(--muted)}
+.scene-page .page-body{grid-template-columns:240px minmax(0,1fr);gap:64px;padding-bottom:64px}
+.scene-page .prose{min-width:0}
+.scene-page .prose :is(p,ul,ol){max-width:72ch}
+.scene-page .prose :is(figure,table){max-width:none}
+.scene-page .page-aside{position:sticky;top:24px;align-self:start}
+.scene-page .prose h2{margin-top:32px;color:var(--ink)}
+.scene-page .prose .note{background:#e4ebf4;border:0;border-radius:16px;color:var(--ink)}
+.scene-page .solution .solution-section{padding-block:48px;border-color:var(--line)}
+.scene-page .solution .solution-heading{margin-bottom:32px}
+.scene-page .solution h2{font-size:clamp(30px,3.3vw,44px);line-height:1.08;letter-spacing:-.045em;color:inherit}
+.scene-page .solution :is(p,li,dd,h3,h4,small){color:inherit}
+.scene-page .solution .solution-intro{margin-top:24px;gap:32px}
+.scene-page .solution .solution-columns{gap:32px}
+.scene-page .solution .solution-opening{padding-block:48px;gap:32px}
+.scene-page .solution .solution-opening>.button,.scene-page .button{background:var(--ink);color:var(--paper);border-radius:999px}
+.scene-page .solution .solution-screen,.scene-page .hero-proof{border-radius:16px;overflow:hidden}
+.scene-page .solution-route,.scene-page .labs-paths{margin-top:32px;gap:24px}
+.scene-page .labs-paths>a,.scene-page .matrix-route,.scene-page .matrix-ownership dl>div,.scene-page .labs-steps details,.scene-page .labs-brands>div{border-color:var(--line)}
+.scene-page .matrix-studio,.scene-page .labs-work,.scene-page .crm-price-grid,.scene-page .crm-proof{background:#13223a;color:#fffdf8;border-radius:16px;padding:24px}
+.scene-page .matrix-studio{background:#e4ebf4;color:var(--ink)}
+.scene-page .solution .matrix-studio :is(p,h3,small,span),.scene-page .solution .labs-work :is(p,h3,small,span){color:inherit}
+.scene-page .matrix-method-note,.scene-page .crm-scope-note,.scene-page .demo-note{background:#e4ebf4;color:var(--ink);padding:24px;border-radius:16px}
+.scene-page .matrix-heading,.scene-page .matrix-ownership{margin-bottom:32px;gap:32px}
+.scene-page .solution .labs-work strong{font-size:clamp(30px,3.3vw,44px)}
+.scene-page .contact{margin:0;padding:48px var(--gutter);background:var(--blue);color:#fffdf8}
+.scene-page .contact .wrap{width:100%;max-width:1760px}
+.scene-page .contact .contact-top{background:transparent;gap:48px;align-items:start}
+.scene-page .contact :is(h2,p,a,.section-label){color:inherit}
+.scene-page .contact h2{font-size:clamp(40px,5.2vw,72px);line-height:1.04;letter-spacing:-.05em}
+.scene-page .contact .contact-wordmark{font-size:clamp(112px,19vw,256px);margin-top:32px;color:#fffdf8}
+.scene-page .contact .contact-links{margin-top:24px}
+.scene-page .isiko-contact{margin-top:24px}
+.scene-page .isiko-contact input,.scene-page .isiko-contact textarea{border-radius:12px}
+.scene-page .isiko-contact button{border-radius:999px;background:#fffdf8;color:var(--blue);border:0}
+.scene-page .footer{padding:24px var(--gutter);background:var(--paper);color:var(--ink);border-color:var(--line)}
+.scene-page :is(a,button,summary):focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.scene-page .contact :is(a,button,input,textarea):focus-visible{outline-color:#fff}
+.scene-page .cookie-panel{color:var(--ink)}
+.scene-page .section-label:before{background:currentColor}
+.scene-page.home .hero{min-height:0;height:auto;max-height:none;background:var(--paper);color:var(--ink);padding:32px var(--gutter) 24px;display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center}
+.scene-page.home .hero-anchor{position:relative;left:auto;top:auto;transform:none;width:100%;height:380px;grid-column:2;grid-row:1}
+.scene-page.home .hero-copy{position:relative;inset:auto;display:block;grid-column:1;grid-row:1;max-width:720px}
+.scene-page.home .hero h1{font-size:clamp(40px,4.6vw,64px)}
+.scene-page.home .hero :is(p,.eyebrow,.hero-side),.scene-page.home .chapter-copy>p:not(.eyebrow){color:var(--ink)}
+.scene-page.home .hero-bottom{position:static;grid-column:1/-1;color:var(--ink)}
+.scene-page.home #motion-toggle{color:var(--ink);border-color:var(--line)}
+.scene-page.home .hero-actions .button.outline{color:var(--ink);border-color:var(--line);background:transparent}
+.scene-page.home .story-chapter{padding-block:48px;gap:32px}
+.scene-page.home .motion-stage{height:360px}
+.scene-page.home .chapter-copy h2{color:var(--ink)}
+.scene-page.home .chapter-related p,.scene-page.home .chapter-evidence a{color:var(--muted)}
+.scene-page.home :is(.portfolio,.offer,.team,.ai-examples){padding-block:48px;color:var(--ink)}
+.scene-page.home :is(.ai-workbench,.chapter-showcase){background:#13223a;color:#fffdf8;border-radius:16px;padding:24px}
+.scene-page.home .chapter-showcase :is(h2,h3,p,a){color:inherit}
+@media(max-width:1023px){body.scene-page{--gutter:24px}.scene-page .header{gap:16px}.scene-page .header nav{gap:16px}.scene-page .page-body{gap:32px}.scene-page .contact .contact-top{gap:32px}}
+@media(max-width:767px){body.scene-page{--gutter:16px}.scene-page .header{padding:16px;min-height:72px}.scene-page .page-hero,.scene-page .solution .solution-hero{padding-block:32px 24px}.scene-page .page-hero h1,.scene-page .solution .solution-hero h1{font-size:clamp(34px,9.5vw,40px)}.scene-page .page-aside{position:static}.scene-page .page-body{padding-bottom:32px}.scene-page .solution .solution-section{padding-block:32px}.scene-page .solution .solution-heading{margin-bottom:24px}.scene-page .solution .solution-intro,.scene-page .solution .solution-columns,.scene-page .matrix-heading,.scene-page .matrix-ownership{gap:24px}.scene-page .solution h2{font-size:30px}.scene-page .contact{padding-block:32px}.scene-page .contact .contact-wordmark{margin-top:24px}.scene-page .labs-paths{gap:16px}.scene-page .labs-paths strong{font-size:30px}.scene-page .matrix-studio,.scene-page .labs-work,.scene-page .crm-price-grid,.scene-page .crm-proof{padding:16px}.scene-page .solution .solution-opening{padding-block:32px}.scene-page.home .hero{grid-template-columns:1fr;padding-top:24px}.scene-page.home .hero-copy{grid-column:1;grid-row:1}.scene-page.home .hero-anchor{grid-column:1;grid-row:2;height:248px;width:248px;margin:auto}.scene-page.home .hero h1{font-size:44px}.scene-page.home .hero-side{margin-top:24px}.scene-page.home .hero-bottom{grid-row:3}.scene-page.home .story-chapter{padding-block:32px;gap:24px}.scene-page.home .motion-stage{height:288px}.scene-page.home :is(.portfolio,.offer,.team,.ai-examples){padding-block:32px}}
+
+/* Sales pages share one restrained type scale, including the Matrix workbench. */
+.scene-page .solution :is(p,li,dd){font-size:16px;line-height:1.6}
+.scene-page .solution .solution-intro>p{font-size:22px;line-height:1.35}
+.scene-page .solution h3{font-size:24px;line-height:1.2;letter-spacing:-.025em}
+.scene-page .matrix-heading>div:last-child{padding-top:0}
+.scene-page .matrix-heading h2{font-size:44px}
+.scene-page .labs-paths strong{font-size:32px}
+.scene-page .matrix-question h3,.scene-page .matrix-ownership h3{font-size:24px}
+.scene-page .solution .matrix-variants p{font-size:18px;line-height:1.45}
+.scene-page .matrix-workbench{padding-inline:8px}
+.scene-page .matrix-studio-heading{padding:8px 8px 16px}
+.scene-page .solution .matrix-studio-note{font-size:12px;padding:16px 8px 0}
+.scene-page .scene-cta{margin:24px 0}
+.scene-page .scene-details{border-block:1px solid var(--line);padding:16px 0;margin-top:24px}
+.scene-page .scene-details>summary{font-size:16px;font-weight:600;cursor:pointer;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:16px;list-style:none}
+.scene-page .scene-details>summary::-webkit-details-marker{display:none}
+.scene-page .scene-details>summary:after{content:'+';font-size:24px}
+.scene-page .scene-details[open]>summary:after{content:'−'}
+.scene-page .scene-details .matrix-ownership{margin-top:24px}
+.scene-page .scene-details .matrix-method-note{background:none;padding:16px 0;border-radius:0}
+.scene-page.wp h1,.scene-page .campaign-hero h1{font-size:clamp(40px,4.6vw,64px);line-height:1.06}
+@media(max-width:767px){.scene-page .solution :is(p,li,dd){font-size:15px}.scene-page .solution .solution-intro>p{font-size:20px}.scene-page .solution h3{font-size:22px}.scene-page .matrix-heading h2{font-size:32px}.scene-page .labs-paths strong{font-size:28px}.scene-page .matrix-question h3{font-size:23px}.scene-page .solution .matrix-variants p{font-size:17px}.scene-page .matrix-studio{margin-inline:0}.scene-page.wp h1,.scene-page .campaign-hero h1{font-size:38px}.scene-page .matrix-perspectives>div{gap:12px}.scene-page .matrix-result{padding:16px;margin-inline:0}}
+
+.scene-page .solution .solution-heading>p,.scene-page .page-lead{font-size:18px;line-height:1.6}
+@media(max-width:767px){.scene-page .solution .solution-heading>p,.scene-page .page-lead{font-size:16px}.scene-page .contact h2{font-size:36px}}
+
+/* Service pages: readable shared controls, stable counters and an explicit table scroll. */
+.scene-page .cookie-panel .cookie-actions>button:not([data-consent="all"]){background:#fffdf8;color:#172338;border-color:#bdc7d8}
+.scene-page .footer :is(a,button),.scene-page .solution-route a{min-width:44px}
+.scene-page :is(.site-header nav,.site-footer) a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
+.scene-page .breadcrumbs{align-items:center}
+.scene-page .breadcrumbs a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
+.scene-page .solution .crm-comparison thead th{color:#fffdf8}
+@media screen{.scene-page .crm-comparison table{min-width:610px}}
+.scene-page .crm-comparison thead span{white-space:nowrap}
+.scene-page .crm-feature-group .feature-count{flex:none;min-width:2ch;white-space:nowrap}
+.scene-page .crm-scope-note{margin-top:24px}
+.scene-page :is(.matrix-route li>span,[data-ai-tab]>span,.labs-steps summary>span){flex:none;min-width:2ch;white-space:nowrap}
+.scene-page .labs-brands{gap:32px}
+
+/* Keep horizontal tab semantics and full labels on narrow phones. */
+.scene-page .matrix-workbench .ai-choices button:focus-visible{outline-offset:-3px}
+@media(max-width:479px){
+  .scene-page .matrix-workbench .ai-choices{gap:16px;overflow-x:auto;scrollbar-width:thin;scrollbar-color:#2447a5 #c4cede}
+  .scene-page .matrix-workbench .ai-choices button{flex:none;white-space:nowrap;gap:8px;padding:12px 0;min-height:44px}
+  .scene-page .crm-comparison{scrollbar-width:thin;scrollbar-color:#2447a5 #c4cede}
+  .scene-page .crm-comparison caption:before{content:'↔ ';color:#2447a5}
+  .scene-page :is(.ai-choices,.crm-comparison)::-webkit-scrollbar{height:8px}
+  .scene-page :is(.ai-choices,.crm-comparison)::-webkit-scrollbar-thumb{background:#2447a5;border-radius:8px}
+  .scene-page :is(.ai-choices,.crm-comparison)::-webkit-scrollbar-track{background:#c4cede}
+}
+
+@media(min-width:768px) and (max-width:1023px){.scene-page .page-body{grid-template-columns:176px minmax(0,1fr);gap:32px}}
+
+/* Clear next reading steps, between the detailed scope and the contact form. */
+.scene-page .related-content,.scene-page .quality-method{padding-block:48px;border-top:1px solid var(--line)}
+.scene-page .related-content h2,.scene-page .quality-method h2{font-size:30px;line-height:1.2;letter-spacing:-.015em;font-weight:500;margin:0 0 24px}
+.scene-page .related-content nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.scene-page .related-content a{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:64px;border-top:1px solid var(--line);padding-block:16px;font-size:17px;line-height:1.4}
+.scene-page .related-content .arrow-icon{width:24px;height:24px;flex:none}
+.scene-page .quality-method{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:48px}
+.scene-page .quality-method p{max-width:72ch;margin:0;font-size:17px;line-height:1.6}
+@media(max-width:767px){.scene-page .related-content nav,.scene-page .quality-method{grid-template-columns:minmax(0,1fr)}.scene-page .quality-method{gap:0}.scene-page .related-content,.scene-page .quality-method{padding-block:32px}}
+
+/* Subpage QA: readable paper surfaces and the shared 12/15/17/22/30/44 type scale. */
+body.scene-page:not(.home){font-size:15px}
+.scene-page:not(.home) :is(.skip,.header nav a,.page-aside a,.solution-route a,.scene-details>summary){font-size:15px;line-height:1.6}
+.scene-page:not(.home) .solution :is(p,li,dd),.scene-page:not(.home) .prose :is(p,li){font-size:15px;line-height:1.6}
+.scene-page:not(.home) .solution .solution-intro>p{font-size:22px;line-height:1.4}
+.scene-page:not(.home) .solution .solution-heading>p,.scene-page:not(.home) .page-lead{font-size:17px;line-height:1.6}
+.scene-page:not(.home) .solution h2{font-size:44px;line-height:1.12}
+.scene-page:not(.home) .solution h3,.scene-page:not(.home) :is(.matrix-question,.matrix-ownership) h3{font-size:22px;line-height:1.25;letter-spacing:-.01em}
+.scene-page:not(.home) .solution .crm-price-grid h3{font-size:44px;line-height:1.12}
+.scene-page:not(.home) .solution .crm-price-grid small{font-size:15px;line-height:1.6}
+.scene-page:not(.home) .solution :is(.related-content,.quality-method) h2{font-size:30px;line-height:1.2}
+.scene-page:not(.home) .solution .quality-method p{font-size:17px;line-height:1.6}
+.scene-page:not(.home) .solution .matrix-variants p{font-size:17px;line-height:1.4}
+.scene-page:not(.home) .labs-paths strong{font-size:30px;line-height:1.2}
+.scene-page:not(.home) :is(.eyebrow,.footer,.breadcrumbs,.article-link small),.scene-page:not(.home) :is(.solution,.contact) .eyebrow{font-size:12px;line-height:1.45}
+.scene-page:not(.home) .eyebrow{letter-spacing:.08em}
+.scene-page:not(.home) .section-label{font-size:15px;line-height:1.6}
+.scene-page:not(.home) .contact h2{font-size:44px;line-height:1.12}
+.scene-page:not(.home) .contact p{font-size:17px;line-height:1.6}
+.scene-page:not(.home) .contact .contact-links a{font-size:22px;line-height:1.25;min-height:44px;display:inline-flex;align-items:center}
+.scene-page:not(.home) a[href^="tel:"]{white-space:nowrap}
+.scene-page:not(.home) .cookie-panel h2{font-size:22px;line-height:1.25}
+.scene-page:not(.home) .cookie-panel p{font-size:15px;line-height:1.6}
+.scene-page:not(.home) .cookie-actions button{font-size:12px;line-height:1.45}
+.scene-page:not(.home) .solution :is(.solution-columns ul,.solution-columns ol){color:inherit}
+
+/* Full-screen captions are links with a usable touch target, not small text rows. */
+.scene-page:not(.home) .solution .solution-screen figcaption{gap:16px;margin-top:16px;font-size:12px;line-height:1.6;align-items:baseline}
+.scene-page:not(.home) figcaption a{display:inline-flex;align-items:center;min-height:44px;min-width:44px;max-width:100%}
+.scene-page:not(.home) .case-related{margin-top:32px}
+.scene-page:not(.home) .case-related>span:nth-child(2){gap:8px}
+.scene-page:not(.home) .case-related strong{font-size:22px;line-height:1.25}
+.scene-page:not(.home) .case-related>span>span{color:var(--muted);font-size:15px;line-height:1.6}
+
+/* Product screens retain their native aspect ratio and share one caption axis. */
+.scene-page:not(.home) .b2b-devices{grid-template-columns:minmax(0,1fr) minmax(0,25%);align-items:start;gap:32px;margin:48px 0 0}
+.scene-page:not(.home) .b2b-devices :is(.b2b-desktop,.b2b-phone){min-width:0;width:100%;max-width:none;justify-self:start}
+.scene-page:not(.home) .b2b-devices span{color:var(--muted);font-size:12px;line-height:1.45;margin-bottom:16px}
+.scene-page:not(.home) :is(.b2b-devices,.b2b-orders-screen) img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;border:1px solid var(--line);border-radius:16px}
+.scene-page:not(.home) .b2b-devices figcaption{color:var(--muted);font-size:12px;line-height:1.6;margin:0}
+.scene-page:not(.home) .b2b-orders-screen{margin:32px 0 0;min-width:0}
+.scene-page:not(.home) .b2b-orders-screen figcaption{color:var(--muted);font-size:12px;line-height:1.6;margin-top:16px}
+.scene-page:not(.home) .solution .demo-note{font-size:12px!important;margin-top:16px!important;line-height:1.6}
+.scene-page:not(.home) .crm-price-grid+.crm-comparison{margin-top:32px}
+.scene-page:not(.home) .solution-link-grid{gap:32px}
+.scene-page:not(.home) .solution-link-grid>a{padding:32px;border-color:var(--line)}
+.scene-page:not(.home) .article-grid{gap:32px;margin-top:48px}
+.scene-page:not(.home) .article-link{padding-top:24px}
+.scene-page:not(.home) .article-link h3{font-size:30px;line-height:1.2;letter-spacing:-.01em;margin-block:24px}
+.scene-page:not(.home) .article-link p{font-size:15px;line-height:1.6}
+
+/* Reset HTML image heights so the demo products cannot stretch into vertical crops. */
+.scene-page:not(.home) .solution-demo-strip{grid-template-columns:repeat(3,minmax(0,160px)) minmax(0,1fr);gap:16px;padding:24px;margin-top:32px;align-items:center}
+.scene-page:not(.home) .solution-demo-strip img{display:block;width:100%;height:auto;max-height:160px;aspect-ratio:1;object-fit:contain;border-radius:8px}
+.scene-page:not(.home) .solution-demo-strip>span{padding-left:8px;font-size:22px;line-height:1.25;letter-spacing:-.01em}
+.scene-page:not(.home) .solution-demo-strip small{font-size:12px;line-height:1.45;margin-top:16px}
+@media(max-width:767px){
+  .scene-page:not(.home) .solution h2,.scene-page:not(.home) .contact h2{font-size:30px;line-height:1.2}
+  .scene-page:not(.home) .solution .crm-price-grid h3{font-size:30px;line-height:1.2}
+  .scene-page:not(.home) .solution .solution-intro>p{font-size:17px;line-height:1.6}
+  .scene-page:not(.home) .solution .solution-screen figcaption{gap:8px;align-items:stretch}
+  .scene-page:not(.home) .b2b-devices{grid-template-columns:minmax(0,1fr);gap:24px;margin-top:32px}
+  .scene-page:not(.home) .b2b-devices .b2b-phone{max-width:351px}
+  .scene-page:not(.home) .solution-link-grid>a{padding:24px}
+  .scene-page:not(.home) .article-grid{margin-top:32px}
+  .scene-page:not(.home) .solution-demo-strip{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:16px}
+  .scene-page:not(.home) .solution-demo-strip img{max-height:128px}
+  .scene-page:not(.home) .solution-demo-strip>span{grid-column:1/-1;padding:12px 0 0}
+}
+
+/* Detailed product scope remains readable without repeating full-height panels. */
+.scene-page .product-media-details{margin:0;padding:0;border:0}
+.scene-page .product-media-details>summary{gap:24px;padding-block:8px}
+.scene-page .product-media-details>summary h2{font-size:22px;line-height:1.25;letter-spacing:-.01em;margin:0}
+.scene-page .product-media-details[open]>summary{margin-bottom:24px}
+.scene-page .product-media-details .solution-heading{margin-bottom:24px}
+.scene-page .product-media-scope{margin-top:16px;font-size:13px;line-height:1.6;max-width:72ch}
+.scene-page .current-product-media img{height:auto;object-fit:contain}
+.scene-page .product-media-scope+.solution-columns{margin-top:24px}
+.scene-page .solution-columns+.current-product-media{margin-top:32px}
+
+/* This article's short row labels should remain whole on narrow screens. */
+@media(max-width:767px){
+  .scene-page:has(.language-menu a[href$="/wiedza/crm-czy-erp/"]) .prose #s1 table :is(th,td):first-child{min-width:7em;white-space:nowrap;hyphens:none;overflow-wrap:normal;word-break:normal}
+  .scene-page:has(.language-menu a[href$="/realizacje/siec-handlowa/"]) .prose table :is(th,td):first-child{min-width:8em;hyphens:none;overflow-wrap:normal;word-break:normal}
+}
+/* Short translated navigation labels keep the same pointer target. */
+.scene-page .header nav>a{min-width:44px}
+.scene-page .header nav>a{white-space:nowrap}
+@media(max-width:1199px){
+ .scene-page .header nav>a{display:none}
+ .scene-page .header .mobile-nav{display:block}
+ .scene-page .header .mobile-nav summary{min-width:44px}
+ .scene-page .header .mobile-nav>div{top:calc(100% - 8px);z-index:40}
+}
+.scene-page:not(.home) .crm-price-grid{margin-bottom:48px}
+
+/* Subpage contact: the invitation and direct channels lead into one form. */
+.scene-page .contact.contact-panel{padding-block:64px}
+.scene-page .contact-panel .contact-layout{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:48px;align-items:start;max-width:1440px}
+.scene-page .contact-panel .contact-intro{grid-column:span 5;min-width:0}
+.scene-page .contact-panel .contact-form{grid-column:span 7;min-width:0}
+.scene-page .contact.contact-panel h2{font-size:44px;line-height:1.12;letter-spacing:-.02em;font-weight:500;max-width:15ch;margin:0 0 24px;overflow-wrap:normal;hyphens:none;text-wrap:balance}
+.scene-page .contact-panel .contact-intro>p{font-size:17px;line-height:1.6;margin:0;max-width:36ch}
+.scene-page .contact-panel .contact-links{margin-top:32px;gap:8px}
+.scene-page .contact-panel .contact-links a{font-size:22px;line-height:1.25;letter-spacing:-.01em;padding:8px 0;min-height:44px;border:0;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:8px}
+.scene-page .contact-panel .isiko-contact{margin:0}
+.scene-page .contact-panel .isiko-contact fieldset{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.scene-page .contact-panel .isiko-contact label{gap:8px;font-size:15px;line-height:1.6}
+.scene-page .contact-panel .isiko-contact :is(input,textarea){min-height:48px;padding:12px 16px;border-radius:12px;background:var(--paper);color:var(--ink);border-color:var(--line);font-size:16px;line-height:1.5}
+.scene-page .contact-panel .isiko-contact textarea{min-height:160px}
+.scene-page .contact-panel .isiko-contact button{min-height:48px;padding:12px 24px;border-color:var(--paper);border-radius:12px;background:var(--paper);color:var(--blue);font-size:15px;line-height:1.6;font-weight:600;transition:transform .1s ease,opacity .1s ease}
+.scene-page .contact-panel .isiko-contact button:enabled:hover{opacity:.9}
+.scene-page .contact-panel .isiko-contact button:enabled:active{transform:scale(.97)}
+.scene-page .contact-panel .isiko-contact .contact-privacy,.scene-page .contact-panel .isiko-contact [data-contact-receipt]{font-size:12px;line-height:1.6;margin:0;opacity:1}
+.scene-page .contact-panel .isiko-contact [role="status"]{font-size:17px;line-height:1.6;margin:24px 0 8px}
+.scene-page .contact-panel .isiko-contact noscript p{font-size:15px;line-height:1.6;margin:24px 0 0}
+@media(max-width:1023px){
+ .scene-page .contact-panel .contact-layout{gap:32px}
+ .scene-page .contact.contact-panel h2{font-size:30px;line-height:1.2;letter-spacing:-.015em}
+}
+@media(max-width:767px){
+ .scene-page .contact.contact-panel{padding-block:32px}
+ .scene-page .contact-panel .contact-layout{grid-template-columns:repeat(4,minmax(0,1fr));gap:32px}
+ .scene-page .contact-panel :is(.contact-intro,.contact-form){grid-column:1/-1}
+ .scene-page .contact.contact-panel h2{max-width:20ch;margin-bottom:16px}
+ .scene-page .contact-panel .contact-intro>p{font-size:15px;line-height:1.6;max-width:none}
+ .scene-page .contact-panel .contact-links{margin-top:24px}
+ .scene-page .contact-panel .isiko-contact fieldset{grid-template-columns:minmax(0,1fr)}
+ .scene-page .contact-panel .isiko-contact button{width:100%}
+}
+@media(prefers-reduced-motion:reduce){.scene-page .contact-panel .isiko-contact button{transition:none}.scene-page .contact-panel .isiko-contact button:enabled:active{transform:none}}

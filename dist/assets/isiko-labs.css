@@ -1,0 +1,114 @@
+/* One comparison sheet, using the existing tabs, type and spacing. */
+.labs-v2 .solution-hero h1{font-size:clamp(56px,6.6vw,96px);max-width:1200px}
+.labs-v2 .solution-intro{margin-top:44px}
+.labs-paths{display:grid;grid-template-columns:1fr 1fr;gap:8%;margin-top:55px}
+.labs-paths>a{border-top:1px solid #bcd1f04d;padding-top:25px;display:block}
+.labs-paths .eyebrow{display:block;margin-bottom:14px}
+.labs-paths strong{display:flex;justify-content:space-between;align-items:center;font-size:46px;line-height:1.1;letter-spacing:-.045em;font-weight:500}
+.labs-paths strong>span{font-size:28px;transition:transform .16s}
+.labs-paths>a:hover strong>span{transform:translate(3px,-3px)}
+.labs-paths p{font-size:16px;margin-bottom:0}
+.matrix-heading{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:start;margin-bottom:56px}
+.matrix-heading h2{font-size:clamp(84px,10.6vw,152px);letter-spacing:-.075em;line-height:1}
+.matrix-heading h3{font-size:clamp(30px,3.25vw,46px);line-height:1.1;letter-spacing:-.04em;margin:0 0 24px}
+.matrix-heading>div:last-child{padding-top:54px}
+.matrix-route{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);margin:0 0 32px;padding:0;gap:16px}
+.matrix-route li{font-size:14px;line-height:1.4;border-top:1px solid #bcd1f061;padding-top:16px}
+.matrix-route li>span{display:block;color:#bcd1f0;font-size:12px;margin-bottom:10px}
+.matrix-studio{background:#f7faff;color:#183859;border-radius:24px;overflow:hidden}
+.matrix-studio-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 36px;border-bottom:1px solid #18385924}
+.matrix-studio-heading>span{font-size:29px;font-weight:600;letter-spacing:-.055em}
+.matrix-studio-heading small{font-size:11px;letter-spacing:.035em;text-transform:uppercase;font-weight:500;margin-left:14px;color:#456482}
+.labs .matrix-studio-heading>p{font-size:12px;color:#456482;margin:0}
+.matrix-workbench{display:block;padding:0 36px}
+.matrix-workbench .ai-choices{position:static;display:flex;gap:32px;border-bottom:1px solid #18385924}
+.matrix-workbench .ai-choices[hidden]{display:none}
+.matrix-workbench .ai-choices button{display:flex;align-items:center;cursor:pointer;width:auto;min-height:66px;font-size:16px;gap:10px;padding:18px 0;background:transparent;border:0;border-bottom:3px solid transparent;border-radius:0;color:#456482}
+.matrix-workbench .ai-choices button>span{color:inherit;font-size:11px}
+.matrix-workbench .ai-choices button>b{display:none}
+.matrix-workbench .ai-choices button[aria-selected=true]{border-bottom-color:#2447a5;color:#2447a5}
+.matrix-workbench .ai-choices button:hover{color:#2447a5}
+.matrix-workbench button:focus-visible{outline:2px solid #2447a5;outline-offset:4px}
+.matrix-workbench .ai-panels{gap:0}
+.matrix-workbench .matrix-panel{border:0;border-radius:0;background:transparent;box-shadow:none;padding:34px 0 0}
+.matrix-workbench .matrix-panel:focus-visible{outline-color:#2447a5}
+.matrix-label{display:block;font-size:11px;line-height:1.5;letter-spacing:.025em;text-transform:uppercase;color:#456482;margin-bottom:12px}
+.matrix-question h3{font-size:clamp(29px,3vw,40px);line-height:1.12;max-width:26ch;margin:0 0 18px;color:#183859}
+.labs .matrix-question>p{font-size:16px;color:#456482;line-height:1.55;margin:0;max-width:70ch}
+.matrix-variants{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:30px;padding:26px 0;border-block:1px solid #18385924}
+.matrix-variants>div+div{border-left:1px solid #18385924;padding-left:36px}
+.labs .matrix-variants p{font-size:clamp(19px,2vw,25px);line-height:1.35;letter-spacing:-.025em;color:#183859;margin:0;max-width:29ch}
+.matrix-perspectives{padding:28px 0}
+.matrix-perspectives>div{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.matrix-perspectives>div>div>span{font-size:13px;color:#2447a5;font-weight:600}
+.labs .matrix-perspectives p{font-size:15px;color:#456482;line-height:1.5;max-width:29ch;margin:9px 0 0}
+.matrix-result{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;padding:26px 30px;background:#e4edf9;margin:0 -12px}
+.labs .matrix-result p{font-size:16px;color:#183859;line-height:1.5;margin:0}
+.matrix-result .matrix-label{color:#2447a5}
+.labs .matrix-studio-note{font-size:12px;line-height:1.5;color:#456482;margin:0;padding:20px 36px 26px}
+.matrix-ownership{display:grid;grid-template-columns:1fr 1fr;gap:8%;margin-top:64px}
+.matrix-ownership h3{font-size:clamp(29px,3vw,40px);line-height:1.1;margin-bottom:24px}
+.matrix-ownership>div>p:last-child{max-width:42ch}
+.matrix-ownership dl{margin:0}
+.matrix-ownership dl>div{border-top:1px solid #bcd1f04d;padding:19px 0}
+.matrix-ownership dt{font-size:18px;font-weight:500;letter-spacing:-.025em}
+.matrix-ownership dd{margin:10px 0 0;color:#d7e3f4;font-size:15px;line-height:1.6}
+.matrix-method-note{display:grid;grid-template-columns:1fr 1fr;gap:8%;border-top:1px solid #bcd1f04d;padding-top:24px;margin-top:32px}
+.labs .matrix-method-note p{font-size:13px;line-height:1.65;color:#bcd1f0;margin:0}
+.matrix-method-note a{text-decoration:underline;text-underline-offset:4px}
+.labs-v2 .labs-work{padding:36px 0;border-inline:0;border-radius:0;background:none;gap:32px 8%}
+.labs-v2 .labs-work-title .text-link{margin-top:16px}
+.labs-v2 .labs-brands{margin:42px 0}
+.labs-service-link{display:block;margin-top:20px}
+@media(max-width:950px){
+ .matrix-heading{gap:6%;grid-template-columns:.9fr 1.1fr}
+ .matrix-heading>div:last-child{padding-top:28px}
+ .matrix-route{gap:12px}
+ .matrix-studio-heading{padding:24px 28px}
+ .matrix-workbench{padding-inline:28px}
+ .matrix-variants{gap:24px}.matrix-variants>div+div{padding-left:24px}
+ .matrix-perspectives>div{gap:20px}
+ .matrix-result{gap:24px;padding:24px}
+ .labs .matrix-studio-note{padding-inline:28px}
+}
+@media(max-width:700px){
+ .labs-v2 .solution-hero h1{font-size:clamp(42px,11vw,72px);line-height:1.01}
+ .labs-v2 .solution-intro{margin-top:30px}
+ .labs-paths{grid-template-columns:1fr;gap:28px;margin-top:34px}
+ .labs-paths strong{font-size:38px}
+ .labs-paths>a{padding-top:20px}
+ .labs-paths .eyebrow{margin-bottom:12px}
+ .matrix-heading{grid-template-columns:1fr;gap:24px;margin-bottom:30px}
+ .matrix-heading h2{font-size:clamp(82px,23vw,132px)}
+ .matrix-heading>div:last-child{padding-top:0}
+ .matrix-heading h3{font-size:32px;margin-bottom:20px}
+ .matrix-route{grid-template-columns:1fr 1fr;gap:20px 16px;margin-bottom:28px}
+ .matrix-route li{font-size:13px;padding-top:12px}
+ .matrix-route li>span{margin-bottom:8px}
+ .matrix-studio{border-radius:18px;margin-inline:-8px}
+ .matrix-studio-heading{padding:19px 20px;gap:12px;align-items:flex-start}
+ .matrix-studio-heading>span{font-size:25px;line-height:1.1}
+ .matrix-studio-heading small{display:block;font-size:9px;margin:7px 0 0}
+ .labs .matrix-studio-heading>p{font-size:11px;max-width:12ch;text-align:right}
+ .matrix-workbench{padding-inline:20px}
+ .matrix-workbench .ai-choices{gap:0;justify-content:space-between}
+ .matrix-workbench .ai-choices button{min-height:58px;font-size:14px;padding:15px 2px}
+ .matrix-workbench .matrix-panel{padding-top:26px}
+ .matrix-question h3{font-size:29px;line-height:1.12}
+ .labs .matrix-question>p{font-size:15px}
+ .matrix-variants{grid-template-columns:1fr;gap:24px;margin-top:24px;padding-block:24px}
+ .matrix-variants>div+div{border-left:0;padding-left:0;border-top:1px solid #18385924;padding-top:24px}
+ .labs .matrix-variants p{font-size:21px;line-height:1.35}
+ .matrix-perspectives{padding-block:24px}
+ .matrix-perspectives>div{grid-template-columns:1fr;gap:20px}
+ .labs .matrix-perspectives p{max-width:none;margin-top:6px}
+ .matrix-result{grid-template-columns:1fr;gap:22px;padding:22px 16px;margin-inline:-6px}
+ .labs .matrix-result p{font-size:15px}
+ .labs .matrix-studio-note{padding:20px;font-size:11px}
+ .matrix-ownership,.matrix-method-note{grid-template-columns:1fr;gap:24px;margin-top:40px}
+ .matrix-ownership h3{font-size:32px}
+ .matrix-method-note{margin-top:20px}
+ .labs-v2 .labs-work{padding-block:26px}
+ .labs-v2 .solution-opening h2{font-size:37px}
+}
+@media(prefers-reduced-motion:reduce){.labs-paths strong>span{transition:none}}

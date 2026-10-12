@@ -1,0 +1,24 @@
+/* Native disclosure; language names stay readable without JavaScript. */
+.home,.subpage{overflow-wrap:anywhere;hyphens:auto}.header,.language-menu{hyphens:none}
+.header{gap:16px}.header>nav{margin-left:auto}
+.language-menu{position:relative;flex:none;font-size:13px;line-height:1.4;color:inherit}
+.language-menu>summary{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;min-width:48px;padding:9px 10px;border:1px solid currentColor;border-radius:24px;list-style:none;cursor:pointer;font:inherit}
+.language-menu>summary::-webkit-details-marker{display:none}
+.language-menu>summary:after{content:'⌄';font-size:15px;line-height:1}
+.language-menu[open]>summary:after{content:'⌃'}
+.language-menu>div{position:absolute;right:0;top:calc(100% + 8px);z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:2px 10px;width:280px;max-width:calc(100vw - 32px);padding:12px;background:#f7f9fd;color:#17253f;border:1px solid #c6d2e5;border-radius:14px;box-shadow:0 15px 35px #07132640}
+.language-menu a{display:flex;align-items:center;min-height:44px;padding:8px 12px;border-radius:8px;text-decoration:none;font-size:14px}
+.language-menu a[aria-current=true]{background:#dce7f8;font-weight:650}
+.language-menu a:hover{background:#e8effa}
+.language-menu a:focus-visible,.language-menu>summary:focus-visible{outline:3px solid #719cdd;outline-offset:3px}
+.demo-language-bar{display:flex;justify-content:flex-end;padding:8px 24px;background:#f3f5f8;color:#17253f}
+/* One consent layout across languages; each choice remains directly reachable. */
+.cookie-panel .cookie-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+.cookie-panel .cookie-actions>button{min-height:44px;padding:12px;border:1px solid #bdc7d8;border-radius:12px;background:#fffdf8;color:#172338;font-family:inherit;font-size:13px;font-weight:600;line-height:1.35;cursor:pointer}
+.cookie-panel .cookie-actions>[data-consent="all"]{grid-column:1/-1;background:#2447a5;color:#fff;border-color:#2447a5}
+.cookie-panel .cookie-actions>button:focus-visible{outline:3px solid #2447a5;outline-offset:3px}
+.cookie-panel{max-height:calc(100svh - 32px);overflow:auto}
+.cookie-panel p{font-size:13px;line-height:1.55;color:#536278}
+@media(max-width:1000px){.header{gap:12px}.header nav{gap:16px}}
+@media(max-width:700px){.header{gap:10px}.header>nav{gap:12px}.header>nav>.nav-contact{display:none}.header .mobile-nav{display:block}.language-menu>summary{padding-inline:9px}.demo-language-bar{padding:8px 16px}}
+@media(max-width:700px){.header .language-menu{position:static}.header .language-menu>div{left:var(--gutter);right:var(--gutter);top:calc(100% - 16px);width:auto;max-width:none}.footer,.footer>div{flex-wrap:wrap;white-space:normal}.footer>div{max-width:100%}}

@@ -1,0 +1,19 @@
+.isiko-contact{margin:28px 0;min-width:0;text-align:left}
+.isiko-contact fieldset{display:grid;grid-template-columns:1fr 1fr;gap:20px 16px;border:0;padding:0;margin:0;min-width:0}
+.isiko-contact label{display:grid;gap:8px;font-size:13px;font-weight:500;line-height:1.5;min-width:0;color:inherit}
+.isiko-contact .contact-message,.isiko-contact .contact-submit,.isiko-contact .contact-privacy{grid-column:1/-1}
+.isiko-contact input,.isiko-contact textarea{box-sizing:border-box;width:100%;min-width:0;border:1px solid #8190ab;border-radius:7px;padding:13px 14px;background:#fff;color:#17243a;font-size:16px;font-weight:400;line-height:1.5;font-family:inherit;box-shadow:none}
+.isiko-contact textarea{resize:vertical;min-height:138px}
+.isiko-contact input:focus-visible,.isiko-contact textarea:focus-visible,.isiko-contact button:focus-visible{outline:3px solid #8fb7ff;outline-offset:3px}
+.isiko-contact button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:190px;max-width:100%;padding:13px 24px;border:1px solid #6184ff;border-radius:7px;background:#214bea;color:#fff;font-size:15px;font-weight:500;line-height:1.4;font-family:inherit;cursor:pointer}
+.isiko-contact button:disabled{opacity:.65;cursor:wait}
+.isiko-contact .contact-privacy,.isiko-contact [data-contact-receipt]{font-size:12px;line-height:1.65;margin:0;max-width:100%;color:inherit;opacity:.85}
+.isiko-contact .contact-privacy a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.isiko-contact [role=status]{font-size:18px;line-height:1.5;font-weight:500;outline-offset:6px;margin:16px 0 6px}
+.isiko-contact [role=status]:empty,.isiko-contact [data-contact-receipt]:empty{display:none}
+.isiko-contact .contact-trap{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.isiko-contact [hidden]{display:none!important}
+.wp-fallback .isiko-contact{margin:0}.wp-fallback{min-width:0}
+@media(max-width:540px){.isiko-contact fieldset{grid-template-columns:1fr}.isiko-contact button{width:100%}}
+
+.contact-top:has(.isiko-contact){align-items:start}

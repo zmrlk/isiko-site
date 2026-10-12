@@ -1,0 +1,41 @@
+# ISIKO
+
+> ISIKO: procesy, systemy i AI. CRM, B2B, integracje ERP i automatyzacja pracy. Polska.
+
+Bezpłatne rozpoznanie; wdrożenia i opieka według uzgodnionego zakresu. Dopina jest jednym rozwijanym produktem, nie katalogiem gotowych osobnych abonamentów. Ta strona przedstawia usługi ISIKO i wybrane realizacje.
+
+Dopina CRM obejmuje sprawy klientów, opiekunów i etapy sprzedaży, własny pulpit, e-mail, WhatsApp Business, SMS i infolinię. Podłączenie uzgodnionych kont przez dostępne integracje jest w bazie; opłaty dostawców są oddzielne. Social media i OLX stanowią dodatkowy moduł. Nowe integracje uzgadniamy indywidualnie, także bez dopłaty, gdy wspierają wspólny kierunek rozwoju. Dostępne połączenia obejmują Play, SerwerSMS, Resend i IMAP/SMTP; Microsoft 365 i Outlook.com wymagają dodatkowej obsługi OAuth. Mechanizm poczty korzysta z IMAP i SMTP; nie stanowi pełnej synchronizacji wszystkich folderów. Zakres social media obejmuje Facebook oraz przekazywanie materiałów do TikToka, z końcowym działaniem użytkownika. Dopina B2B pozwala rozpocząć od katalogu i zamówień kontrahentów, a integrację ERP uzgadnia się osobno. Z systemu korzysta STAGO, producent pawilonów modułowych. Dostępne kanały i moduły zależą od zakresu konkretnego wdrożenia. Księgowość oraz obecny ERP mogą pozostać źródłem danych. Zakres, integracje i kryteria odbioru określa oferta wdrożenia.
+
+Kontakt firmowy: hello@isiko.pl, +48 572 196 566. English: https://isiko.pl/en/.
+
+VARDE Labs jest warsztatem AI. Helix to stosowany w pracy sposób kontroli jakości: testy działania, przegląd wyglądu i niezależna ocena zmian przed odbiorem. Nie jest osobną ofertą abonamentową. STERP zajmuje się designem i stronami; https://sterp.pl/.
+
+## Strony
+- [ISIKO — procesy, systemy i AI](https://isiko.pl/): Porządkujemy procesy i łączymy systemy. CRM, B2B, integracje ERP i automatyzacje. Poznaj ofertę i realizacje ISIKO.
+- [Systemy CRM na miarę | ISIKO](https://isiko.pl/uslugi/systemy-crm/): Zapytanie, wycena, dalszy kontakt i realizacja. Proces dopasowany do tego, jak pracuje Twój zespół.
+- [Panele B2B i sprzedaż | ISIKO](https://isiko.pl/uslugi/panele-b2b/): Katalog, ceny kontrahenta i zamówienia. Klient kupuje na swoich warunkach, a zespół pracuje na wspólnych danych.
+- [Integracje i automatyzacje | ISIKO](https://isiko.pl/uslugi/integracje-erp/): Łączymy ERP, sklep, CRM i obieg dokumentów. Z ustalonym kierunkiem danych i obsługą wyjątków.
+- [AI w procesie firmy | ISIKO](https://isiko.pl/uslugi/ai-w-firmie/): Praca z dokumentami, porządkowanie informacji i wsparcie decyzji. Z określonym dostępem do danych i kontrolą człowieka.
+- [Strony, które prowadzą dalej | ISIKO](https://isiko.pl/uslugi/strony-www/): Od pierwszej wizyty do zapytania. Projekt, treść, SEO i pomiar połączone z obsługą kontaktu.
+- [Opieka i dalszy rozwój | ISIKO](https://isiko.pl/uslugi/opieka-i-rozwoj/): Kto odpowiada za system po wdrożeniu? Ustalamy monitoring, aktualizacje, kopie i kolejne etapy.
+- [STAGO — marka, marketing, strona i system | ISIKO](https://isiko.pl/realizacje/stago/): Logo i identyfikacja, marketing, strony oraz Dopina używana do sprzedaży i pracy operacyjnej.
+- [Panel B2B — Twoi kontrahenci. Ich warunki. Jeden panel. | ISIKO](https://isiko.pl/realizacje/panel-b2b/): Katalog i zamówienia połączone z indywidualnymi warunkami handlowymi. Własny widok klienta i wspólne źródło danych dla obsługi.
+- [ePamiątka — Technologia, która zostawia miejsce na emocje. | ISIKO](https://isiko.pl/realizacje/epamiatka/): Produkt dla wspólnych albumów wydarzeń. Proste wejście dla gościa, dodawanie wspomnień i panel do zarządzania albumem.
+- [CRM czy ERP — czego naprawdę brakuje Twojej firmie? | ISIKO](https://isiko.pl/wiedza/crm-czy-erp/): Zacznij od miejsca, w którym ginie informacja. Nazwa systemu jest dopiero kolejną decyzją.
+- [Panel B2B z ERP: co ustalić przed wyceną? | ISIKO](https://isiko.pl/wiedza/panel-b2b-integracja-erp/): Cenniki, stany, rozrachunki i wyjątki. Lista, która pozwala porównać zakresy ofert.
+- [Co automatyzować jako pierwsze? | ISIKO](https://isiko.pl/wiedza/automatyzacja-procesow/): Wybierz jeden powtarzalny proces. Sprawdź jego koszt i ustal, po czym poznasz poprawę.
+- [Wiedza o CRM, B2B i automatyzacji | ISIKO](https://isiko.pl/wiedza/): Praktyczne pytania przed wdrożeniem CRM, integracją panelu B2B z ERP i automatyzacją procesów firmy.
+- [Marketing i komunikacja połączone ze sprzedażą | ISIKO](https://isiko.pl/uslugi/marketing-i-komunikacja/): Wideo, treści, social media, strona i pomiar. Pomagamy wyjaśnić ofertę firmy i połączyć zainteresowanie z dalszą obsługą klienta.
+- [Przejęcie i uporządkowanie istniejącego systemu | ISIKO](https://isiko.pl/uslugi/przejecie-systemu/): Brakuje dostępu, dokumentacji albo osoby, która rozumie całość? Zaczynamy od ustalenia stanu i bezpiecznego planu dalszej pracy.
+- [Polityka prywatności | ISIKO](https://isiko.pl/polityka-prywatnosci/): Informacje o danych przekazywanych przez kontakt z ISIKO i o opcjonalnym pomiarze korzystania ze strony.
+- [Cookies i ustawienia prywatności | ISIKO](https://isiko.pl/cookies/): Wybierasz, czy zgadzasz się na analitykę i marketing. Odmowa nie blokuje korzystania ze strony.
+- [System operacyjny sieci handlowej | ISIKO](https://isiko.pl/realizacje/siec-handlowa/): Sprzedaż, grafiki, zgłoszenia i wiedza w jednym systemie. Przykład pracy z procesami rozproszonej organizacji oraz rozwoju kolejnych wersji.
+- [Obieg dokumentów z OCR i AI | ISIKO](https://isiko.pl/realizacje/obieg-finansowy/): Od faktury i transakcji bankowej do propozycji opisu oraz kontroli rozbieżności. Przykład systemu dla grupy spółek, z weryfikacją przez człowieka.
+- [Dopina dla producentów pawilonów i kontenerów | ISIKO](https://isiko.pl/rozwiazania/system-dla-producentow-pawilonow/): Dopina dla producentów i sprzedawców pawilonów: CRM, konfiguracja wycen, oferty, produkcja, magazyn, czas pracy i rozliczenia. Poznaj cały proces Dopiny.
+- [Wolny Namiot — branding, brandbook i strona | ISIKO](https://isiko.pl/realizacje/wolny-namiot/): Wolny Namiot: identyfikacja marki, brandbook, strona wynajmu namiotów i ścieżka zapytania. Zobacz projekt ISIKO.
+- [Dzikie Wiosło — strona i rezerwacje spływów | ISIKO](https://isiko.pl/realizacje/dzikie-wioslo/): Dzikie Wiosło: strona, wybór trasy i terminu oraz proces rezerwacji spływu kajakowego. Zobacz realizację ISIKO.
+- [Dopina B2B — panel dla kontrahentów, katalog i ERP | ISIKO](https://isiko.pl/rozwiazania/dopina-b2b/): Dopina B2B: wygodne zamówienia na telefonie i komputerze, ceny kontrahenta, dostępność oraz kontekst przed rozmową. Poznaj proces i sprawdź demo.
+- [Dopina — CRM, B2B i obsługa firmy | ISIKO](https://isiko.pl/dopina/): Dopina łączy obsługę klienta, CRM, oferty i zamówienia B2B. Poznaj rozwiązanie dla producentów pawilonów i panel dla kontrahentów.
+- [VARDE Labs — bOS, Matrix i AI w praktyce | ISIKO](https://isiko.pl/varde-labs/): VARDE Labs: jak zespół ISIKO pracuje z AI, rozwija bOS i eksperymenty Matrix. Praktyczne zastosowania, rezultaty pracy i kierunki rozwoju.
+
+- [Dopina CRM — funkcje i zakres wdrożenia](https://isiko.pl/rozwiazania/dopina-crm/): Sprawy klientów, personalizacja pulpitu, karty, wspólna skrzynka, AI i sekwencje. E-mail, WhatsApp Business, SMS i infolinia w bazie; social media i OLX jako dodatek.

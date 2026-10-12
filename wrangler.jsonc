@@ -2,21 +2,23 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "isiko-site",
   "compatibility_date": "2026-08-25",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "observability": {
     "enabled": true
   },
   "assets": {
-    "directory": "."
+    "directory": "./dist",
+    "not_found_handling": "404-page"
   },
   "routes": [
     {
       "pattern": "isiko.pl",
       "custom_domain": true
-    },
-    {
-      "pattern": "varde.pl",
-      "custom_domain": true
     }
-  ]
+  ],
+  "build": {
+    "command": "node scripts/verify-release.mjs"
+  }
 }

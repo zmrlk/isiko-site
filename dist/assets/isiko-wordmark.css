@@ -1,0 +1,13 @@
+/* The accepted mark is a circle at (100,100), r=90 in a 200px SVG.
+   Its visible diameter is .54em; the .03em inset sits below the baseline. */
+html body .brand{align-items:baseline;gap:0}
+html body .brand .mark{display:block;flex:none;align-self:baseline;width:.60em;height:.60em;min-width:0;margin:0 0 0 .035em;transform:translateY(.03em)}
+html body .brand i{display:block;flex:none;align-self:baseline;width:.54em;height:.54em;margin:0 0 0 .035em;transform:none;border-radius:50%;background:currentColor}
+html body .contact-wordmark{align-items:baseline;gap:.035em}
+html body .contact-wordmark .contact-anchor{display:block;flex:none;align-self:baseline;width:.60em;height:.60em;margin:0;line-height:0;transform:translateY(.03em)}
+html body .contact-wordmark .contact-anchor .mark{display:block;width:100%;height:100%;margin:0;transform:none}
+
+/* Original outlined master from the brand library; dimensions preserve its viewBox. */
+html body .brand{align-items:center;min-height:44px;flex-shrink:0}
+html body .brand .brand-master{display:block;width:112px;height:auto;max-width:none}
+@media(max-width:767px){html body .brand{min-width:44px}html body .brand .brand-master{width:96px;max-width:100%}}
