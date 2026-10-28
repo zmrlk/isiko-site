@@ -8,8 +8,11 @@ The reviewed site is in `dist/`. Files at the repository root outside this folde
 
 ```sh
 node scripts/verify-release.mjs
+node scripts/check-seo.mjs
 npx wrangler deploy
 ```
+
+`check-seo.mjs` checks every indexable page in `dist/` without network access: canonical, hreflang reciprocity and x-default, one `h1`, image `alt`, JSON-LD syntax, sitemap and robots. Title and description lengths and skipped heading levels are reported as warnings.
 
 Wrangler also runs the verifier before publishing. `release-manifest.json` records every reviewed public file by SHA256. Update the package and manifest together after building and reviewing the editable source project; do not edit generated HTML directly.
 

@@ -13,3 +13,4 @@ jobs:
         with:
           node-version: '22'
       - run: node scripts/verify-release.mjs
+      - run: node scripts/check-seo.mjs
